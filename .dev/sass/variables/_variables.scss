@@ -15,7 +15,7 @@
 
 $row-width: 1100px;
 $foundation-palette: (
-  primary: #2199e8,
+  primary: #191919,
   secondary: #777,
   success: #3adb76,
   warning: #ffae00,
@@ -83,4 +83,4 @@ $widget-font-size: rem-calc(.9);
 // 6. Masthead
 // ------------
 
-$header-bg-color: white;
+$header-bg-color: map-get($foundation-palette, primary);

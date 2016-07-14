@@ -1,19 +1,34 @@
 $menu-font-family: $header-font-family !default;
-$menu-background-color: #222 !default;
+$menu-background-color: rgba(25,25,25,.8) !default;
 
 .main-navigation-container{
 	background-color: $menu-background-color;
+	float: left;
+	height: 100%;
+	padding: 75px 30px 0;
+	position: relative;
+	.quote-section {
+		position: absolute;
+		bottom: 40px;
+		padding-right: 30px;
+		blockquote {
+			color: #fff;
+			border: 0;
+			font-size: 16px;
+		}
+		cite {
+			color: #999999;
+			font-style: normal;
+			font-size: 12px;
+			text-transform: uppercase;
+		}
+	}
 }
 
-.main-navigation{
+.menu {
 	position: relative;
 	z-index: 100;
 	@extend .row;
-
-	.menu{
-		@extend .large-12;
-		@extend .columns;
-	}
 
 	ul {
 		font-size: emCalc(15);
@@ -41,10 +56,9 @@ $menu-background-color: #222 !default;
 			display: block;
 			font-family: $menu-font-family;
 			line-height: 1.2;
+			font-size: 24px;
 			font-weight: normal;
-			color: contrast-color($menu-background-color,darken($menu-background-color,65%),lighten($menu-background-color,65%),50%);
-			padding: 1.5em 1em;
-			padding: 1.5rem 1rem;
+			color: #fff;
 			position: relative;
 
 
@@ -92,7 +106,6 @@ $menu-background-color: #222 !default;
 		}
 
 		li {
-			float: left;
 			padding: 0;
 			margin: 0;
 			list-style: none;
