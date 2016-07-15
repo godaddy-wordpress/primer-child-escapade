@@ -1,10 +1,10 @@
-$site-footer-background: #111 !default;
+$site-footer-background: #474747 !default;
 $site-footer-text-color: contrast-color($site-footer-background, #222, #fff, 50%) !default;
 $site-footer-border-color: contrast-color($site-footer-background, darken($site-footer-background,15%), lighten($site-footer-background,15%), 50%) !default;
 $site-footer-anchor-color: contrast-color($site-footer-background, #222, #fff, 50%) !default;
 $site-footer-anchor-color-hover: contrast-color($site-footer-background, #222, #fff, 50%) !default;
 
-$site-footer-info-background: #fff;
+$site-footer-info-background: map-get($foundation-palette, primary);
 $site-footer-info-text-color: contrast-color($site-footer-info-background, #222, #fff, 50%) !default;
 $site-footer-info-anchor-color: contrast-color($site-footer-info-background, #222, #fff, 50%) !default;
 $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-background, #222, #fff, 50%) !default;
@@ -130,7 +130,6 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 	}
 
 	.site-info{
-		@extend .row;
 		overflow: hidden;
 
 		.social-menu {

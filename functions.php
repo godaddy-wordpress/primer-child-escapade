@@ -5,16 +5,17 @@
  *
  * @link https://codex.wordpress.org/Function_Reference/register_nav_menus
  */
-function escapade_register_site_info_menu() {
+function escapade_register_menus() {
 
 	register_nav_menus(
 		array(
 			'site-info' => esc_html__( 'Site Info', 'escapade' ),
+			'footer'	=> esc_html__( 'Footer', 'escapade' )
 		)
 	);
 
 }
-add_action( 'after_setup_theme', 'escapade_register_site_info_menu' );
+add_action( 'after_setup_theme', 'escapade_register_menus' );
 
 /**
  * Add image size for hero image

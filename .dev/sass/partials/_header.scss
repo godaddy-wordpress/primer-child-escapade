@@ -1,5 +1,9 @@
 $entry-title-bg: rgba(0,0,0,.6) !default;
 
+body {
+	background: url(img/faux-columns.png) repeat-y;
+}
+
 .site-title {
 }
 
@@ -7,7 +11,6 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 }
 
 .site-header {
-	background: blue;
 	height: 100%;
 	max-height: 868px;
 	.site-title {

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Escapade 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-13 21:17-0400\n"
+"POT-Creation-Date: 2016-07-15 17:53-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,15 @@ msgstr ""
 msgid "Site Info"
 msgstr ""
 
-#: functions.php:95
+#: functions.php:13
+msgid "Footer"
+msgstr ""
+
+#: functions.php:96
 msgid "Hero"
 msgstr ""
 
-#: functions.php:97
+#: functions.php:98
 msgid "The hero appears in the hero widget area on the front page"
 msgstr ""
 
@@ -188,8 +192,8 @@ msgctxt "number of comments"
 msgid "% Comments"
 msgstr ""
 
-#: templates/parts/site-info.php:17
+#: templates/parts/site-info.php:29
 #, php-format
 msgctxt "1. theme name link, 2. theme author link"
-msgid "Built with %1$s by %2$s."
+msgid "%1$s Theme by %2$s."
 msgstr ""
