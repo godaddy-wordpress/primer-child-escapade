@@ -25,7 +25,7 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 
 .footer-widget-area {
 	overflow: hidden;
-	padding: 2.25rem 1.25rem 0;
+	padding: 2.25rem 4.6rem 0;
 
 	&.columns-1 {
 		.footer-widget {
@@ -61,27 +61,28 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 
 	.footer-widget {
 		padding: 0;
+		position: relative;
 
 		.widget{
-			background-color: lighten($site-footer-background,10%);
 			color: $site-footer-text-color;
+			padding: 0;
+			box-sizing: border-box;
 		}
 
 		@media #{$large-up} {
-			padding: 0 15px;
+			padding-right: 115px;
 			float: left;
 		}
 
 		&:first-child {
 			@media #{$large-up} {
-				padding-right: 15px;
 				padding-left: 0;
 			}
 		}
 
 		&:last-child {
 			@media #{$large-up} {
-				padding-left: 15px;
+				margin-right: 0;
 				padding-right: 0;
 			}
 		}
@@ -90,8 +91,15 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 			color: $site-footer-anchor-color;
 			background: transparent;
 			font-weight: bold;
-			border-bottom: 2px solid $site-footer-border-color;
-			border-radius: 0;
+			text-transform: uppercase;
+			font-size: 22px;
+			position: absolute;
+			left: -30px;
+			transform: rotate(-90deg);
+			transform-origin: left top 0;
+			width: 1000px;
+			text-align: right;
+			top: 1000px;
 		}
 
 		.widget {
@@ -110,7 +118,7 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 }
 
 .site-info-wrapper{
-	padding: 20px 0;
+	padding: 4.6rem;
 	background: $site-footer-info-background;
 	color: $site-footer-info-text-color;
 	line-height: 1.5;
@@ -127,6 +135,22 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 		float: left;
 		width: 50%;
 		margin-top: 5px;
+		color: #535353;
+		a[rel="designer"] {
+			color: #535353;
+		}
+	}
+	
+	.menu {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		li {
+			display: inline;
+			a {
+				text-transform: uppercase;
+			}
+		}
 	}
 
 	.site-info{
@@ -139,12 +163,8 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 			}
 
 			a{
-				color: $site-footer-info-background;
-				background-color: $site-footer-info-text-color;
-
-				&:hover{
-					color: $site-footer-info-background;
-					background-color: $primary-color;
+				&:before {
+					font-size: 36px;
 				}
 			}
 		}
@@ -154,5 +174,6 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 	.site-info-inner{
 		@extend .large-12;
 		@extend .columns;
+		padding: 0;
 	}
 }

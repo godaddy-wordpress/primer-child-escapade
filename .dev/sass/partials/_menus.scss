@@ -25,7 +25,7 @@ $menu-background-color: rgba(25,25,25,.8) !default;
 	}
 }
 
-.menu {
+header .menu {
 	position: relative;
 	z-index: 100;
 	@extend .row;

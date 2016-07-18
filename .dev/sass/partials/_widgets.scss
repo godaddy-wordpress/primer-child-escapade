@@ -2,7 +2,7 @@ $widget-bg: #fff !default;
 
 .widget {
 	margin: 0 0 1.5em;
-	padding: 2rem;
+	padding: 0 2rem;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -80,9 +80,8 @@ $widget-bg: #fff !default;
 }
 
 .widget {
-	background-color: $widget-bg;
-	padding: 2em;
-	padding: 2rem;
+	padding: 0 2em;
+	padding: 0 2rem;
 
 	ul {
 		list-style: none;

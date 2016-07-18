@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Escapade 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-15 17:53-0400\n"
+"POT-Creation-Date: 2016-07-18 12:23-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,36 @@ msgstr ""
 
 #: functions.php:98
 msgid "The hero appears in the hero widget area on the front page"
+msgstr ""
+
+#: functions.php:135
+msgid "Footer Left"
+msgstr ""
+
+#: functions.php:137
+msgid ""
+"The footer left sidebar appears in the first column of the footer widget "
+"area."
+msgstr ""
+
+#: functions.php:147
+msgid "Footer Center"
+msgstr ""
+
+#: functions.php:149
+msgid ""
+"The footer center sidebar appears in the second column of the footer widget "
+"area."
+msgstr ""
+
+#: functions.php:159
+msgid "Footer Right"
+msgstr ""
+
+#: functions.php:161
+msgid ""
+"The footer right sidebar appears in the third column of the footer widget "
+"area."
 msgstr ""
 
 #. //developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/#header-php

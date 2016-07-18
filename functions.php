@@ -122,3 +122,49 @@ function escapade_get_header_image() {
 	$header_image = get_header_image();
 	return $header_image;
 }
+
+/**
+ * Register widget area. Change markup to support rotated titles.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_sidebar
+ */
+function primer_widgets_init() {
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Left', 'primer' ),
+			'id'            => 'footer-1',
+			'description'   => esc_html__( 'The footer left sidebar appears in the first column of the footer widget area.', 'primer' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<div style="position: relative;"><div class="widget-title">',
+			'after_title'   => '</div></div>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Center', 'primer' ),
+			'id'            => 'footer-2',
+			'description'   => esc_html__( 'The footer center sidebar appears in the second column of the footer widget area.', 'primer' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<div style="position: relative;"><div class="widget-title">',
+			'after_title'   => '</div></div>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Right', 'primer' ),
+			'id'            => 'footer-3',
+			'description'   => esc_html__( 'The footer right sidebar appears in the third column of the footer widget area.', 'primer' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<div style="position: relative;"><div class="widget-title">',
+			'after_title'   => '</div></div>',
+		)
+	);
+}
+
+add_action( 'widgets_init', 'primer_widgets_init' );
