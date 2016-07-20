@@ -93,9 +93,9 @@ add_action( 'primer_header', 'escapade_add_hero', 25 );
  */
 function escapade_register_hero_sidebar() {
 	register_sidebar( array(
-		'name'          => __( 'Hero', 'ascension' ),
+		'name'          => __( 'Hero', 'escapade' ),
 		'id'            => 'hero',
-		'description'   => __( 'The hero appears in the hero widget area on the front page', 'ascension' ),
+		'description'   => __( 'The hero appears in the hero widget area on the front page', 'escapade' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -124,47 +124,24 @@ function escapade_get_header_image() {
 }
 
 /**
- * Register widget area. Change markup to support rotated titles.
+ * Remove sidebar
  *
- * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function primer_widgets_init() {
+function escapade_remove_widgets() {
 
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Footer Left', 'primer' ),
-			'id'            => 'footer-1',
-			'description'   => esc_html__( 'The footer left sidebar appears in the first column of the footer widget area.', 'primer' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</aside>',
-			'before_title'  => '<div style="position: relative;"><div class="widget-title">',
-			'after_title'   => '</div></div>',
-		)
-	);
+	unregister_sidebar( 'sidebar-1' );
+	unregister_sidebar( 'sidebar-2' );
 
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Footer Center', 'primer' ),
-			'id'            => 'footer-2',
-			'description'   => esc_html__( 'The footer center sidebar appears in the second column of the footer widget area.', 'primer' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</aside>',
-			'before_title'  => '<div style="position: relative;"><div class="widget-title">',
-			'after_title'   => '</div></div>',
-		)
-	);
-
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Footer Right', 'primer' ),
-			'id'            => 'footer-3',
-			'description'   => esc_html__( 'The footer right sidebar appears in the third column of the footer widget area.', 'primer' ),
-			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</aside>',
-			'before_title'  => '<div style="position: relative;"><div class="widget-title">',
-			'after_title'   => '</div></div>',
-		)
-	);
 }
 
-add_action( 'widgets_init', 'primer_widgets_init' );
+add_action( 'widgets_init', 'escapade_remove_widgets', 11 );
+
+function escapade_update_fonts() {
+	return array(
+		'Oswald',
+		'Droid Serif',
+		'Lato',
+		'Merriweather'
+	);
+}
+add_filter( 'primer_fonts', 'escapade_update_fonts' );

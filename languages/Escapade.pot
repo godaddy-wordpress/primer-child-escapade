@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Escapade 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-18 12:23-0400\n"
+"POT-Creation-Date: 2016-07-20 18:04-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,134 +33,12 @@ msgstr ""
 msgid "The hero appears in the hero widget area on the front page"
 msgstr ""
 
-#: functions.php:135
-msgid "Footer Left"
-msgstr ""
-
-#: functions.php:137
-msgid ""
-"The footer left sidebar appears in the first column of the footer widget "
-"area."
-msgstr ""
-
-#: functions.php:147
-msgid "Footer Center"
-msgstr ""
-
-#: functions.php:149
-msgid ""
-"The footer center sidebar appears in the second column of the footer widget "
-"area."
-msgstr ""
-
-#: functions.php:159
-msgid "Footer Right"
-msgstr ""
-
-#: functions.php:161
-msgid ""
-"The footer right sidebar appears in the third column of the footer widget "
-"area."
-msgstr ""
-
 #. //developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/#header-php
 #. *
 #. * @package Primer
 #.
 #: header.php:33
 msgid "Skip to content"
-msgstr ""
-
-#: inc/breadcrumbs.php:39
-msgid "Blog"
-msgstr ""
-
-#: inc/custom-fonts.php:27
-msgid "Typography"
-msgstr ""
-
-#: inc/custom-fonts.php:37
-msgid "Primary Font"
-msgstr ""
-
-#: inc/custom-fonts.php:51
-msgid "Secondary Font"
-msgstr ""
-
-#: inc/customizer.php:90
-msgid "Base Color Scheme"
-msgstr ""
-
-#: inc/customizer.php:105
-msgid "Tagline Text Color"
-msgstr ""
-
-#: inc/customizer.php:117
-msgid "Link Color"
-msgstr ""
-
-#: inc/customizer.php:129
-msgid "Main Text Color"
-msgstr ""
-
-#: inc/customizer.php:141
-msgid "Secondary Text Color"
-msgstr ""
-
-#: inc/customizer.php:210
-msgid "Default"
-msgstr ""
-
-#: inc/customizer.php:221
-msgid "Dark"
-msgstr ""
-
-#: inc/customizer.php:232
-msgid "Gray"
-msgstr ""
-
-#: inc/customizer.php:243
-msgid "Red"
-msgstr ""
-
-#: inc/customizer.php:254
-msgid "Yellow"
-msgstr ""
-
-#: inc/extras.php:91
-#, php-format
-msgctxt "page number"
-msgid "Page %d"
-msgstr ""
-
-#: inc/template-tags.php:56
-msgid "Posts navigation"
-msgstr ""
-
-#: inc/template-tags.php:62
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr ""
-
-#: inc/template-tags.php:68
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#: inc/template-tags.php:102
-msgid "Post navigation"
-msgstr ""
-
-#: inc/theme-layouts.php:364
-msgctxt "theme layout"
-msgid "Default"
-msgstr ""
-
-#: inc/theme-layouts.php:459 inc/theme-layouts.php:566
-#: inc/theme-layouts.php:651
-msgid "Layout"
-msgstr ""
-
-#: inc/theme-layouts.php:684
-msgid "Global Layout"
 msgstr ""
 
 #: templates/parts/loop/page-content.php:17
