@@ -101,7 +101,7 @@
 	padding-bottom: 1em;
 	padding-bottom: 1rem;
 	font-size: .9em;
-	font-family: $sans-font-family;
+	font-family: $primary-font-family;
 	@extend .clearfix;
 
 	i{
@@ -131,7 +131,7 @@
 .person-meta {
 	margin-bottom: 1em;
 	margin-bottom: 1rem;
-	font-family: $sans-font-family;
+	font-family: $primary-font-family;
 
 	.genericon {
 		line-height: 2;
@@ -151,7 +151,7 @@
 .post-format{
 	color: $primary-color;
 	text-transform: uppercase;
-	font-family: $sans-font-family;
+	font-family: $primary-font-family;
 	font-size: rem-calc(13);
 	font-weight: bold;
 }
@@ -169,7 +169,7 @@ article.format-link {
 	background: #f5f5f5;
 
 	.entry-title {
-		font-family: $sans-font-family;
+		font-family: $primary-font-family;
 		font-weight: bold;
 		font-size: rem-calc(28);
 	}

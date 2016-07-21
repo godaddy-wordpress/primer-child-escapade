@@ -49,18 +49,6 @@ function escapade_add_mobile_menu() {
 add_action( 'primer_header', 'escapade_add_mobile_menu', 0 );
 
 /**
- * Move navigation from after_header to header
- *
- * @link https://codex.wordpress.org/Function_Reference/remove_action
- * @link https://codex.wordpress.org/Function_Reference/add_action
- */
-function escapade_move_navigation() {
-	remove_action( 'primer_after_header', 'primer_add_primary_navigation', 20 );
-	get_template_part( 'templates/parts/primary-navigation' );
-}
-add_action( 'primer_header', 'escapade_move_navigation', 19 );
-
-/**
  * Update custom header arguments
  *
  * @param $args
@@ -145,3 +133,31 @@ function escapade_update_fonts() {
 	);
 }
 add_filter( 'primer_fonts', 'escapade_update_fonts' );
+
+/**
+ * Add Social links to primary navigation area.
+ *
+ * @action primer_after_header
+ */
+function escapade_add_social_to_header(){
+
+	if ( has_nav_menu( 'social' ) ) :
+
+		get_template_part( 'templates/parts/social-menu' );
+
+	endif;
+
+}
+add_action( 'primer_after_header', 'escapade_add_social_to_header', 30 );
+
+/**
+ * Add quote to primary navigation area. TODO: Make this conditional when implementing into Customizer.
+ *
+ * @action primer_after_header
+ */
+function escapade_add_quote_to_header(){
+
+		get_template_part('templates/parts/quote');
+
+}
+add_action( 'primer_after_header', 'escapade_add_quote_to_header', 30 );

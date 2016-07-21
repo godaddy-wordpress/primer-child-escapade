@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Escapade 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-20 18:04-0400\n"
+"POT-Creation-Date: 2016-07-21 02:21-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,11 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: functions.php:96
+#: functions.php:84
 msgid "Hero"
 msgstr ""
 
-#: functions.php:98
+#: functions.php:86
 msgid "The hero appears in the hero widget area on the front page"
 msgstr ""
 

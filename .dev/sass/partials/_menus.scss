@@ -1,32 +1,11 @@
 $menu-font-family: $header-font-family !default;
 $menu-background-color: rgba(25,25,25,.8) !default;
 
-.main-navigation-container{
-	background-color: $menu-background-color;
-	float: left;
-	height: 100%;
-	padding: 75px 30px 0;
-	position: relative;
-	.quote-section {
-		position: absolute;
-		bottom: 40px;
-		padding-right: 30px;
-		blockquote {
-			color: #fff;
-			border: 0;
-			font-size: 16px;
-			margin-bottom: 0;
-		}
-		cite {
-			color: #999999;
-			font-style: normal;
-			font-size: 12px;
-			text-transform: uppercase;
-		}
-	}
+.main-navigation-container {
+	margin-top: 75px;
 }
 
-header .menu {
+header .main-navigation-container .menu {
 	position: relative;
 	z-index: 100;
 	@extend .row;
@@ -58,7 +37,7 @@ header .menu {
 			font-family: $menu-font-family;
 			line-height: 1.2;
 			font-size: 24px;
-			font-weight: normal;
+			font-weight: 300;
 			color: #fff;
 			position: relative;
 		}
@@ -78,7 +57,6 @@ header .menu {
 	}
 
 	@media all and ( min-width: 480px ){
-		clear:both;
 
 		li{
 			text-align: left;
@@ -102,7 +80,7 @@ header .menu {
 
 		li {
 			padding: 0;
-			margin: 0;
+			margin: 0 0 10px 0;
 			list-style: none;
 			position: relative;
 

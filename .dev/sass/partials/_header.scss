@@ -1,13 +1,7 @@
 $entry-title-bg: rgba(0,0,0,.6) !default;
 
 body {
-	background: url(img/faux-columns.png) repeat-y;
-}
-
-.site-title {
-}
-
-.site-description{
+	background: url(img/background.png) repeat-y;
 }
 
 .site-header {
@@ -23,6 +17,42 @@ body {
 		a {
 			display: block;
 			margin: 75px 30px 0;
+		}
+	}
+}
+
+.secondary-masthead {
+	background-color: $menu-background-color;
+	float: left;
+	height: 100%;
+	padding: 0 35px;
+	width: 250px;
+	position: relative;
+	.quote-section {
+		position: absolute;
+		bottom: 40px;
+		padding-right: 30px;
+		blockquote {
+			color: #fff;
+			border: 0;
+			font-size: 16px;
+			margin-bottom: 0;
+			font-family: $secondary-font-family;
+		}
+		cite {
+			color: #999999;
+			font-style: normal;
+			font-size: 13px;
+			font-family: $primary-font-family;
+			text-transform: uppercase;
+		}
+	}
+	.social-menu {
+		li {
+			display: block;
+			text-align: left;
+			a {
+			}
 		}
 	}
 }
@@ -81,7 +111,7 @@ body {
 		.entry-title{
 			font-size: rem-calc(42);
 			line-height: 1.2;
-			font-family: $sans-font-family;
+			font-family: $primary-font-family;
 			font-weight: bold;
 		}
 
@@ -104,7 +134,7 @@ body {
 			background-color: $primary-color;
 			color: contrast-color($primary-color,#fff,#000,50%);
 			display: inline-block;
-			font-family: $sans-font-family;
+			font-family: $primary-font-family;
 			text-transform: uppercase;
 			font-weight: bold;
 			font-size: emCalc(13);

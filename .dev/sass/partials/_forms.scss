@@ -6,7 +6,7 @@ textarea {
 	font-size: 100%; /* Corrects font size not being inherited in all browsers */
 	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
-	font-family: $sans-font-family;
+	font-family: $primary-font-family;
 }
 
 button,
@@ -138,7 +138,7 @@ fieldset {
 legend {
 	color: $body-font-color;
 	font-size: rem-calc(16);
-	font-family: $sans-font-family;
+	font-family: $primary-font-family;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	padding: 0 15px;

@@ -1,7 +1,21 @@
-.social-menu {
+header .social-menu {
 	@extend .clearfix;
-	float: right;
-	width: 50%;
+	margin-top: 10px;
+	a{
+		color: #999;
+		text-transform: uppercase;
+		font-family: $primary-font-family;
+		font-size: 12px;
+		line-height: 15px;
+		&:before{
+			@extend .genericon;
+			margin-right: 7px;
+		}
+	}
+}
+
+.site-info .social-menu {
+	@extend .clearfix;
 
 	a{
 		@extend .genericon;
@@ -21,6 +35,9 @@
 			font-size: 18px;
 		}
 	}
+}
+
+.social-menu {
 
 	a[href*="wordpress.org"]:before,
 	a[href*="wordpress.com"]:before {

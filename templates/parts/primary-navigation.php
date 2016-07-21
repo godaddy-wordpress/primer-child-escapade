@@ -16,6 +16,4 @@
 
 	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ) ?>
 
-	<?php get_template_part('templates/parts/quote'); ?>
-
 </div>

@@ -63,7 +63,7 @@
 
 		.comment-author,
 		.comment-metadata{
-			font-family: $sans-font-family;
+			font-family: $primary-font-family;
 		}
 
 		.comment-metadata {
@@ -118,7 +118,7 @@
 
 #respond {
 	margin-top: 10px;
-	font-family: $sans-font-family;
+	font-family: $primary-font-family;
 
 	h3#reply-title {
 		font-size: 1.5em !important;

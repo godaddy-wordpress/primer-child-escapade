@@ -26,7 +26,8 @@ $black: #0a0a0a;
 $white: #fefefe;
 $color-background-button: map-get($foundation-palette, primary);
 $body-font-color: $black;
-$sans-font-family: 'Open Sans', sans-serif;
+$primary-font-family: 'Oswald', sans-serif;
+$secondary-font-family: 'Droid Serif', serif;
 $global-weight-normal: normal;
 $global-radius: 0;
 
@@ -44,7 +45,7 @@ $breakpoints: (
 // 3. Base Typography
 // ------------------
 
-$header-font-family: $sans-font-family;
+$header-font-family: $primary-font-family;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;

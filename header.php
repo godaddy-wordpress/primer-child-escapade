@@ -36,9 +36,12 @@
 
 	<header id="masthead" class="site-header" role="banner"<?php if( ! empty( escapade_get_header_image() ) ): ?> style="background:url('<?php echo escapade_get_header_image( ); ?>') no-repeat top center; background-size: cover;"<?php endif; ?>>
 
-		<?php do_action( 'primer_header' ) ?>
 
-		<?php do_action( 'primer_after_header' ) ?>
+		<?php do_action( 'primer_header' ) ?>
+	
+		<div class="secondary-masthead">
+			<?php do_action( 'primer_after_header' ) ?>
+		</div>
 
 	</header><!-- #masthead -->
 
