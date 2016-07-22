@@ -166,13 +166,12 @@ header .main-navigation-container .menu {
 }
 
 .secondary-masthead {
-	background-color: $menu-background-color;
 	float: left;
 	height: 100%;
 	padding: 0 35px;
 	width: 250px;
 	position: relative;
-	margin-right: 50px;
+
 	&.toggled {
 		display: block;
 	}
@@ -207,7 +206,6 @@ header .main-navigation-container .menu {
 
 @media screen and (max-width: 900px) {
 	.secondary-masthead {
-		background-color: $menu-background-color;
 		position: absolute;
 		left: 73px;
 		display: none;

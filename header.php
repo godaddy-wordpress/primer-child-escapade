@@ -24,6 +24,21 @@
 
 	<?php wp_head() ?>
 
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/ie.css">
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/respond.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/nwmatcher.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/html5shiv.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/selectivizr.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/rem.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/jquery.backgroundSize.min.js"></script>
+	<script type="text/javascript">
+	$( document ).ready( function( $ ) {
+		$( 'body .hero' ).css( { backgroundSize: "cover" } );
+	});
+	</script>
+<![endif] -->
 </head>
 
 <body <?php body_class() ?>>
@@ -34,15 +49,20 @@
 
 	<?php do_action( 'primer_before_header' ) ?>
 
-	<header id="masthead" class="site-header" role="banner"<?php if( ! empty( escapade_get_header_image() ) ): ?> style="background:url('<?php echo escapade_get_header_image( ); ?>') no-repeat top center; background-size: cover;"<?php endif; ?>>
+	<header id="masthead" class="site-header" role="banner"<?php if( escapade_get_header_image() ): ?> style="background:url('<?php echo escapade_get_header_image(); ?>') no-repeat top center; background-size: cover;"<?php endif; ?>>
 
+		<div class="menu-toggle" id="menu-toggle">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
 
 		<?php do_action( 'primer_header' ) ?>
-	
+
 		<div class="secondary-masthead">
 			<?php do_action( 'primer_after_header' ) ?>
 		</div>
-		
+
 		<?php if ( is_active_sidebar( 'hero' ) && is_home() ) : ?>
 
 		<div class="hero-widget">

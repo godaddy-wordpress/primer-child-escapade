@@ -149,15 +149,3 @@ function escapade_add_social_to_header(){
 
 }
 add_action( 'primer_after_header', 'escapade_add_social_to_header', 30 );
-
-/**
- * Add quote to primary navigation area. TODO: Make this conditional when implementing into Customizer.
- *
- * @action primer_after_header
- */
-function escapade_add_quote_to_header(){
-
-		get_template_part('templates/parts/quote');
-
-}
-add_action( 'primer_after_header', 'escapade_add_quote_to_header', 30 );

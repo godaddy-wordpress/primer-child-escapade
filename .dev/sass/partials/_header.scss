@@ -1,49 +1,58 @@
 $entry-title-bg: rgba(0,0,0,.6) !default;
 
-@media screen and (min-width: 900px) {
-	body {
-		background: url(img/background.png) repeat-y;
-	}
-}
-
 .site-header {
-	height: 100%;
-	max-height: 500px;
-	@include clearfix;
-	@media screen and (min-width: 900px) {
-		max-height: 868px;
-		min-height: 500px;
-	}
-	.site-title {
-		background: map-get($foundation-palette, primary);
-		float: left;
-		padding: 75px 20px 0;
-		margin: 0;
-		height: 100%;
-		position: relative;
-		@media screen and (min-width: 900px) {
-			background: map-get($foundation-palette, primary);
-			float: left;
-			padding: 75px 33px 0;
-			margin: 0;
-			height: 100%;
-			position: relative;			
+	text-align: center;
+	z-index: 9999;
+	background-color: $menu-background-color;
+	display: none;
+	top: 0;
+	padding-top: 40px;
+
+	@media screen and (min-width: 600px){
+
+		.admin-bar &{
+			top: 45px;
 		}
-		a {
-			color: #fff;
-			text-transform: uppercase;
-			font-weight: 300;
-			font-size: 35px;
-			display: block;
-			white-space: nowrap;
-			font-family: $primary-font-family;
-			&.text svg {
-				fill: #fff;
-				width: 32px;
-				height: 32px;
-				display: inline-block;
+	}
+
+	@media screen and (min-width: 783px){
+		display: block;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+
+		.admin-bar &{
+			top: 32px;
+		}
+	}
+
+	.site-logo{
+		margin: 0 auto 20px;
+		max-width: 140px;
+		display: block;
+	}
+
+	.site-title{
+		font-size: 22px;
+		font-weight: 300;
+		text-transform: uppercase;
+		margin-bottom: 0;
+
+		a{
+			color: white;
+
+			&:hover{
+				color: white;
+				opacity: .8;
 			}
 		}
+
+	}
+
+	.site-description{
+		color: #ffffff;
+		font-size: 14px;
+		text-transform: inherit;
 	}
 }
 
@@ -175,9 +184,6 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 }
 
 @media all and ( min-width: 1100px ){
-	.secondary-masthead {
-		margin-right: 100px;
-	}
 	.hero-widget {
 		color: #fff;
 		padding: 130px 15px 40px 140px;

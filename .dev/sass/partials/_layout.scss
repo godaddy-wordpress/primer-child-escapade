@@ -1,6 +1,6 @@
 #content{
 	@media all and ( min-width: 900px ) {
-		padding: 2.25rem 0 2.25rem 22rem;		
+		padding: 2.25rem 0 2.25rem 22rem;
 	}
 
 	body.layout-one-column-full & {
@@ -12,6 +12,13 @@
 	body.page-template-page-builder &{
 		padding: 0;
 		max-width: none;
+	}
+}
+
+@media all and ( min-width: 900px ) {
+
+	#page{
+		margin-left: 250px;
 	}
 }
 
