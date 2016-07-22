@@ -3012,7 +3012,8 @@ header .main-navigation-container .menu {
     padding: 0 35px;
     margin-right: 0;
     right: 0;
-    z-index: 3; }
+    z-index: 3;
+    max-height: 600px; }
     .secondary-masthead .quote-section {
       position: absolute;
       bottom: 40px;
@@ -3811,7 +3812,7 @@ body.layout-one-column-narrow #content {
 
 .site-header {
   height: 100%;
-  max-height: 500px; }
+  max-height: 600px; }
   .site-header:before, .site-header:after {
     content: " ";
     display: table; }
@@ -3827,7 +3828,8 @@ body.layout-one-column-narrow #content {
     padding: 75px 20px 0;
     margin: 0;
     height: 100%;
-    position: relative; }
+    position: relative;
+    z-index: 2; }
     @media screen and (min-width: 900px) {
       .site-header .site-title {
         background: #191919;
