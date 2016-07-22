@@ -42,6 +42,16 @@
 		<div class="secondary-masthead">
 			<?php do_action( 'primer_after_header' ) ?>
 		</div>
+		
+		<?php if ( is_active_sidebar( 'hero' ) && is_home() ) : ?>
+
+		<div class="hero-widget">
+
+			<?php dynamic_sidebar( 'hero' ) ?>
+
+		</div>
+
+		<?php endif; ?>
 
 	</header><!-- #masthead -->
 

@@ -357,3 +357,21 @@ textarea { height: auto; min-height: 50px; }
 
 // Make select elements 100% width by default
 select { width: 100%; }
+
+// CTA
+.cta {
+	background: $cta-background;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	display: table;
+	border-radius: 30px;
+	line-height: 48px;
+	font-family: $primary-font-family;
+	font-size: 18px;
+	padding: 0 50px;
+	margin-top: 30px;
+	&:hover {
+		color: #fff;
+	}
+}

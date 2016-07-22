@@ -25,7 +25,10 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 
 .footer-widget-area {
 	overflow: hidden;
-	padding: 2.25rem 4.6rem 0;
+	padding: 2.5rem 1.2rem;
+	@media screen and (min-width: 769px) {
+		padding: 4.6rem 4.6rem 2.25rem;
+	}
 
 	&.columns-1 {
 		.footer-widget {
@@ -38,7 +41,7 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 	&.columns-2 {
 		.footer-widget {
 			@media #{$large-up} {
-				width: 50%;
+				width: 45%;
 			}
 		}
 	}
@@ -46,7 +49,7 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 	&.columns-3 {
 		.footer-widget {
 			@media #{$large-up} {
-				width: 33.3333333333%;
+				width: 30%;
 			}
 		}
 	}
@@ -65,12 +68,12 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 
 		.widget{
 			color: $site-footer-text-color;
-			padding: 0;
+			padding: 0 0 0 45px;
 			box-sizing: border-box;
 		}
 
 		@media #{$large-up} {
-			padding-right: 115px;
+			margin-right: 5%;
 			float: left;
 		}
 
@@ -94,12 +97,13 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 			text-transform: uppercase;
 			font-size: 22px;
 			position: absolute;
-			left: -45px;
+			left: 0;
 			transform: rotate(-90deg);
 			transform-origin: left top 0;
 			width: 1000px;
 			text-align: right;
 			top: 1000px;
+			margin: 0;
 		}
 
 		.widget {
@@ -118,12 +122,14 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 }
 
 .site-info-wrapper{
-	padding: 4.6rem;
+	padding: 1.5rem;
 	background: $site-footer-info-background;
 	color: $site-footer-info-text-color;
 	line-height: 1.5;
 	font-family: $primary-font-family;
-
+	@media screen and (min-width: 769px) {
+		padding: 4.6rem;
+	}
 	a{
 		color: $site-footer-info-anchor-color;
 
@@ -133,11 +139,25 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 	}
 
 	.site-info-text{
-		float: left;
-		width: 50%;
 		color: #535353;
+		text-align: center;
 		a[rel="designer"] {
 			color: #535353;
+		}
+		.menu {
+			display: none;
+		}
+		@media screen and (min-width: 769px) {
+			text-align: left;
+			float: left;
+			width: 50%;
+			color: #535353;
+			a[rel="designer"] {
+				color: #535353;
+			}
+			.menu {
+				display: block;
+			}
 		}
 	}
 	
@@ -158,12 +178,20 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 		overflow: hidden;
 
 		.social-menu {
-			float: right;
-			width: 50%;
+			margin-top: 15px;
+			@media screen and (min-width: 769px) {
+				float: right;
+				width: 50%;
+				margin: 0;
+			}
 			ul{
+				text-align: center;
 				margin-right: 0;
 				li:last-child a {
 					margin-right: 0;
+				}
+				@media screen and (min-width: 769px) {
+					text-align: right;
 				}
 			}
 			

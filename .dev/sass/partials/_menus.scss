@@ -30,7 +30,6 @@ header .main-navigation-container .menu {
 		margin: 0;
 		padding: 0;
 		list-style: none;
-		text-align: center;
 
 		a {
 			display: block;
@@ -150,11 +149,13 @@ header .main-navigation-container .menu {
 
 /* Small menu */
 .menu-toggle {
-	display: none;
-	float: right;
-	width: 65px;
-	padding: 10px;
-	cursor: pointer;
+    width: 66px;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    left: 3px;
+   	display: none;
 
 	div {
 		background: #fff;
@@ -164,7 +165,85 @@ header .main-navigation-container .menu {
 	}
 }
 
-@media screen and (max-width: 600px) {
+.secondary-masthead {
+	background-color: $menu-background-color;
+	float: left;
+	height: 100%;
+	padding: 0 35px;
+	width: 250px;
+	position: relative;
+	margin-right: 50px;
+	&.toggled {
+		display: block;
+	}
+	.quote-section {
+		position: absolute;
+		bottom: 40px;
+		padding-right: 30px;
+		blockquote {
+			color: #fff;
+			border: 0;
+			font-size: 16px;
+			margin-bottom: 0;
+			font-family: $secondary-font-family;
+		}
+		cite {
+			color: #999999;
+			font-style: normal;
+			font-size: 13px;
+			font-family: $primary-font-family;
+			text-transform: uppercase;
+		}
+	}
+	.social-menu {
+		li {
+			display: block;
+			text-align: left;
+			a {
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.secondary-masthead {
+		background-color: $menu-background-color;
+		position: absolute;
+		left: 73px;
+		display: none;
+		height: 100%;
+		padding: 0 35px;
+		margin-right: 0;
+		right: 0;
+		z-index: 3;
+		.quote-section {
+			position: absolute;
+			bottom: 40px;
+			padding-right: 30px;
+			blockquote {
+				color: #fff;
+				border: 0;
+				font-size: 16px;
+				margin-bottom: 0;
+				font-family: $secondary-font-family;
+			}
+			cite {
+				color: #999999;
+				font-style: normal;
+				font-size: 13px;
+				font-family: $primary-font-family;
+				text-transform: uppercase;
+			}
+		}
+		.social-menu {
+			li {
+				display: block;
+				text-align: left;
+				a {
+				}
+			}
+		}
+	}
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;

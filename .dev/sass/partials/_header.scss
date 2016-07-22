@@ -1,57 +1,47 @@
 $entry-title-bg: rgba(0,0,0,.6) !default;
 
-body {
-	background: url(img/background.png) repeat-y;
+@media screen and (min-width: 900px) {
+	body {
+		background: url(img/background.png) repeat-y;
+	}
 }
 
 .site-header {
 	height: 100%;
-	max-height: 868px;
-	min-height: 500px;
+	max-height: 500px;
+	@include clearfix;
+	@media screen and (min-width: 900px) {
+		max-height: 868px;
+		min-height: 500px;
+	}
 	.site-title {
 		background: map-get($foundation-palette, primary);
 		float: left;
-		padding: 0;
+		padding: 75px 20px 0;
 		margin: 0;
 		height: 100%;
+		position: relative;
+		@media screen and (min-width: 900px) {
+			background: map-get($foundation-palette, primary);
+			float: left;
+			padding: 75px 33px 0;
+			margin: 0;
+			height: 100%;
+			position: relative;			
+		}
 		a {
-			display: block;
-			margin: 75px 30px 0;
-		}
-	}
-}
-
-.secondary-masthead {
-	background-color: $menu-background-color;
-	float: left;
-	height: 100%;
-	padding: 0 35px;
-	width: 250px;
-	position: relative;
-	.quote-section {
-		position: absolute;
-		bottom: 40px;
-		padding-right: 30px;
-		blockquote {
 			color: #fff;
-			border: 0;
-			font-size: 16px;
-			margin-bottom: 0;
-			font-family: $secondary-font-family;
-		}
-		cite {
-			color: #999999;
-			font-style: normal;
-			font-size: 13px;
-			font-family: $primary-font-family;
 			text-transform: uppercase;
-		}
-	}
-	.social-menu {
-		li {
+			font-weight: 300;
+			font-size: 35px;
 			display: block;
-			text-align: left;
-			a {
+			white-space: nowrap;
+			font-family: $primary-font-family;
+			&.text svg {
+				fill: #fff;
+				width: 32px;
+				height: 32px;
+				display: inline-block;
 			}
 		}
 	}
@@ -143,6 +133,63 @@ body {
 			&:hover{
 				background-color: darken($primary-color,10%);
 			}
+		}
+	}
+}
+
+.hero-widget {
+	color: #fff;
+	padding: 80px 15px 40px 95px;
+	position: relative;
+	max-width: 75%;
+	.widget {
+		padding: 0;
+	}
+	h2.widget-title {
+		color: #fff;
+		font-size: 2em;
+		font-weight: 300;
+	}
+	div.textwidget {
+		font-family: $secondary-font-family;
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+@media all and ( min-width: 600px ){
+	.hero-widget {
+		color: #fff;
+		padding: 80px 15px 40px 140px;
+		h2.widget-title {
+			color: #fff;
+			font-size: 3.5em;
+			font-weight: 300;
+		}
+		div.textwidget {
+			font-family: $secondary-font-family;
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+}
+
+@media all and ( min-width: 1100px ){
+	.secondary-masthead {
+		margin-right: 100px;
+	}
+	.hero-widget {
+		color: #fff;
+		padding: 130px 15px 40px 140px;
+		h2.widget-title {
+			color: #fff;
+			font-size: 6em;
+			font-weight: 300;
+		}
+		div.textwidget {
+			font-family: $secondary-font-family;
+			font-size: 24px;
+			line-height: 36px;
 		}
 	}
 }
