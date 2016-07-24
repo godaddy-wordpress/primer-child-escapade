@@ -3793,16 +3793,16 @@ body.page-template-page-builder #primary {
 body.layout-one-column-narrow #content {
   max-width: 50em; }
 
-.site-header {
+.site-header[style] {
   height: 100%;
   max-height: 600px; }
-  .site-header:before, .site-header:after {
+  .site-header[style]:before, .site-header[style]:after {
     content: " ";
     display: table; }
-  .site-header:after {
+  .site-header[style]:after {
     clear: both; }
   @media screen and (min-width: 900px) {
-    .site-header {
+    .site-header[style] {
       max-height: 600px;
       min-height: 500px; } }
 
@@ -3877,7 +3877,8 @@ body.layout-one-column-narrow #content {
 
 @media all and (min-width: 600px) {
   .hero-widget {
-    color: #fff; }
+    color: #fff;
+    padding: 7rem 4.4375rem 0; }
     .hero-widget h2.widget-title {
       color: #fff;
       font-size: 3.5em;
