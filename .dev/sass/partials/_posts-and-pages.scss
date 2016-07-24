@@ -1,3 +1,13 @@
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+#page {
+	.site-main > article.type-post a {
+		border-bottom: $anchor-color 1px solid;
+	}
+}
+
 .sticky {}
 
 .no-results,
@@ -49,15 +59,9 @@
 
 .entry-title{
 	margin-bottom: .25em;
-	font-size: rem-calc(28);
 
 	a{
 		color: $header-color;
-	}
-
-	.single &{
-		font-weight: 300;
-		font-size: rem-calc(36);
 	}
 }
 
@@ -93,24 +97,18 @@
 }
 
 .entry-meta {
-	border-bottom: 1px solid rgba(0,0,0,.1);
-	line-height: 1.4em;
-	line-height: 1.4rem;
-	margin-bottom: 1em;
-	margin-bottom: 1rem;
-	padding-bottom: 1em;
-	padding-bottom: 1rem;
-	font-size: .9em;
-	font-family: $primary-font-family;
-	@extend .clearfix;
-
-	i{
-		vertical-align: middle;
-		line-height: .8;
-	}
-
-	.has-post-thumbnail &{
-		border-bottom-width: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li {
+		font-family: $primary-font-family;
+		text-transform: uppercase;
+		color: $meta-color;
+		
+		span {
+			font-size: 24px;
+			padding-right: 25px;
+		}
 	}
 }
 
@@ -198,5 +196,23 @@ article.format-link {
 	.mejs-container {
 		width: 100%!important;
 		height: 100%!important;
+	}
+}
+
+.entry-content {
+	p {
+		font-family: $secondary-font-family;
+		font-size: 16px;
+		line-height: 26px;
+	}
+	@media screen and (min-width: 769px) {
+		p {
+			font-family: $secondary-font-family;
+			font-size: 20px;
+			line-height: 33px;
+		}	
+	}
+	p + p {
+		margin-top: 2rem;
 	}
 }

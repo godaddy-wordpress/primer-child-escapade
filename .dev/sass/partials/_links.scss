@@ -1,9 +1,5 @@
 a {
 	color: $anchor-color;
-
-	&:visited {
-		color: $anchor-color-visited;
-	}
 	&:hover,
 	&:focus,
 	&:active {

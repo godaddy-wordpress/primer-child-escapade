@@ -1,6 +1,6 @@
 $menu-font-family: $header-font-family !default;
-$menu-background-color: rgba(25,25,25,.9) !default;
-$submenu-background-color: #232323;
+$menu-background-color: rgba(25,25,25,.95) !default;
+$submenu-background-color: #191919;
 
 @media screen and (min-width: 783px){
 	.main-navigation-container {
@@ -183,7 +183,7 @@ body {
 /* Small menu */
 .menu-toggle {
     width: 66px;
-    padding: 10px;
+    padding: 10px 0 10px 10px;
     cursor: pointer;
     float: right;
    	display: block;

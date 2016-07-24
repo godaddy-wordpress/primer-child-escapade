@@ -27,7 +27,20 @@ input[type="submit"] {
 	padding: .75em 1em;
 	padding: .75rem 1rem;
 	display: inline-block;
-
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	display: table;
+	border-radius: 30px;
+	line-height: 48px;
+	font-family: $primary-font-family;
+	font-size: 18px;
+	padding: 0 30px;
+	margin-top: 20px;
+	font-weight: 300;
+	&:hover {
+		color: #fff;
+	}
 	&:hover {
 		color: contrast-color($color-background-button,#fff,#000,25%);
 		background: lighten($color-background-button,3%);
@@ -36,6 +49,7 @@ input[type="submit"] {
 	&:focus
 	&:active{
 		background: lighten($color-background-button,3%);
+		outline: 0;
 	}
 }
 
@@ -83,9 +97,8 @@ input[type="color"],
 textarea {
 	color: $input-color;
 	background-color: $input-background;
-	border: none;
+	border: $border-color 2px solid;
 	transform: 200ms background linear;
-	border-radius: 3px;
 	resize: none;
 
 	&:focus {
@@ -120,7 +133,8 @@ input[type="file"] {
 
 label{
 	font-family: $header-font-family;
-	font-weight: bold;
+	font-weight: 300;
+	text-transform: uppercase;
 }
 
 textarea {

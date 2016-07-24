@@ -17,7 +17,10 @@
 			<?php if ( is_singular() ) : ?>
 
 				<h1 class="entry-title"><?php the_title() ?></h1>
-
+				<ul class="entry-meta">
+					<li><span class="genericon genericon-user"></span> <?php the_author(); ?></li>
+					<li><span class="genericon genericon-time"></span> <?php the_time('F j, Y'); ?></li>
+				</ul>
 			<?php else : ?>
 
 				<h2 class="page-title"><a href="<?php the_permalink() ?>" rel="permalink"><?php the_title() ?></a></h2>

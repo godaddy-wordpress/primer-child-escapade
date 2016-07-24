@@ -24,13 +24,15 @@ $foundation-palette: (
 $medium-gray: #cacaca;
 $black: #0a0a0a;
 $white: #fefefe;
-$color-background-button: map-get($foundation-palette, primary);
+$color-background-button: #55b74e;
 $body-font-color: $black;
 $primary-font-family: 'Oswald', sans-serif;
 $secondary-font-family: 'Droid Serif', serif;
 $global-weight-normal: normal;
 $global-radius: 0;
 $cta-background: #55b74e;
+$border-color: #181818;
+$meta-color: #999999;
 
 // 2. Breakpoints
 // --------------
@@ -58,9 +60,9 @@ $code-color: $black;
 $code-font-family: $font-family-monospace;
 $code-font-weight: $global-weight-normal;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: map-get($foundation-palette, primary);
-$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
-$anchor-color-visited: scale-color($anchor-color, $lightness: -14%);
+$anchor-color: map-get($foundation-palette, secondary);
+$anchor-color-hover: scale-color($anchor-color, $lightness: 50%);
+$anchor-color-visited: scale-color($anchor-color, $lightness: 50%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-margin: rem-calc(20) auto;
