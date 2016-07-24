@@ -12,7 +12,7 @@
 
 	button = container.getElementsByClassName( 'menu-toggle' )[0];
 
-	menu = container.getElementsByClassName( 'secondary-masthead' )[0];
+	menu = container.getElementsByClassName( 'side-masthead' )[0];
 
 	// Hide menu toggle button if menu is empty and return early.
 	if ( 'undefined' === typeof menu ) {

@@ -1,8 +1,11 @@
 $menu-font-family: $header-font-family !default;
-$menu-background-color: rgba(25,25,25,.8) !default;
+$menu-background-color: rgba(25,25,25,.9) !default;
+$submenu-background-color: #232323;
 
-.main-navigation-container {
-	margin-top: 75px;
+@media screen and (min-width: 783px){
+	.main-navigation-container {
+		margin: 35px -35px 0;
+	}
 }
 
 header .main-navigation-container .menu {
@@ -18,6 +21,13 @@ header .main-navigation-container .menu {
 		z-index:1;
 		margin: 0;
 		padding: 0;
+	}
+	.sub-menu {
+		display: block;
+		li a {
+			padding: 0;
+			font-size: 18px;
+		}
 	}
 
 	a{
@@ -44,22 +54,14 @@ header .main-navigation-container .menu {
 
 	.menu-item-has-children{
 		li > a{
-			padding-top: 1em;
-			padding-top: 1rem;
-			padding-bottom: 1em;
-			padding-bottom: 1rem;
-
-			&:hover{
-				background-color: rgba(0,0,0,.05);
-			}
+			padding: .5em 1em;
 		}
 	}
 
+	li {
+		text-align: left;
+	}
 	@media all and ( min-width: 480px ){
-
-		li{
-			text-align: left;
-		}
 
 		ul {
 			padding: 0;
@@ -77,15 +79,17 @@ header .main-navigation-container .menu {
 			border-bottom-width: 0;
 		}
 
+	}
+	@media screen and (min-width: 783px){
 		li {
-			padding: 0;
-			margin: 0 0 10px 0;
+			padding: 8px 35px 8px;
+			margin: 0 0 0 0;
 			list-style: none;
 			position: relative;
 
 			&.current-menu-item,
 			&:hover {
-
+				background-color: $submenu-background-color;
 				> a {
 					color: contrast-color($menu-background-color,#000,#fff,50%);
 
@@ -95,11 +99,14 @@ header .main-navigation-container .menu {
 				}
 
 			}
-
+			.sub-menu {
+				display: none;
+				li {
+					padding: .5em 1em;
+				}
+			}
 			.sub-menu .menu-item-has-children {
-
 				&:hover {
-
 					> a:after {
 						border-left-color: contrast-color($menu-background-color,#000,#fff,50%);
 					}
@@ -122,15 +129,21 @@ header .main-navigation-container .menu {
 			}
 
 			&.menu-item-has-children {
-
+			
 				&:hover {
 					position:relative;
-
 					> ul {
 						display:block;
-						background-color: $menu-background-color;
-						width:250px;
+						background-color: $submenu-background-color;
+						position: absolute;
+						right: -200px;
+						top: 0;
+						width: 200px;
+						text-align: left;
+						clear: both;
+						@media screen and (max-width: 782px){
 
+						}
 						ul {
 							left: 100%;
 							top: 0;
@@ -139,6 +152,15 @@ header .main-navigation-container .menu {
 						li {
 							float:none;
 							display:block;
+							padding: .5rem 1rem;
+							margin: 0;
+							a {
+								font-size: 20px;
+								padding: 12px 15px;
+								&:hover {
+									background: none;
+								}
+							}
 						}
 					}
 				}
@@ -147,16 +169,27 @@ header .main-navigation-container .menu {
 	}
 }
 
+body {
+	@media screen and (min-width: 783px){
+		padding-left: 250px;
+		&.admin-bar {
+			.side-masthead {
+				top: 32px;
+			}
+		}
+	}	
+}
+
 /* Small menu */
 .menu-toggle {
     width: 66px;
     padding: 10px;
     cursor: pointer;
-    position: absolute;
-    top: 7px;
-    left: 3px;
-   	display: none;
-
+    float: right;
+   	display: block;
+	@media screen and (min-width: 783px){
+		display: none;
+	}	
 	div {
 		background: #fff;
 		height: 4px;
@@ -165,33 +198,82 @@ header .main-navigation-container .menu {
 	}
 }
 
-.secondary-masthead {
-	float: left;
-	height: 100%;
+.side-masthead {
 	padding: 0 35px;
-	width: 250px;
 	position: relative;
-
-	&.toggled {
-		display: block;
+	@include clearfix;
+	.mobile-container {
+		display: none;
 	}
-	.quote-section {
-		position: absolute;
-		bottom: 40px;
-		padding-right: 30px;
-		blockquote {
-			color: #fff;
-			border: 0;
-			font-size: 16px;
-			margin-bottom: 0;
-			font-family: $secondary-font-family;
+	&.toggled {
+		.mobile-container {
+			display: block;
+			clear: both;
 		}
-		cite {
-			color: #999999;
-			font-style: normal;
-			font-size: 13px;
-			font-family: $primary-font-family;
-			text-transform: uppercase;
+	}
+	text-align: center;
+	z-index: 9999;
+	background-color: $menu-background-color;
+	.site-logo {
+		display: none;
+	}
+	.site-title {
+		line-height: 53px;
+	}
+	.site-title, .site-description {
+		float: left;
+	}
+	.site-description {
+		line-height: 50px;
+		padding: 0 20px;
+		color: #ffffff;
+		font-size: 14px;
+		display: none;
+		@media screen and (min-width: 600px){
+			display: block;
+		}
+	}
+	.site-title {
+		font-size: 30px;
+		font-weight: 300;
+		text-transform: uppercase;
+		margin-bottom: 0;
+		margin-top: 0;
+
+		a{
+			color: white;
+
+			&:hover{
+				color: white;
+				opacity: .8;
+			}
+		}
+	}
+	@media screen and (min-width: 783px){
+		display: block;
+		position: fixed;
+		left: 0;
+		width: 250px;
+		bottom: 0;
+		top: 0;
+		padding-top: 40px;
+		.mobile-container {
+			display: block;
+		}
+		.site-title {
+			line-height: normal;
+		}
+		.site-description {
+			padding: 0;
+			line-height: normal;
+		}
+		.site-description, .site-title {
+			float: none;
+		}
+		.site-logo{
+			margin: 0 auto 20px;
+			max-width: 140px;
+			display: block;
 		}
 	}
 	.social-menu {
@@ -199,95 +281,6 @@ header .main-navigation-container .menu {
 			display: block;
 			text-align: left;
 			a {
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.secondary-masthead {
-		position: absolute;
-		left: 73px;
-		display: none;
-		height: 100%;
-		padding: 0 35px;
-		margin-right: 0;
-		right: 0;
-		z-index: 3;
-		max-height: 600px;
-		.quote-section {
-			position: absolute;
-			bottom: 40px;
-			padding-right: 30px;
-			blockquote {
-				color: #fff;
-				border: 0;
-				font-size: 16px;
-				margin-bottom: 0;
-				font-family: $secondary-font-family;
-			}
-			cite {
-				color: #999999;
-				font-style: normal;
-				font-size: 13px;
-				font-family: $primary-font-family;
-				text-transform: uppercase;
-			}
-		}
-		.social-menu {
-			li {
-				display: block;
-				text-align: left;
-				a {
-				}
-			}
-		}
-	}
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
-		display: block;
-	}
-
-	.main-navigation {
-
-		ul {
-			display: none;
-			clear: both;
-		}
-
-		li {
-			display: block;
-			float: none;
-
-			a {
-				display: block;
-				background: #222;
-				text-align: left;
-			}
-
-			&.menu-item-has-children {
-
-				&:hover {
-					> a:after {
-						border-top-color: transparent;
-						border-left-color: contrast-color($menu-background-color,#000,#fff,50%);
-					}
-				}
-
-				> a:after {
-					content:"";
-					display:block;
-					position:absolute;
-					top:50%;
-					right:.6em;
-					right:.6rem;
-					margin-top: -6px;
-					border:5px solid transparent;
-					border-left-color: contrast-color($menu-background-color,darken($menu-background-color,65%),lighten($menu-background-color,65%),50%);
-					height:0;
-					width:0;
-					margin-left:10px;
-				}
 			}
 		}
 	}

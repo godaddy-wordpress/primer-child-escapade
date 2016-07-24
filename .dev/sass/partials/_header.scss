@@ -1,58 +1,12 @@
 $entry-title-bg: rgba(0,0,0,.6) !default;
 
 .site-header {
-	text-align: center;
-	z-index: 9999;
-	background-color: $menu-background-color;
-	display: none;
-	top: 0;
-	padding-top: 40px;
-
-	@media screen and (min-width: 600px){
-
-		.admin-bar &{
-			top: 45px;
-		}
-	}
-
-	@media screen and (min-width: 783px){
-		display: block;
-		position: fixed;
-		left: 0;
-		bottom: 0;
-
-		.admin-bar &{
-			top: 32px;
-		}
-	}
-
-	.site-logo{
-		margin: 0 auto 20px;
-		max-width: 140px;
-		display: block;
-	}
-
-	.site-title{
-		font-size: 22px;
-		font-weight: 300;
-		text-transform: uppercase;
-		margin-bottom: 0;
-
-		a{
-			color: white;
-
-			&:hover{
-				color: white;
-				opacity: .8;
-			}
-		}
-
-	}
-
-	.site-description{
-		color: #ffffff;
-		font-size: 14px;
-		text-transform: inherit;
+	height: 100%;
+	max-height: 600px;
+	@include clearfix;
+	@media screen and (min-width: 900px) {
+		max-height: 600px;
+		min-height: 500px;
 	}
 }
 
@@ -111,7 +65,6 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 			font-size: rem-calc(42);
 			line-height: 1.2;
 			font-family: $primary-font-family;
-			font-weight: bold;
 		}
 
 		.entry-excerpt {
@@ -148,9 +101,8 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 
 .hero-widget {
 	color: #fff;
-	padding: 80px 15px 40px 95px;
 	position: relative;
-	max-width: 75%;
+	padding: 5rem 2.3rem 0;
 	.widget {
 		padding: 0;
 	}
@@ -169,7 +121,6 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 @media all and ( min-width: 600px ){
 	.hero-widget {
 		color: #fff;
-		padding: 80px 15px 40px 140px;
 		h2.widget-title {
 			color: #fff;
 			font-size: 3.5em;
@@ -186,7 +137,7 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 @media all and ( min-width: 1100px ){
 	.hero-widget {
 		color: #fff;
-		padding: 130px 15px 40px 140px;
+		max-width: 800px;
 		h2.widget-title {
 			color: #fff;
 			font-size: 6em;
