@@ -135,6 +135,39 @@ function escapade_update_fonts() {
 add_filter( 'primer_fonts', 'escapade_update_fonts' );
 
 /**
+ * Update font types specific to scribbles.
+ *
+ * @return array
+ */
+function scribbles_update_font_types() {
+    return array(
+        array(
+            'name'    => 'primary_font',
+            'label'   => __( 'Primary Font', 'primer' ),
+            'default' => 'Oswald',
+            'css'     => array(
+
+            ),
+            'weight'   => array(
+                300
+            )
+        ),
+        array(
+            'name'    => 'secondary_font',
+            'label'   => __( 'Secondary Font', 'primer' ),
+            'default' => 'Droid Serif',
+            'css'     => array(
+
+            ),
+            'weight'   => array(
+                400
+            )
+        ),
+    );
+}
+add_action( 'primer_font_types', 'scribbles_update_font_types' );
+
+/**
  * Add Social links to primary navigation area.
  *
  * @action primer_after_header
@@ -149,3 +182,15 @@ function escapade_add_social_to_header(){
 
 }
 add_action( 'primer_after_header', 'escapade_add_social_to_header', 30 );
+
+/**
+ * Remove customizer features added by the parent theme that are not applicable to this theme
+ * 
+ * @action after_setup_theme
+ */
+function escapade_remove_customizer_features($wp_customize){
+
+	$wp_customize->remove_section('layout');
+
+}
+add_action( 'customize_register', 'escapade_remove_customizer_features', 30 );

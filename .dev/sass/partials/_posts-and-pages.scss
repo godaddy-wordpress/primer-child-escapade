@@ -65,6 +65,12 @@ html {
 	}
 }
 
+#page .site-main article.type-post h2.page-title {
+	a{
+		border: none;
+	}
+}
+
 .archive-title{
 	margin-bottom: 1em;
 	margin-bottom: 2rem;
@@ -199,7 +205,7 @@ article.format-link {
 	}
 }
 
-.entry-content {
+.entry-content, .entry-summary {
 	p {
 		font-family: $secondary-font-family;
 		font-size: 16px;

@@ -59,7 +59,7 @@ body {
   color: #0a0a0a;
   padding: 0;
   margin: 0;
-  font-family: Georgia, serif;
+  font-family: "Droid Serif", serif, serif;
   font-weight: normal;
   font-style: normal;
   line-height: 150%;
@@ -176,7 +176,7 @@ body {
   color: #0a0a0a;
   padding: 0;
   margin: 0;
-  font-family: Georgia, serif;
+  font-family: "Droid Serif", serif, serif;
   font-weight: normal;
   font-style: normal;
   line-height: 150%;
@@ -2150,7 +2150,7 @@ body {
   color: #0a0a0a;
   padding: 0;
   margin: 0;
-  font-family: Georgia, serif;
+  font-family: "Droid Serif", serif, serif;
   font-weight: normal;
   font-style: normal;
   line-height: 150%;
@@ -3415,6 +3415,9 @@ html {
   .entry-title a {
     color: inherit; }
 
+#page .site-main article.type-post h2.page-title a {
+  border: none; }
+
 .archive-title {
   margin-bottom: 1em;
   margin-bottom: 2rem; }
@@ -3537,18 +3540,18 @@ article.format-link {
     width: 100% !important;
     height: 100% !important; }
 
-.entry-content p {
+.entry-content p, .entry-summary p {
   font-family: "Droid Serif", serif;
   font-size: 16px;
   line-height: 26px; }
 
 @media screen and (min-width: 769px) {
-  .entry-content p {
+  .entry-content p, .entry-summary p {
     font-family: "Droid Serif", serif;
     font-size: 20px;
     line-height: 33px; } }
 
-.entry-content p + p {
+.entry-content p + p, .entry-summary p + p {
   margin-top: 2rem; }
 
 .blog .format-aside .entry-title,

@@ -187,7 +187,7 @@ $font-weight-bold: bold !default;
 // We use these to control various global styles
 $body-bg: #fff !default;
 $body-font-color: #222 !default;
-$body-font-family: Georgia, serif !default;
+$body-font-family: $secondary-font-family, serif !default;
 $body-font-weight: $font-weight-normal !default;
 $body-font-style: normal !default;
 
