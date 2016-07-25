@@ -4,7 +4,6 @@ html {
 
 #page {
 	.site-main > article.type-post a {
-		border-bottom: $anchor-color 1px solid;
 	}
 }
 
@@ -61,7 +60,7 @@ html {
 	margin-bottom: .25em;
 
 	a{
-		color: $header-color;
+		color: #0078a0;
 	}
 }
 

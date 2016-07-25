@@ -1,4 +1,4 @@
-$site-footer-background: #474747 !default;
+$site-footer-background: #414242 !default;
 $site-footer-text-color: contrast-color($site-footer-background, #222, #fff, 50%) !default;
 $site-footer-border-color: contrast-color($site-footer-background, darken($site-footer-background,15%), lighten($site-footer-background,15%), 50%) !default;
 $site-footer-anchor-color: contrast-color($site-footer-background, #222, #fff, 50%) !default;
@@ -140,10 +140,10 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 	}
 
 	.site-info-text{
-		color: #535353;
+		color: rgba(255,255,255,.5);
 		text-align: center;
 		a[rel="designer"] {
-			color: #535353;
+			color: rgba(255,255,255,.5);
 		}
 		.menu {
 			display: none;
@@ -152,10 +152,6 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 			text-align: left;
 			float: left;
 			width: 50%;
-			color: #535353;
-			a[rel="designer"] {
-				color: #535353;
-			}
 			.menu {
 				display: block;
 			}

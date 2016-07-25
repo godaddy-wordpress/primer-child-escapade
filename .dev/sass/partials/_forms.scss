@@ -1,12 +1,16 @@
 button,
-a.button,
-input,
-select,
-textarea {
+a.button{
 	font-size: 100%; /* Corrects font size not being inherited in all browsers */
 	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
 	font-family: $primary-font-family;
+}
+
+input,
+select,
+textarea {
+	font-family: $secondary-font-family;
+	font-size: rem-calc(16);
 }
 
 button,
@@ -40,16 +44,6 @@ input[type="submit"] {
 	font-weight: 300;
 	&:hover {
 		color: #fff;
-	}
-	&:hover {
-		color: contrast-color($color-background-button,#fff,#000,25%);
-		background: lighten($color-background-button,3%);
-	}
-
-	&:focus
-	&:active{
-		background: lighten($color-background-button,3%);
-		outline: 0;
 	}
 }
 
@@ -132,7 +126,7 @@ input[type="file"] {
 }
 
 label{
-	font-family: $header-font-family;
+	font-family: $primary-font-family;
 	font-weight: 300;
 	text-transform: uppercase;
 }

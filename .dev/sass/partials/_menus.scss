@@ -1,6 +1,5 @@
-$menu-font-family: $header-font-family !default;
 $menu-background-color: rgba(25,25,25,.95) !default;
-$submenu-background-color: #191919;
+$submenu-background-color: rgba(0,0,0,.3);
 
 @media screen and (min-width: 783px){
 	.main-navigation-container {
@@ -30,9 +29,6 @@ header .main-navigation-container .menu {
 		}
 	}
 
-	a{
-		color: contrast-color($menu-background-color, #000, #fff, 50%);
-	}
 
 	li {
 		display:block;
@@ -43,7 +39,7 @@ header .main-navigation-container .menu {
 
 		a {
 			display: block;
-			font-family: $menu-font-family;
+			font-family: $primary-font-family;
 			line-height: 1.2;
 			font-size: 24px;
 			font-weight: 300;
@@ -91,7 +87,7 @@ header .main-navigation-container .menu {
 			&:hover {
 				background-color: $submenu-background-color;
 				> a {
-					color: contrast-color($menu-background-color,#000,#fff,50%);
+					color: #fff;
 
 					&:after {
 						border-color: contrast-color($menu-background-color,#000,#fff,50%);
@@ -102,7 +98,7 @@ header .main-navigation-container .menu {
 			.sub-menu {
 				display: none;
 				li {
-					padding: .5em 1em;
+					padding: .18em 1em;
 				}
 			}
 			.sub-menu .menu-item-has-children {
@@ -280,8 +276,6 @@ body {
 		li {
 			display: block;
 			text-align: left;
-			a {
-			}
 		}
 	}
 }

@@ -11,6 +11,10 @@
 		height: 32px;
 		transition: 200ms opacity;
 		color: #fff;
+		&:hover {
+			background: none !important;
+			color: inherit;
+		}
 
 		&:before{
 			-webkit-font-smoothing: subpixel-antialiased;

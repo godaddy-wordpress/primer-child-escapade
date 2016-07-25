@@ -118,7 +118,7 @@ select {
 .cta {
   background: #55b74e;
   text-transform: uppercase;
-  color: #fff;
+  color: #fff !important;
   text-align: center;
   display: table;
   border-radius: 30px;
@@ -128,11 +128,9 @@ select {
   padding: 0 50px;
   margin-top: 30px; }
   .cta:hover {
-    color: #fff;
-    background: #5fbb59; }
+    color: #fff; }
   .cta:focus .cta:active {
     color: #fff !important;
-    background: #5fbb59;
     outline: 0; }
 
 meta.foundation-mq-small {
@@ -235,7 +233,7 @@ select {
 .cta {
   background: #55b74e;
   text-transform: uppercase;
-  color: #fff;
+  color: #fff !important;
   text-align: center;
   display: table;
   border-radius: 30px;
@@ -245,11 +243,9 @@ select {
   padding: 0 50px;
   margin-top: 30px; }
   .cta:hover {
-    color: #fff;
-    background: #5fbb59; }
+    color: #fff; }
   .cta:focus .cta:active {
     color: #fff !important;
-    background: #5fbb59;
     outline: 0; }
 
 .row, header .main-navigation-container .menu, .navigation, .site-branding-container, .main-navigation, .featured-content .entry-header .entry-header-row, .featured-content .featured-content-inner {
@@ -2209,7 +2205,7 @@ select {
 .cta {
   background: #55b74e;
   text-transform: uppercase;
-  color: #fff;
+  color: #fff !important;
   text-align: center;
   display: table;
   border-radius: 30px;
@@ -2219,11 +2215,9 @@ select {
   padding: 0 50px;
   margin-top: 30px; }
   .cta:hover {
-    color: #fff;
-    background: #5fbb59; }
+    color: #fff; }
   .cta:focus .cta:active {
     color: #fff !important;
-    background: #5fbb59;
     outline: 0; }
 
 .text-left {
@@ -2574,7 +2568,6 @@ blockquote {
   padding: 0 20px;
   border-left: 1px solid #cacaca;
   overflow: hidden;
-  font-family: "Oswald", sans-serif;
   font-style: italic; }
   blockquote p {
     margin-bottom: 0; }
@@ -2675,10 +2668,7 @@ blockquote p {
     display: inherit !important; } }
 
 button,
-a.button,
-input,
-select,
-textarea {
+a.button {
   font-size: 100%;
   /* Corrects font size not being inherited in all browsers */
   margin: 0;
@@ -2686,6 +2676,12 @@ textarea {
   vertical-align: baseline;
   /* Improves appearance and consistency in all browsers */
   font-family: "Oswald", sans-serif; }
+
+input,
+select,
+textarea {
+  font-family: "Droid Serif", serif;
+  font-size: 1rem; }
 
 button,
 a.button,
@@ -2725,77 +2721,6 @@ input[type="submit"] {
   input[type="reset"]:hover,
   input[type="submit"]:hover {
     color: #fff; }
-  button:hover,
-  a.button:hover,
-  a.button:visited:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    color: #fff;
-    background: #5fbb59; }
-  button:focus button:active,
-  a.button:focus button:active,
-  a.button:visited:focus button:active,
-  input[type="button"]:focus button:active,
-  input[type="reset"]:focus button:active,
-  input[type="submit"]:focus button:active, button:focus
-  a.button:active,
-  a.button:focus
-  a.button:active,
-  a.button:visited:focus
-  a.button:active,
-  input[type="button"]:focus
-  a.button:active,
-  input[type="reset"]:focus
-  a.button:active,
-  input[type="submit"]:focus
-  a.button:active, button:focus
-  a.button:visited:active,
-  a.button:focus
-  a.button:visited:active,
-  a.button:visited:focus
-  a.button:visited:active,
-  input[type="button"]:focus
-  a.button:visited:active,
-  input[type="reset"]:focus
-  a.button:visited:active,
-  input[type="submit"]:focus
-  a.button:visited:active, button:focus
-  input[type="button"]:active,
-  a.button:focus
-  input[type="button"]:active,
-  a.button:visited:focus
-  input[type="button"]:active,
-  input[type="button"]:focus
-  input[type="button"]:active,
-  input[type="reset"]:focus
-  input[type="button"]:active,
-  input[type="submit"]:focus
-  input[type="button"]:active, button:focus
-  input[type="reset"]:active,
-  a.button:focus
-  input[type="reset"]:active,
-  a.button:visited:focus
-  input[type="reset"]:active,
-  input[type="button"]:focus
-  input[type="reset"]:active,
-  input[type="reset"]:focus
-  input[type="reset"]:active,
-  input[type="submit"]:focus
-  input[type="reset"]:active, button:focus
-  input[type="submit"]:active,
-  a.button:focus
-  input[type="submit"]:active,
-  a.button:visited:focus
-  input[type="submit"]:active,
-  input[type="button"]:focus
-  input[type="submit"]:active,
-  input[type="reset"]:focus
-  input[type="submit"]:active,
-  input[type="submit"]:focus
-  input[type="submit"]:active {
-    background: #5fbb59;
-    outline: 0; }
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -2840,7 +2765,7 @@ input[type="color"],
 textarea {
   color: #0a0a0a;
   background-color: #fefefe;
-  border: #181818 2px solid;
+  border: rgba(0, 0, 0, 0.7) 2px solid;
   -webkit-transform: 200ms background linear;
           transform: 200ms background linear;
   resize: none; }
@@ -2911,9 +2836,9 @@ legend {
   padding: 0 15px; }
 
 a {
-  color: #777; }
+  color: #8bd1e5; }
   a:hover, a:focus, a:active {
-    color: #bbbbbb; }
+    color: #c5e8f2; }
 
 @media screen and (min-width: 783px) {
   .main-navigation-container {
@@ -2935,8 +2860,6 @@ header .main-navigation-container .menu {
     header .main-navigation-container .menu .sub-menu li a {
       padding: 0;
       font-size: 18px; }
-  header .main-navigation-container .menu a {
-    color: #fff; }
   header .main-navigation-container .menu li {
     display: block;
     float: none;
@@ -2973,7 +2896,7 @@ header .main-navigation-container .menu {
       list-style: none;
       position: relative; }
       header .main-navigation-container .menu li.current-menu-item, header .main-navigation-container .menu li:hover {
-        background-color: #191919; }
+        background-color: rgba(0, 0, 0, 0.3); }
         header .main-navigation-container .menu li.current-menu-item > a, header .main-navigation-container .menu li:hover > a {
           color: #fff; }
           header .main-navigation-container .menu li.current-menu-item > a:after, header .main-navigation-container .menu li:hover > a:after {
@@ -2981,7 +2904,7 @@ header .main-navigation-container .menu {
       header .main-navigation-container .menu li .sub-menu {
         display: none; }
         header .main-navigation-container .menu li .sub-menu li {
-          padding: .5em 1em; }
+          padding: .18em 1em; }
       header .main-navigation-container .menu li .sub-menu .menu-item-has-children:hover > a:after {
         border-left-color: #fff; }
       header .main-navigation-container .menu li .sub-menu .menu-item-has-children > a:after {
@@ -3001,7 +2924,7 @@ header .main-navigation-container .menu {
         position: relative; }
         header .main-navigation-container .menu li.menu-item-has-children:hover > ul {
           display: block;
-          background-color: #191919;
+          background-color: rgba(0, 0, 0, 0.3);
           position: absolute;
           right: -200px;
           top: 0;
@@ -3184,7 +3107,7 @@ header .main-navigation-container .menu {
   .widget:last-child {
     margin-bottom: 0; }
   .widget, .widget p, .widget ul, .widget ol {
-    font-family: "Oswald", sans-serif;
+    font-family: "Droid Serif", serif;
     font-size: rem-calc(0.9); }
 
 /* Make sure form fields fit in widgets */
@@ -3357,9 +3280,6 @@ header .main-navigation-container .menu {
 html {
   -webkit-font-smoothing: antialiased; }
 
-#page .site-main > article.type-post a {
-  border-bottom: #777 1px solid; }
-
 .no-results,
 .not-found {
   padding: 1.5em;
@@ -3413,7 +3333,7 @@ html {
 .entry-title {
   margin-bottom: .25em; }
   .entry-title a {
-    color: inherit; }
+    color: #0078a0; }
 
 #page .site-main article.type-post h2.page-title a {
   border: none; }
@@ -3962,7 +3882,7 @@ body.layout-one-column-narrow #content {
       line-height: 36px; } }
 
 .site-footer {
-  background-color: #474747;
+  background-color: #414242;
   color: #fff;
   padding: 0; }
   .site-footer a {
@@ -4027,7 +3947,7 @@ body.layout-one-column-narrow #content {
       margin-bottom: 2.25em;
       margin-bottom: 2.25rem; }
       .footer-widget-area .footer-widget .widget li, .footer-widget-area .footer-widget .widget a {
-        border-color: #6d6d6d; }
+        border-color: #676969; }
     .footer-widget-area .footer-widget .widget_calendar #calendar_wrap {
       padding-right: 0; }
 
@@ -4045,20 +3965,17 @@ body.layout-one-column-narrow #content {
     .site-info-wrapper a:hover {
       color: #fff; }
   .site-info-wrapper .site-info-text {
-    color: #535353;
+    color: rgba(255, 255, 255, 0.5);
     text-align: center; }
     .site-info-wrapper .site-info-text a[rel="designer"] {
-      color: #535353; }
+      color: rgba(255, 255, 255, 0.5); }
     .site-info-wrapper .site-info-text .menu {
       display: none; }
     @media screen and (min-width: 769px) {
       .site-info-wrapper .site-info-text {
         text-align: left;
         float: left;
-        width: 50%;
-        color: #535353; }
-        .site-info-wrapper .site-info-text a[rel="designer"] {
-          color: #535353; }
+        width: 50%; }
         .site-info-wrapper .site-info-text .menu {
           display: block; } }
   .site-info-wrapper .menu {
@@ -4153,6 +4070,9 @@ body.layout-one-column-narrow #content {
   -webkit-transition: 200ms opacity;
           transition: 200ms opacity;
   color: #fff; }
+  .site-info .social-menu a:hover {
+    background: none !important;
+    color: inherit; }
   .site-info .social-menu a:before {
     -webkit-font-smoothing: subpixel-antialiased;
     padding: 7px;

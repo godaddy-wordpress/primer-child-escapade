@@ -362,7 +362,7 @@ select { width: 100%; }
 .cta {
 	background: $cta-background;
 	text-transform: uppercase;
-	color: #fff;
+	color: #fff !important;
 	text-align: center;
 	display: table;
 	border-radius: 30px;
@@ -373,13 +373,11 @@ select { width: 100%; }
 	margin-top: 30px;
 	&:hover {
 		color: contrast-color($color-background-button,#fff,#000,25%);
-		background: lighten($color-background-button,3%);
 	}
 
 	&:focus
 	&:active{
 		color: #fff !important;
-		background: lighten($color-background-button,3%);
 		outline: 0;
 	}
 }

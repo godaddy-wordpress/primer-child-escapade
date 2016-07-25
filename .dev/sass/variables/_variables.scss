@@ -31,7 +31,7 @@ $secondary-font-family: 'Droid Serif', serif;
 $global-weight-normal: normal;
 $global-radius: 0;
 $cta-background: #55b74e;
-$border-color: #181818;
+$border-color: rgba(0,0,0,.7);
 $meta-color: #999999;
 
 // 2. Breakpoints
@@ -60,7 +60,7 @@ $code-color: $black;
 $code-font-family: $font-family-monospace;
 $code-font-weight: $global-weight-normal;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: map-get($foundation-palette, secondary);
+$anchor-color: #8bd1e5;
 $anchor-color-hover: scale-color($anchor-color, $lightness: 50%);
 $anchor-color-visited: scale-color($anchor-color, $lightness: 50%);
 $anchor-text-decoration: none;
@@ -81,7 +81,7 @@ $input-background: $white;
 // 5. Widgets
 // -----------
 
-$widget-font-family: $header-font-family;
+$widget-font-family: $primary-font-family;
 $widget-font-size: rem-calc(.9);
 
 // 6. Masthead

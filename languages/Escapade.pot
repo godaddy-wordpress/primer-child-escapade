@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Escapade 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-24 17:51-0400\n"
+"POT-Creation-Date: 2016-07-25 00:50-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,6 +39,46 @@ msgstr ""
 
 #: functions.php:157
 msgid "Secondary Font"
+msgstr ""
+
+#: functions.php:220
+msgid "Header Background Color"
+msgstr ""
+
+#: functions.php:230
+msgid "Link Color"
+msgstr ""
+
+#: functions.php:248
+msgid "Main Text Color"
+msgstr ""
+
+#: functions.php:258
+msgid "Secondary Text Color"
+msgstr ""
+
+#: functions.php:268
+msgid "Button Color"
+msgstr ""
+
+#: functions.php:278
+msgid "Widget Text Color"
+msgstr ""
+
+#: functions.php:288
+msgid "Widget Background Color"
+msgstr ""
+
+#: functions.php:298
+msgid "Footer Text Color"
+msgstr ""
+
+#: functions.php:308
+msgid "Footer Background Color"
+msgstr ""
+
+#: functions.php:323
+msgid "Sepia"
 msgstr ""
 
 #. //developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/#header-php
