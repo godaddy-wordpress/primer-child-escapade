@@ -63,7 +63,7 @@
 			</div>
 		</div>
 
-		<?php if ( is_active_sidebar( 'hero' ) && is_home() ) : ?>
+		<?php if ( is_active_sidebar( 'hero' ) && is_front_page() ) : ?>
 
 		<div class="hero-widget">
 
