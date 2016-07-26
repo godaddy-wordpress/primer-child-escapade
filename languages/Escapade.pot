@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Escapade 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 00:50-0400\n"
+"POT-Creation-Date: 2016-07-26 02:21-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,51 +33,51 @@ msgstr ""
 msgid "The hero appears in the hero widget area on the front page"
 msgstr ""
 
-#: functions.php:146
+#: functions.php:147
 msgid "Primary Font"
 msgstr ""
 
-#: functions.php:157
+#: functions.php:158
 msgid "Secondary Font"
 msgstr ""
 
-#: functions.php:220
+#: functions.php:221
 msgid "Header Background Color"
 msgstr ""
 
-#: functions.php:230
+#: functions.php:231
 msgid "Link Color"
 msgstr ""
 
-#: functions.php:248
+#: functions.php:249
 msgid "Main Text Color"
 msgstr ""
 
-#: functions.php:258
+#: functions.php:259
 msgid "Secondary Text Color"
 msgstr ""
 
-#: functions.php:268
+#: functions.php:269
 msgid "Button Color"
 msgstr ""
 
-#: functions.php:278
+#: functions.php:279
 msgid "Widget Text Color"
 msgstr ""
 
-#: functions.php:288
+#: functions.php:289
 msgid "Widget Background Color"
 msgstr ""
 
-#: functions.php:298
+#: functions.php:299
 msgid "Footer Text Color"
 msgstr ""
 
-#: functions.php:308
+#: functions.php:309
 msgid "Footer Background Color"
 msgstr ""
 
-#: functions.php:323
+#: functions.php:324
 msgid "Sepia"
 msgstr ""
 

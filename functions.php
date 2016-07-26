@@ -100,7 +100,7 @@ add_action( 'widgets_init', 'escapade_register_hero_sidebar' );
 function escapade_get_header_image() {
 	$image_size = (int) get_theme_mod( 'full_width' ) === 1 ? 'hero-2x' : 'hero';
 	$custom_header = get_custom_header();
-
+	
 	if ( ! empty( $custom_header->attachment_id ) ) {
 		$image = wp_get_attachment_image_url( $custom_header->attachment_id, $image_size );
 		if ( getimagesize( $image ) ) {
@@ -108,6 +108,7 @@ function escapade_get_header_image() {
 		}
 	}
 	$header_image = get_header_image();
+
 	return $header_image;
 }
 
@@ -338,3 +339,10 @@ function escapade_color_schemes() {
 	);
 }
 add_action( 'primer_color_schemes', 'escapade_color_schemes' );
+
+function escapade_add_default_header_image($array) {
+	$array['default-image'] = get_stylesheet_directory_uri() . '/assets/images/header-default.jpg';
+	
+	return $array;
+}
+add_filter( 'primer_custom_header_args', 'escapade_add_default_header_image', 20 );

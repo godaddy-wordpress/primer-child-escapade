@@ -4070,9 +4070,6 @@ body.layout-one-column-narrow #content {
   -webkit-transition: 200ms opacity;
           transition: 200ms opacity;
   color: #fff; }
-  .site-info .social-menu a:hover {
-    background: none !important;
-    color: inherit; }
   .site-info .social-menu a:before {
     -webkit-font-smoothing: subpixel-antialiased;
     padding: 7px;
@@ -4134,6 +4131,9 @@ body.layout-one-column-narrow #content {
     position: relative;
     padding: 0;
     margin: 3px; }
+    .social-menu ul li a:hover {
+      background: none !important;
+      opacity: .8; }
 
 header .social-menu {
   margin-top: 20px;

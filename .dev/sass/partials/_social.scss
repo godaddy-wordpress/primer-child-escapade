@@ -11,10 +11,6 @@
 		height: 32px;
 		transition: 200ms opacity;
 		color: #fff;
-		&:hover {
-			background: none !important;
-			color: inherit;
-		}
 
 		&:before{
 			-webkit-font-smoothing: subpixel-antialiased;
@@ -84,6 +80,10 @@
 			position: relative;
 			padding: 0;
 			margin: 3px;
+			a:hover {
+				background: none !important;
+				opacity: .8;
+			}
 		}
 	}
 }
