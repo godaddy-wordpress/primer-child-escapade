@@ -5,7 +5,7 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 	max-height: 600px;
 	@include clearfix;
 	@media screen and (min-width: 900px) {
-		max-height: 600px;
+		max-height: 800px;
 		min-height: 500px;
 	}
 }
@@ -115,6 +115,10 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 		font-family: $secondary-font-family;
 		font-size: 14px;
 		line-height: 20px;
+		p {
+			font-size: 14px;
+			line-height: 20px;
+		}
 	}
 }
 
@@ -131,6 +135,10 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 			font-family: $secondary-font-family;
 			font-size: 18px;
 			line-height: 24px;
+			p {
+				font-size: 18px;
+				line-height: 24px;
+			}
 		}
 	}
 }
@@ -148,6 +156,10 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 			font-family: $secondary-font-family;
 			font-size: 24px;
 			line-height: 36px;
+			p {
+				font-size: 24px;
+				line-height: 36px;
+			}
 		}
 	}
 }
