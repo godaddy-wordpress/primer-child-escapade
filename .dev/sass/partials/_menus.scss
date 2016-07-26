@@ -40,11 +40,15 @@ header .main-navigation-container .menu {
 		a {
 			display: block;
 			font-family: $primary-font-family;
-			line-height: 1.2;
+			line-height: 1.7;
+			border-bottom: rgba(255,255,255,.4) 1px solid;
 			font-size: 24px;
 			font-weight: 300;
 			color: #fff;
 			position: relative;
+		}
+		&:last-child a {
+			border-bottom: 0;
 		}
 	}
 
@@ -82,7 +86,10 @@ header .main-navigation-container .menu {
 			margin: 0 0 0 0;
 			list-style: none;
 			position: relative;
-
+			a {
+				line-height: 1.3;
+				border: none;
+			}
 			&.current-menu-item,
 			&:hover {
 				background-color: $submenu-background-color;
@@ -196,7 +203,8 @@ body {
 
 .side-masthead {
 	padding: 0 35px;
-	position: relative;
+	position: fixed;
+	width: 100%;
 	@include clearfix;
 	.mobile-container {
 		display: none;
@@ -247,7 +255,6 @@ body {
 	}
 	@media screen and (min-width: 783px){
 		display: block;
-		position: fixed;
 		left: 0;
 		width: 250px;
 		bottom: 0;
