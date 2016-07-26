@@ -261,8 +261,7 @@ select {
   .row:after, header .main-navigation-container .menu:after, .navigation:after, .site-branding-container:after, .main-navigation:after, .featured-content .entry-header .entry-header-row:after, .featured-content .featured-content-inner:after {
     clear: both; }
   .row.collapse > .column, header .main-navigation-container .collapse.menu > .column, .collapse.navigation > .column, .collapse.site-branding-container > .column, .collapse.main-navigation > .column, .featured-content .entry-header .collapse.entry-header-row > .column, .featured-content .collapse.featured-content-inner > .column,
-  .row.collapse > .columns, header .main-navigation-container .collapse.menu > .columns, .collapse.navigation > .columns, .collapse.site-branding-container > .columns, .collapse.main-navigation > .columns, .featured-content .entry-header .collapse.entry-header-row > .columns, .featured-content .collapse.featured-content-inner > .columns, .navigation
-  .row.collapse > .nav-links, header .main-navigation-container .navigation .collapse.menu > .nav-links, .navigation header .main-navigation-container .collapse.menu > .nav-links, .collapse.navigation > .nav-links, .navigation .collapse.site-branding-container > .nav-links, .navigation .collapse.main-navigation > .nav-links, .featured-content .entry-header .navigation .collapse.entry-header-row > .nav-links, .navigation .featured-content .entry-header .collapse.entry-header-row > .nav-links, .featured-content .navigation .collapse.featured-content-inner > .nav-links, .navigation .featured-content .collapse.featured-content-inner > .nav-links,
+  .row.collapse > .columns, header .main-navigation-container .collapse.menu > .columns, .collapse.navigation > .columns, .collapse.site-branding-container > .columns, .collapse.main-navigation > .columns, .featured-content .entry-header .collapse.entry-header-row > .columns, .featured-content .collapse.featured-content-inner > .columns,
   .row.collapse > #primary, header .main-navigation-container .collapse.menu > #primary, .collapse.navigation > #primary, .collapse.site-branding-container > #primary, .collapse.main-navigation > #primary, .featured-content .entry-header .collapse.entry-header-row > #primary, .featured-content .collapse.featured-content-inner > #primary,
   .row.collapse > #secondary, header .main-navigation-container .collapse.menu > #secondary, .collapse.navigation > #secondary, .collapse.site-branding-container > #secondary, .collapse.main-navigation > #secondary, .featured-content .entry-header .collapse.entry-header-row > #secondary, .featured-content .collapse.featured-content-inner > #secondary,
   .row.collapse > #tertiary, header .main-navigation-container .collapse.menu > #tertiary, .collapse.navigation > #tertiary, .collapse.site-branding-container > #tertiary, .collapse.main-navigation > #tertiary, .featured-content .entry-header .collapse.entry-header-row > #tertiary, .featured-content .collapse.featured-content-inner > #tertiary,
@@ -300,7 +299,6 @@ select {
 
 .column,
 .columns,
-.navigation .nav-links,
 #primary,
 #secondary,
 #tertiary,
@@ -419,7 +417,6 @@ select {
     right: auto; }
   .column,
   .columns,
-  .navigation .nav-links,
   #primary,
   #secondary,
   #tertiary,
@@ -488,7 +485,6 @@ select {
     float: right; }
   .column.small-centered,
   .columns.small-centered,
-  .navigation .small-centered.nav-links,
   .small-centered#primary,
   .small-centered#secondary,
   .small-centered#tertiary,
@@ -502,7 +498,6 @@ select {
     float: none; }
   .column.small-uncentered,
   .columns.small-uncentered,
-  .navigation .small-uncentered.nav-links,
   .small-uncentered#primary,
   .small-uncentered#secondary,
   .small-uncentered#tertiary,
@@ -516,7 +511,6 @@ select {
     float: right; }
   .column.small-centered:last-child,
   .columns.small-centered:last-child,
-  .navigation .small-centered.nav-links:last-child,
   .small-centered#primary:last-child,
   .small-centered#secondary:last-child,
   .small-centered#tertiary:last-child,
@@ -528,7 +522,6 @@ select {
     float: none; }
   .column.small-uncentered:last-child,
   .columns.small-uncentered:last-child,
-  .navigation .small-uncentered.nav-links:last-child,
   .small-uncentered#primary:last-child,
   .small-uncentered#secondary:last-child,
   .small-uncentered#tertiary:last-child,
@@ -540,7 +533,6 @@ select {
     float: right; }
   .column.small-uncentered.opposite,
   .columns.small-uncentered.opposite,
-  .navigation .small-uncentered.opposite.nav-links,
   .small-uncentered.opposite#primary,
   .small-uncentered.opposite#secondary,
   .small-uncentered.opposite#tertiary,
@@ -650,7 +642,6 @@ select {
     right: auto; }
   .column,
   .columns,
-  .navigation .nav-links,
   #primary,
   #secondary,
   #tertiary,
@@ -719,7 +710,6 @@ select {
     float: right; }
   .column.medium-centered,
   .columns.medium-centered,
-  .navigation .medium-centered.nav-links,
   .medium-centered#primary,
   .medium-centered#secondary,
   .medium-centered#tertiary,
@@ -733,7 +723,6 @@ select {
     float: none; }
   .column.medium-uncentered,
   .columns.medium-uncentered,
-  .navigation .medium-uncentered.nav-links,
   .medium-uncentered#primary,
   .medium-uncentered#secondary,
   .medium-uncentered#tertiary,
@@ -747,7 +736,6 @@ select {
     float: right; }
   .column.medium-centered:last-child,
   .columns.medium-centered:last-child,
-  .navigation .medium-centered.nav-links:last-child,
   .medium-centered#primary:last-child,
   .medium-centered#secondary:last-child,
   .medium-centered#tertiary:last-child,
@@ -759,7 +747,6 @@ select {
     float: none; }
   .column.medium-uncentered:last-child,
   .columns.medium-uncentered:last-child,
-  .navigation .medium-uncentered.nav-links:last-child,
   .medium-uncentered#primary:last-child,
   .medium-uncentered#secondary:last-child,
   .medium-uncentered#tertiary:last-child,
@@ -771,7 +758,6 @@ select {
     float: right; }
   .column.medium-uncentered.opposite,
   .columns.medium-uncentered.opposite,
-  .navigation .medium-uncentered.opposite.nav-links,
   .medium-uncentered.opposite#primary,
   .medium-uncentered.opposite#secondary,
   .medium-uncentered.opposite#tertiary,
@@ -978,7 +964,6 @@ select {
     right: auto; }
   .column,
   .columns,
-  .navigation .nav-links,
   #primary,
   #secondary,
   #tertiary,
@@ -1017,7 +1002,7 @@ select {
     width: 83.3333333333%; }
   .large-11 {
     width: 91.6666666667%; }
-  .large-12, .navigation .nav-links, body.layout-one-column-wide #primary,
+  .large-12, body.layout-one-column-wide #primary,
   body.layout-one-column-narrow #primary, body.layout-one-column-wide #secondary,
   body.layout-one-column-narrow #secondary, .site-branding, .site-footer .site-info, .site-info-wrapper .site-info-inner {
     width: 100%; }
@@ -1053,7 +1038,6 @@ select {
     float: right; }
   .column.large-centered, .site-footer .column.site-info,
   .columns.large-centered,
-  .navigation .large-centered.nav-links,
   .large-centered#primary,
   .site-footer #primary.site-info,
   .large-centered#secondary,
@@ -1072,7 +1056,6 @@ select {
     float: none; }
   .column.large-uncentered,
   .columns.large-uncentered,
-  .navigation .large-uncentered.nav-links,
   .large-uncentered#primary,
   .large-uncentered#secondary,
   .large-uncentered#tertiary,
@@ -1086,7 +1069,6 @@ select {
     float: right; }
   .column.large-centered:last-child, .site-footer .column.site-info:last-child,
   .columns.large-centered:last-child,
-  .navigation .large-centered.nav-links:last-child,
   .large-centered#primary:last-child,
   .site-footer #primary.site-info:last-child,
   .large-centered#secondary:last-child,
@@ -1101,7 +1083,6 @@ select {
     float: none; }
   .column.large-uncentered:last-child,
   .columns.large-uncentered:last-child,
-  .navigation .large-uncentered.nav-links:last-child,
   .large-uncentered#primary:last-child,
   .large-uncentered#secondary:last-child,
   .large-uncentered#tertiary:last-child,
@@ -1113,7 +1094,6 @@ select {
     float: right; }
   .column.large-uncentered.opposite,
   .columns.large-uncentered.opposite,
-  .navigation .large-uncentered.opposite.nav-links,
   .large-uncentered.opposite#primary,
   .large-uncentered.opposite#secondary,
   .large-uncentered.opposite#tertiary,
@@ -1319,7 +1299,6 @@ select {
     right: auto; }
   .column,
   .columns,
-  .navigation .nav-links,
   #primary,
   #secondary,
   #tertiary,
@@ -1388,7 +1367,6 @@ select {
     float: right; }
   .column.xlarge-centered,
   .columns.xlarge-centered,
-  .navigation .xlarge-centered.nav-links,
   .xlarge-centered#primary,
   .xlarge-centered#secondary,
   .xlarge-centered#tertiary,
@@ -1402,7 +1380,6 @@ select {
     float: none; }
   .column.xlarge-uncentered,
   .columns.xlarge-uncentered,
-  .navigation .xlarge-uncentered.nav-links,
   .xlarge-uncentered#primary,
   .xlarge-uncentered#secondary,
   .xlarge-uncentered#tertiary,
@@ -1416,7 +1393,6 @@ select {
     float: right; }
   .column.xlarge-centered:last-child,
   .columns.xlarge-centered:last-child,
-  .navigation .xlarge-centered.nav-links:last-child,
   .xlarge-centered#primary:last-child,
   .xlarge-centered#secondary:last-child,
   .xlarge-centered#tertiary:last-child,
@@ -1428,7 +1404,6 @@ select {
     float: none; }
   .column.xlarge-uncentered:last-child,
   .columns.xlarge-uncentered:last-child,
-  .navigation .xlarge-uncentered.nav-links:last-child,
   .xlarge-uncentered#primary:last-child,
   .xlarge-uncentered#secondary:last-child,
   .xlarge-uncentered#tertiary:last-child,
@@ -1440,7 +1415,6 @@ select {
     float: right; }
   .column.xlarge-uncentered.opposite,
   .columns.xlarge-uncentered.opposite,
-  .navigation .xlarge-uncentered.opposite.nav-links,
   .xlarge-uncentered.opposite#primary,
   .xlarge-uncentered.opposite#secondary,
   .xlarge-uncentered.opposite#tertiary,
@@ -1550,7 +1524,6 @@ select {
     right: auto; }
   .column,
   .columns,
-  .navigation .nav-links,
   #primary,
   #secondary,
   #tertiary,
@@ -1619,7 +1592,6 @@ select {
     float: right; }
   .column.xxlarge-centered,
   .columns.xxlarge-centered,
-  .navigation .xxlarge-centered.nav-links,
   .xxlarge-centered#primary,
   .xxlarge-centered#secondary,
   .xxlarge-centered#tertiary,
@@ -1633,7 +1605,6 @@ select {
     float: none; }
   .column.xxlarge-uncentered,
   .columns.xxlarge-uncentered,
-  .navigation .xxlarge-uncentered.nav-links,
   .xxlarge-uncentered#primary,
   .xxlarge-uncentered#secondary,
   .xxlarge-uncentered#tertiary,
@@ -1647,7 +1618,6 @@ select {
     float: right; }
   .column.xxlarge-centered:last-child,
   .columns.xxlarge-centered:last-child,
-  .navigation .xxlarge-centered.nav-links:last-child,
   .xxlarge-centered#primary:last-child,
   .xxlarge-centered#secondary:last-child,
   .xxlarge-centered#tertiary:last-child,
@@ -1659,7 +1629,6 @@ select {
     float: none; }
   .column.xxlarge-uncentered:last-child,
   .columns.xxlarge-uncentered:last-child,
-  .navigation .xxlarge-uncentered.nav-links:last-child,
   .xxlarge-uncentered#primary:last-child,
   .xxlarge-uncentered#secondary:last-child,
   .xxlarge-uncentered#tertiary:last-child,
@@ -1671,7 +1640,6 @@ select {
     float: right; }
   .column.xxlarge-uncentered.opposite,
   .columns.xxlarge-uncentered.opposite,
-  .navigation .xxlarge-uncentered.opposite.nav-links,
   .xxlarge-uncentered.opposite#primary,
   .xxlarge-uncentered.opposite#secondary,
   .xxlarge-uncentered.opposite#tertiary,
@@ -3029,8 +2997,20 @@ header .main-navigation-container .menu {
     text-align: right; }
 
 .navigation .nav-links {
+  padding: 1.5em;
+  padding: 1.5rem;
+  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
   margin-bottom: 1em;
   margin-bottom: 1rem; }
+  @media only screen and (min-width: 40.063em) {
+    .navigation .nav-links {
+      padding: 2.5em 3.5em;
+      padding: 2.5rem 3.5rem; } }
+
+.navigation div.nav-links {
+  padding-top: 0;
+  padding-bottom: 0; }
 
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,

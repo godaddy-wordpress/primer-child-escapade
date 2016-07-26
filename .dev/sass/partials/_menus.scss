@@ -291,10 +291,13 @@ body {
 	@extend .row;
 
 	.nav-links{
-		@extend .large-12;
-		@extend .columns;
+		@include panel;
 		margin-bottom: 1em;
 		margin-bottom: 1rem;
+	}
+	div.nav-links{
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 }
 
