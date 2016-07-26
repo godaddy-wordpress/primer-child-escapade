@@ -3,7 +3,8 @@ html {
 }
 
 #page {
-	.site-main > article.type-post a {
+	.content-area {
+//		@include panel;
 	}
 }
 
