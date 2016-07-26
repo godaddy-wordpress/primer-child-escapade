@@ -346,3 +346,10 @@ function escapade_add_default_header_image($array) {
 	return $array;
 }
 add_filter( 'primer_custom_header_args', 'escapade_add_default_header_image', 20 );
+
+function escapade_font_weight( $weights, $font ) {
+
+    return ( 'Lato' === $font ) ? [ 700 ] : $weights;
+
+}
+add_filter( 'primer_font_weights', 'escapade_font_weight', 10, 2 );
