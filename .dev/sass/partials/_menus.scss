@@ -1,5 +1,7 @@
+$menu-bg-ie: rgb(25,25,25);
+$submenu-bg-ie: rgb(128,128,128);
 $menu-background-color: rgba(25,25,25,.95) !default;
-$submenu-background-color: rgba(0,0,0,.3);
+$submenu-background-color: rgba(0,0,0,.7);
 
 @media screen and (min-width: 783px){
 	.main-navigation-container {
@@ -137,6 +139,7 @@ header .main-navigation-container .menu {
 					position:relative;
 					> ul {
 						display:block;
+						background-color: $submenu-bg-ie;
 						background-color: $submenu-background-color;
 						position: absolute;
 						right: -200px;
@@ -217,6 +220,7 @@ body {
 	}
 	text-align: center;
 	z-index: 9999;
+	background-color: $menu-bg-ie;
 	background-color: $menu-background-color;
 	.site-logo {
 		display: none;
