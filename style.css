@@ -3769,6 +3769,10 @@ body.page-template-page-builder #content {
   padding: 0;
   max-width: none; }
 
+body.page-template-page-builder-default-header #content {
+  padding: 0;
+  max-width: none; }
+
 body.layout-one-column-full #primary {
   margin: 0;
   padding: 0;

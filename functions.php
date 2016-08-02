@@ -122,7 +122,7 @@ function escapade_remove_widgets() {
 
 }
 
-add_action( 'widgets_init', 'escapade_remove_widgets', 11 );
+//add_action( 'widgets_init', 'escapade_remove_widgets', 11 );
 
 function escapade_update_fonts() {
 	return array(
