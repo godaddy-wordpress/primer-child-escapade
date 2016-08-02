@@ -2923,11 +2923,16 @@ header .main-navigation-container .menu {
           text-align: right;
           clear: both; } }
 
-@media screen and (min-width: 783px) {
-  body {
-    padding-right: 250px; }
-    body.admin-bar .side-masthead {
-      top: 32px; } }
+body {
+  margin-top: 56px; }
+  body.admin-bar .side-masthead {
+    top: 46px; }
+  @media screen and (min-width: 783px) {
+    body {
+      margin-top: 0;
+      padding-right: 250px; }
+      body.admin-bar .side-masthead {
+        top: 32px; } }
 
 /* Small menu */
 .menu-toggle {
@@ -2949,6 +2954,7 @@ header .main-navigation-container .menu {
   padding: 0 35px;
   position: fixed;
   width: 100%;
+  top: 0;
   text-align: center;
   z-index: 9999;
   background-color: #191919;
@@ -3893,6 +3899,22 @@ body.layout-one-column-narrow #content {
       .hero-widget div.textwidget p {
         font-size: 24px;
         line-height: 36px; } }
+
+.page-template-page-builder .hentry {
+  padding-bottom: 0; }
+
+.blog .site-header[style] {
+  max-height: 300px;
+  position: relative; }
+  @media screen and (min-width: 783px) {
+    .blog .site-header[style] {
+      max-height: 500px; } }
+
+.blog .hero-widget {
+  position: absolute;
+  bottom: 50px; }
+  .blog .hero-widget h1 {
+    color: #fff; }
 
 .site-footer {
   background-color: #414242;

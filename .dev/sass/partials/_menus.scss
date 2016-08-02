@@ -176,7 +176,14 @@ header .main-navigation-container .menu {
 }
 
 body {
+	margin-top: 56px;
+	&.admin-bar {
+		.side-masthead {
+			top: 46px;
+		}
+	}
 	@media screen and (min-width: 783px){
+		margin-top: 0;
 		padding-left: 250px;
 		&.admin-bar {
 			.side-masthead {
@@ -208,6 +215,7 @@ body {
 	padding: 0 35px;
 	position: fixed;
 	width: 100%;
+	top: 0;
 	@include clearfix;
 	.mobile-container {
 		display: none;

@@ -163,3 +163,24 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 		}
 	}
 }
+
+.page-template-page-builder .hentry {
+	padding-bottom: 0;
+}
+
+.blog {
+	.site-header[style] {
+		max-height: 300px;
+		@media screen and (min-width: 783px) {
+			max-height: 500px;
+		}
+		position: relative;
+	}
+	.hero-widget {
+		position: absolute;
+		bottom: 50px;
+		h1 {
+			color: #fff;
+		}
+	}
+}

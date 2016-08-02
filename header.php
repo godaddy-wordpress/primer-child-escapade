@@ -71,6 +71,12 @@
 		</div>
 
 		<?php endif; ?>
+		
+		<?php if( is_home() ) : ?>
+		<div class="hero-widget">
+			<h1>Blog</h1>
+		</div>
+		<?php endif; ?>
 
 	</header><!-- #masthead -->
 

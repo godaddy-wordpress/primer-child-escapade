@@ -9,8 +9,7 @@ function escapade_register_menus() {
 
 	register_nav_menus(
 		array(
-			'site-info' => esc_html__( 'Site Info', 'escapade' ),
-			'footer'	=> esc_html__( 'Footer', 'escapade' )
+			'footer'	=> esc_html__( 'Footer Menu', 'escapade' )
 		)
 	);
 
