@@ -60,11 +60,18 @@
 		padding: 0;
 		float: none;
 	}
+
+	body.page-template-page-builder-default-header &{
+		width: 100%;
+		padding: 0;
+		float: none;
+	}
 }
 
 #secondary{
 	@extend .large-4;
 	@extend .columns;
+	margin: 4rem 0;
 
 	body.layout-two-column-reversed &{
 		@extend .large-pull-8;

@@ -3784,6 +3784,14 @@ body.page-template-page-builder #primary {
   padding: 0;
   float: none; }
 
+body.page-template-page-builder-default-header #primary {
+  width: 100%;
+  padding: 0;
+  float: none; }
+
+#secondary {
+  margin: 4rem 0; }
+
 body.layout-one-column-narrow #content {
   max-width: 50em; }
 
