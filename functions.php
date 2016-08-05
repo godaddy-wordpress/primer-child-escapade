@@ -203,15 +203,6 @@ add_action( 'customize_register', 'escapade_remove_customizer_features', 30 );
 function escapade_colors() {
   return array(
 				array(
-					'name'    => 'header_textcolor',
-					'default' => '#fff',
-					'css'     => array(
-						'.side-masthead .site-description, .hero-widget, header .main-navigation-container .menu li a, .main-navigation-container .menu li.current-menu-item > a, .main-navigation-container .menu li.current-menu-item > a:hover, .side-masthead .site-title a, .side-masthead .site-title a:hover, .hero-widget h2.widget-title' => array(
-							'color' => '%1$s',
-						),
-					),
-				),
-				array(
 					'name'    => 'background_color',
 					'default' => '#fff',
 				),
@@ -244,26 +235,6 @@ function escapade_colors() {
 					),
 				),
 				array(
-					'name'    => 'main_text_color',
-					'label'   => __( 'Main Text Color', 'primer' ),
-					'default' => '#212121',
-					'css'     => array(
-						'.site-content, .site-content h1, .site-content h2, .site-content h3, .site-content h4, .site-content h5, .site-content h6, .site-content p, .site-content blockquote, legend' => array(
-							'color' => '%1$s',
-						),
-					),
-				),
-				array(
-					'name'    => 'secondary_text_color',
-					'label'   => __( 'Secondary Text Color', 'primer' ),
-					'default' => '#999999',
-					'css'     => array(
-						'.side-masthead .social-menu a, .entry-meta li, .side-masthead .social-menu a:hover' => array(
-							'color' => '%1$s',
-						),
-					),
-				),
-				array(
 					'name'    => 'button_color',
 					'label'   => __( 'Button Color', 'primer' ),
 					'default' => '#55b74e',
@@ -274,32 +245,12 @@ function escapade_colors() {
 					),
 				),
 				array(
-					'name'    => 'w_text_color',
-					'label'   => __( 'Widget Text Color', 'primer' ),
-					'default' => '#fff',
-					'css'     => array(
-						'.footer-widget-area, .footer-widget .widget-title, .site-footer, .footer-widget-area .footer-widget .widget, .footer-widget-area .footer-widget .widget-title' => array(
-							'color' => '%1$s',
-						),
-					),
-				),
-				array(
 					'name'    => 'w_background_color',
 					'label'   => __( 'Widget Background Color', 'primer' ),
 					'default' => '#414242',
 					'css'     => array(
 						'.site-footer' => array(
 							'background-color' => '%1$s',
-						),
-					),
-				),
-				array(
-					'name'    => 'footer_textcolor',
-					'label'   => __( 'Footer Text Color', 'primer' ),
-					'default' => '#fff',
-					'css'     => array(
-						'.site-info-wrapper a, .site-info .social-menu a' => array(
-							'color' => '%1$s',
 						),
 					),
 				),
@@ -322,16 +273,11 @@ function escapade_color_schemes() {
 				'sepia' => array(
 					'label'  => __( 'Sepia', 'primer' ),
 					'colors' => array(
-						'header_textcolor'         => '#efece4',
 						'header_backgroundcolor'   => '#201b14',
 						'background_color'         => '#efece4',
 						'link_color'               => '#e54447',
-						'main_text_color'          => '#2d271e',
-						'secondary_text_color'     => '#b2aa96',
-						'button_color'			   => '#eda246',
-						'w_text_color'			   => '#b2aa96',
+						'button_color'             => '#eda246',
 						'w_background_color'	   => '#363027',
-						'footer_textcolor'		   => '#b2aa96',
 						'footer_backgroundcolor'   => '#2d271e',
 					),
 				)
