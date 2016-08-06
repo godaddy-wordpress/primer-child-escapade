@@ -239,7 +239,7 @@ function escapade_colors() {
 					'label'   => __( 'Button Color', 'primer' ),
 					'default' => '#55b74e',
 					'css'     => array(
-						'.cta, button, a.button, a.button:visited, input[type="button"], input[type="reset"], input[type="submit"]' => array(
+						'.cta, .cta:link, .cta:visited, .cta:hover, .cta:active, button, button:link, button:visited, button:hover, button:active, a.button, a.button:link, a.button:visited, a.button:hover, a.button:active, input[type="button"], input[type="reset"], input[type="submit"], input[type="submit"]:link, input[type="submit"]:visited, input[type="submit"]:hover, input[type="submit"]:active' => array(
 							'background-color' => '%1$s',
 						),
 					),
