@@ -2370,7 +2370,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #222;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 1rem;
@@ -2379,6 +2378,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 80%;
     color: #6f6f6f;
     line-height: 0; }
+  #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+    color: #222; }
 
 h1 {
   font-size: 2.375rem; }
@@ -3765,13 +3766,14 @@ body.layout-one-column-full #content {
   margin: 0;
   padding: 0; }
 
-body.page-template-page-builder #content {
+body.page-template-page-builder #content,
+body.page-template-page-builder-no-header #content {
   padding: 0;
   max-width: none; }
-
-body.page-template-page-builder-default-header #content {
-  padding: 0;
-  max-width: none; }
+  @media all and (min-width: 900px) {
+    body.page-template-page-builder #content,
+    body.page-template-page-builder-no-header #content {
+      padding-bottom: 0; } }
 
 body.layout-one-column-full #primary {
   margin: 0;
@@ -3779,12 +3781,8 @@ body.layout-one-column-full #primary {
   max-width: none;
   width: 100%; }
 
-body.page-template-page-builder #primary {
-  width: 100%;
-  padding: 0;
-  float: none; }
-
-body.page-template-page-builder-default-header #primary {
+body.page-template-page-builder #primary,
+body.page-template-page-builder-no-header #primary {
   width: 100%;
   padding: 0;
   float: none; }
@@ -3915,17 +3913,29 @@ body.layout-one-column-narrow #content {
 .page-template-page-builder .hentry {
   padding-bottom: 0; }
 
-.blog .site-header[style] {
+.blog .site-header[style],
+.page:not(.home) .site-header[style],
+.archive .site-header[style],
+.single .site-header[style] {
   max-height: 300px;
   position: relative; }
   @media screen and (min-width: 783px) {
-    .blog .site-header[style] {
+    .blog .site-header[style],
+    .page:not(.home) .site-header[style],
+    .archive .site-header[style],
+    .single .site-header[style] {
       max-height: 500px; } }
 
-.blog .hero-widget {
+.blog .hero-widget,
+.page:not(.home) .hero-widget,
+.archive .hero-widget,
+.single .hero-widget {
   position: absolute;
   bottom: 50px; }
-  .blog .hero-widget h1 {
+  .blog .hero-widget h1,
+  .page:not(.home) .hero-widget h1,
+  .archive .hero-widget h1,
+  .single .hero-widget h1 {
     color: #fff; }
 
 .site-footer {

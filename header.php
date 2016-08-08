@@ -34,7 +34,7 @@
 
 	<?php do_action( 'primer_before_header' ) ?>
 
-	<header id="masthead" class="site-header" role="banner"<?php if( escapade_get_header_image() && is_front_page() ): ?> style="background:url('<?php echo escapade_get_header_image(); ?>') no-repeat top center; background-size: cover;"<?php elseif( has_post_thumbnail() && ! is_page_template( 'templates/page-builder-default-header.php' ) ): ?> style="background:url('<?php echo the_post_thumbnail_url("full"); ?>') no-repeat top center; background-size: cover;"<?php endif; ?>>
+	<header id="masthead" class="site-header" role="banner"<?php if( escapade_get_header_image() ): ?> style="background:url('<?php echo escapade_get_header_image(); ?>') no-repeat top center; background-size: cover;"<?php elseif( has_post_thumbnail() && ! is_page_template( 'templates/page-builder-default-header.php' ) ): ?> style="background:url('<?php echo the_post_thumbnail_url("full"); ?>') no-repeat top center; background-size: cover;"<?php endif; ?>>
 		<div class="side-masthead">
 			<?php do_action( 'primer_header' ) ?>
 			<div class="menu-toggle" id="menu-toggle">
@@ -47,21 +47,13 @@
 			</div>
 		</div>
 
-		<?php if ( is_active_sidebar( 'hero' ) && is_front_page() && escapade_get_header_image() ) : ?>
 
 		<div class="hero-widget">
 
-			<?php dynamic_sidebar( 'hero' ) ?>
+			<?php do_action( 'escapade_hero' ); ?>
+			<?php if ( is_front_page() ) dynamic_sidebar( 'hero' ) ?>
 
 		</div>
-
-		<?php endif; ?>
-
-		<?php if( is_home() ) : ?>
-		<div class="hero-widget">
-			<h1>Blog</h1>
-		</div>
-		<?php endif; ?>
 
 	</header><!-- #masthead -->
 

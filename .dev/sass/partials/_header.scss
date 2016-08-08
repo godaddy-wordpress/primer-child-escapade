@@ -168,7 +168,10 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 	padding-bottom: 0;
 }
 
-.blog {
+.blog,
+.page:not(.home),
+.archive,
+.single {
 	.site-header[style] {
 		max-height: 300px;
 		@media screen and (min-width: 783px) {

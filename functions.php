@@ -1,6 +1,26 @@
 <?php
 
 /**
+ * Move titles above menu templates.
+ *
+ * @since 1.0.0
+ */
+function escapade_remove_titles(){
+
+	remove_action( 'primer_after_header', 'primer_add_page_builder_template_title', 100 );
+	remove_action( 'primer_after_header', 'primer_add_blog_title', 100 );
+	remove_action( 'primer_after_header', 'primer_add_archive_title', 100 );
+
+	if( ! is_front_page() ):
+		add_action( 'escapade_hero', 'primer_add_page_builder_template_title' );
+		add_action( 'escapade_hero', 'primer_add_blog_title' );
+		add_action( 'escapade_hero', 'primer_add_archive_title' );
+	endif;
+
+}
+add_action( 'init', 'escapade_remove_titles' );
+
+/**
  * Register custom Custom Navigation Menus.
  *
  * @link https://codex.wordpress.org/Function_Reference/register_nav_menus
@@ -99,7 +119,7 @@ add_action( 'widgets_init', 'escapade_register_hero_sidebar' );
 function escapade_get_header_image() {
 	$image_size = (int) get_theme_mod( 'full_width' ) === 1 ? 'hero-2x' : 'hero';
 	$custom_header = get_custom_header();
-	
+
 	if ( ! empty( $custom_header->attachment_id ) ) {
 		$image = wp_get_attachment_image_url( $custom_header->attachment_id, $image_size );
 		if ( getimagesize( $image ) ) {
@@ -185,7 +205,7 @@ add_action( 'primer_after_header', 'escapade_add_social_to_header', 30 );
 
 /**
  * Remove customizer features added by the parent theme that are not applicable to this theme
- * 
+ *
  * @action after_setup_theme
  */
 function escapade_remove_customizer_features($wp_customize){
@@ -197,7 +217,7 @@ add_action( 'customize_register', 'escapade_remove_customizer_features', 30 );
 
 /**
  * Update colors
- * 
+ *
  * @action primer_colors
  */
 function escapade_colors() {
@@ -209,7 +229,7 @@ function escapade_colors() {
 				array(
 					'name'    => 'header_backgroundcolor',
 					'label'   => __( 'Header Background Color', 'primer' ),
-					'default' => '#222',
+					'default' => '#fff',
 					'css'     => array(
 						'.side-masthead, header .main-navigation-container .menu li.menu-item-has-children:hover > ul' => array(
 							'background-color' => '%1$s',
@@ -287,7 +307,7 @@ add_action( 'primer_color_schemes', 'escapade_color_schemes' );
 
 function escapade_add_default_header_image($array) {
 	$array['default-image'] = get_stylesheet_directory_uri() . '/assets/images/header-default.jpg';
-	
+
 	return $array;
 }
 add_filter( 'primer_custom_header_args', 'escapade_add_default_header_image', 20 );

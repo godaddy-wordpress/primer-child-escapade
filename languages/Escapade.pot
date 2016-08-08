@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the Escapade package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Escapade 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-02 15:36-0400\n"
+"POT-Creation-Date: 2016-08-08 17:40-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,63 +17,47 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.php:12
+#: functions.php:32
 msgid "Footer Menu"
 msgstr ""
 
-#: functions.php:83
+#: functions.php:103
 msgid "Hero"
 msgstr ""
 
-#: functions.php:85
+#: functions.php:105
 msgid "The hero appears in the hero widget area on the front page"
 msgstr ""
 
-#: functions.php:146
+#: functions.php:166
 msgid "Primary Font"
 msgstr ""
 
-#: functions.php:157
+#: functions.php:177
 msgid "Secondary Font"
 msgstr ""
 
-#: functions.php:220
+#: functions.php:231
 msgid "Header Background Color"
 msgstr ""
 
-#: functions.php:230
+#: functions.php:241
 msgid "Link Color"
 msgstr ""
 
-#: functions.php:248
-msgid "Main Text Color"
-msgstr ""
-
-#: functions.php:258
-msgid "Secondary Text Color"
-msgstr ""
-
-#: functions.php:268
+#: functions.php:259
 msgid "Button Color"
 msgstr ""
 
-#: functions.php:278
-msgid "Widget Text Color"
-msgstr ""
-
-#: functions.php:288
+#: functions.php:269
 msgid "Widget Background Color"
 msgstr ""
 
-#: functions.php:298
-msgid "Footer Text Color"
-msgstr ""
-
-#: functions.php:308
+#: functions.php:279
 msgid "Footer Background Color"
 msgstr ""
 
-#: functions.php:323
+#: functions.php:294
 msgid "Sepia"
 msgstr ""
 
@@ -81,7 +65,7 @@ msgstr ""
 #. *
 #. * @package Primer
 #.
-#: header.php:48
+#: header.php:33
 msgid "Skip to content"
 msgstr ""
 
