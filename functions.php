@@ -221,86 +221,81 @@ add_action( 'customize_register', 'escapade_remove_customizer_features', 30 );
  * @action primer_colors
  */
 function escapade_colors() {
-  return array(
-				array(
-					'name'    => 'background_color',
-					'default' => '#fff',
-				),
-				array(
-					'name'    => 'header_backgroundcolor',
-					'label'   => __( 'Header Background Color', 'primer' ),
-					'default' => '#fff',
-					'css'     => array(
-						'.side-masthead, header .main-navigation-container .menu li.menu-item-has-children:hover > ul' => array(
-							'background-color' => '%1$s',
-						),
+	return array(
+			'background_color' => array(
+				'label'   => __( 'Background Color', 'primer' ),
+				'default' => '#fff',
+			),
+			'header_backgroundcolor' => array(
+				'label'   => __( 'Header Background Color', 'primer' ),
+				'default' => '#222',
+				'css'     => array(
+					'.side-masthead, header .main-navigation-container .menu li.menu-item-has-children:hover > ul' => array(
+						'background-color' => '%1$s',
 					),
 				),
-				array(
-					'name'    => 'link_color',
-					'label'   => __( 'Link Color', 'primer' ),
-					'default' => '#8bd1e5',
-					'css'     => array(
-						'a, a:visited, .entry-footer a, .sticky .entry-title a:before' => array(
-							'color' => '%1$s',
-						)
+			),
+			'link_color' => array(
+				'label'   => __( 'Link Color', 'primer' ),
+				'default' => '#8bd1e5',
+				'css'     => array(
+					'a, a:visited, .entry-footer a, .sticky .entry-title a:before' => array(
+						'color' => '%1$s',
+					)
+				),
+				'rgba_css' => array(
+					'a:hover, a:visited:hover, .entry-footer a:hover' => array(
+						'color' => 'rgba(%1$s, 0.75)',
 					),
-					'rgba_css' => array(
-						'a:hover, a:visited:hover, .entry-footer a:hover' => array(
-							'color' => 'rgba(%1$s, 0.75)',
-						),
-						'button:hover, a.button:hover, a.button:visited:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .site-info-wrapper:hover .site-info:hover .social-menu a:hover' => array(
-							'background-color' => 'rgba(%1$s, 0.75)',
-						),
+					'button:hover, a.button:hover, a.button:visited:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .site-info-wrapper:hover .site-info:hover .social-menu a:hover' => array(
+						'background-color' => 'rgba(%1$s, 0.75)',
 					),
 				),
-				array(
-					'name'    => 'button_color',
-					'label'   => __( 'Button Color', 'primer' ),
-					'default' => '#55b74e',
-					'css'     => array(
-						'.cta, .cta:link, .cta:visited, .cta:hover, .cta:active, button, button:link, button:visited, button:hover, button:active, a.button, a.button:link, a.button:visited, a.button:hover, a.button:active, input[type="button"], input[type="reset"], input[type="submit"], input[type="submit"]:link, input[type="submit"]:visited, input[type="submit"]:hover, input[type="submit"]:active' => array(
-							'background-color' => '%1$s',
-						),
+			),
+			'button_color' => array(
+				'label'   => __( 'Button Color', 'primer' ),
+				'default' => '#55b74e',
+				'css'     => array(
+					'.cta, .cta:link, .cta:visited, .cta:hover, .cta:active, button, button:link, button:visited, button:hover, button:active, a.button, a.button:link, a.button:visited, a.button:hover, a.button:active, input[type="button"], input[type="reset"], input[type="submit"], input[type="submit"]:link, input[type="submit"]:visited, input[type="submit"]:hover, input[type="submit"]:active' => array(
+						'background-color' => '%1$s',
 					),
 				),
-				array(
-					'name'    => 'w_background_color',
-					'label'   => __( 'Widget Background Color', 'primer' ),
-					'default' => '#414242',
-					'css'     => array(
-						'.site-footer' => array(
-							'background-color' => '%1$s',
-						),
+			),
+			'w_background_color' => array(
+				'label'   => __( 'Widget Background Color', 'primer' ),
+				'default' => '#414242',
+				'css'     => array(
+					'.site-footer' => array(
+						'background-color' => '%1$s',
 					),
 				),
-				array(
-					'name'    => 'footer_backgroundcolor',
-					'label'   => __( 'Footer Background Color', 'primer' ),
-					'default' => '#191919',
-					'css'     => array(
-						'.site-info-wrapper' => array(
-							'background-color' => '%1$s',
-						),
+			),
+			'footer_backgroundcolor' => array(
+				'label'   => __( 'Footer Background Color', 'primer' ),
+				'default' => '#191919',
+				'css'     => array(
+					'.site-info-wrapper' => array(
+						'background-color' => '%1$s',
 					),
 				),
-			);
+			),
+		);
 }
 add_action( 'primer_colors', 'escapade_colors', 30 );
 
 function escapade_color_schemes() {
 	return array(
-				'sepia' => array(
-					'label'  => __( 'Sepia', 'primer' ),
-					'colors' => array(
-						'header_backgroundcolor'   => '#201b14',
-						'background_color'         => '#efece4',
-						'link_color'               => '#e54447',
-						'button_color'             => '#eda246',
-						'w_background_color'	   => '#363027',
-						'footer_backgroundcolor'   => '#2d271e',
-					),
-				)
+		'sepia' => array(
+			'label'  => esc_html__( 'Sepia', 'primer' ),
+			'colors' => array(
+				'header_backgroundcolor'   => '#201b14',
+				'background_color'         => '#efece4',
+				'link_color'               => '#e54447',
+				'button_color'             => '#eda246',
+				'w_background_color'	   => '#363027',
+				'footer_backgroundcolor'   => '#2d271e',
+			),
+		),
 	);
 }
 add_action( 'primer_color_schemes', 'escapade_color_schemes' );
