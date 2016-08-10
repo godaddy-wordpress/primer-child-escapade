@@ -2858,7 +2858,7 @@ header .main-navigation-container .menu {
       border-bottom: rgba(255, 255, 255, 0.4) 1px solid;
       font-size: 24px;
       font-weight: 300;
-      color: #fff;
+      color: #999;
       position: relative; }
     header .main-navigation-container .menu li:last-child a {
       border-bottom: 0; }
@@ -2979,7 +2979,7 @@ body {
   .side-masthead .site-description {
     line-height: 50px;
     padding: 0 20px;
-    color: #ffffff;
+    color: #999;
     font-size: 14px;
     display: none; }
     @media screen and (min-width: 600px) {
@@ -2992,9 +2992,9 @@ body {
     margin-bottom: 0;
     margin-top: 0; }
     .side-masthead .site-title a {
-      color: white; }
+      color: #999; }
       .side-masthead .site-title a:hover {
-        color: white;
+        color: #000;
         opacity: .8; }
   @media screen and (min-width: 783px) {
     .side-masthead {
@@ -3811,7 +3811,7 @@ body.layout-one-column-narrow #content {
   .featured-content .entry-header,
   .featured-content .entry-header .entry-title,
   .featured-content .entry-header .entry-title a {
-    color: white; }
+    color: #999; }
   .featured-content .entry-header .entry-header-column {
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
