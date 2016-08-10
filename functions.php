@@ -163,7 +163,7 @@ function escapade_update_font_types() {
     return array(
         array(
             'name'    => 'primary_font',
-            'label'   => __( 'Primary Font', 'primer' ),
+            'label'   => esc_html__( 'Primary Font', 'primer' ),
             'default' => 'Oswald',
             'css'     => array(
 	            '.cta, .site-info-wrapper, .comment-author, .comment-metadata, #respond, .entry-title, .read-more, button, a.button, a.button:visited, input[type="button"], input[type="reset"], input[type="submit"], .featured-content .entry-title, .featured-content .read-more, .entry-meta li, .event-meta, .sermon-meta, .location-meta, .person-meta, .post-format, article.format-link .entry-title, header .social-menu a, .widget-title, label, header .main-navigation-container .menu li a, .entry-footer, .more-link, h1, h2, h3, h4' => array( 'font-family' => '"%s", sans-serif' )
@@ -174,7 +174,7 @@ function escapade_update_font_types() {
         ),
         array(
             'name'    => 'secondary_font',
-            'label'   => __( 'Secondary Font', 'primer' ),
+            'label'   => esc_html__( 'Secondary Font', 'primer' ),
             'default' => 'Droid Serif',
             'css'     => array(
 				'body, input, select, textarea, .hero-widget div.textwidget, .widget, .widget p, .widget ul, .widget ol, .entry-content p, .entry-summary p, h5, h6' => array( 'font-family' => '"%s", sans-serif' )
@@ -223,11 +223,11 @@ add_action( 'customize_register', 'escapade_remove_customizer_features', 30 );
 function escapade_colors() {
 	return array(
 			'background_color' => array(
-				'label'   => __( 'Background Color', 'primer' ),
+				'label'   => esc_html__( 'Background Color', 'primer' ),
 				'default' => '#fff',
 			),
 			'header_backgroundcolor' => array(
-				'label'   => __( 'Header Background Color', 'primer' ),
+				'label'   => esc_html__( 'Header Background Color', 'primer' ),
 				'default' => '#222',
 				'css'     => array(
 					'.side-masthead, header .main-navigation-container .menu li.menu-item-has-children:hover > ul' => array(
@@ -236,7 +236,7 @@ function escapade_colors() {
 				),
 			),
 			'link_color' => array(
-				'label'   => __( 'Link Color', 'primer' ),
+				'label'   => esc_html__( 'Link Color', 'primer' ),
 				'default' => '#8bd1e5',
 				'css'     => array(
 					'a, a:visited, .entry-footer a, .sticky .entry-title a:before' => array(
@@ -253,7 +253,7 @@ function escapade_colors() {
 				),
 			),
 			'button_color' => array(
-				'label'   => __( 'Button Color', 'primer' ),
+				'label'   => esc_html__( 'Button Color', 'primer' ),
 				'default' => '#55b74e',
 				'css'     => array(
 					'.cta, .cta:link, .cta:visited, .cta:hover, .cta:active, button, button:link, button:visited, button:hover, button:active, a.button, a.button:link, a.button:visited, a.button:hover, a.button:active, input[type="button"], input[type="reset"], input[type="submit"], input[type="submit"]:link, input[type="submit"]:visited, input[type="submit"]:hover, input[type="submit"]:active' => array(
@@ -262,7 +262,7 @@ function escapade_colors() {
 				),
 			),
 			'w_background_color' => array(
-				'label'   => __( 'Widget Background Color', 'primer' ),
+				'label'   => esc_html__( 'Widget Background Color', 'primer' ),
 				'default' => '#414242',
 				'css'     => array(
 					'.site-footer' => array(
@@ -271,7 +271,7 @@ function escapade_colors() {
 				),
 			),
 			'footer_backgroundcolor' => array(
-				'label'   => __( 'Footer Background Color', 'primer' ),
+				'label'   => esc_html__( 'Footer Background Color', 'primer' ),
 				'default' => '#191919',
 				'css'     => array(
 					'.site-info-wrapper' => array(
