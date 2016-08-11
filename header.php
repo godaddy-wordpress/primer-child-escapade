@@ -6,54 +6,55 @@
  *
  * @link https://developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/#header-php
  *
- * @package Primer
+ * @package Escapade
  */
 ?><!DOCTYPE html>
 
-<html <?php language_attributes() ?>>
+<html <?php language_attributes(); ?>>
 
 <head>
 
-	<meta charset="<?php bloginfo( 'charset' ) ?>">
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ) ?>">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-	<?php wp_head() ?>
+	<?php wp_head(); ?>
 
 </head>
 
-<body <?php body_class() ?>>
+<body <?php body_class(); ?>>
 
-	<?php do_action( 'primer_body_inside' ) ?>
+	<?php do_action( 'primer_body_inside' ); ?>
 
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'primer' ) ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'primer' ); ?></a>
 
-	<?php do_action( 'primer_before_header' ) ?>
+	<?php do_action( 'primer_before_header' ); ?>
 
-	<header id="masthead" class="site-header" role="banner"<?php if( escapade_get_header_image() ): ?> style="background:url('<?php echo escapade_get_header_image(); ?>') no-repeat top center; background-size: cover;"<?php elseif( has_post_thumbnail() && ! is_page_template( 'templates/page-builder-default-header.php' ) ): ?> style="background:url('<?php echo the_post_thumbnail_url("full"); ?>') no-repeat top center; background-size: cover;"<?php endif; ?>>
+	<header id="masthead" class="site-header" role="banner"<?php if ( primer_has_hero_image() ) : ?> style="background:url('<?php echo esc_url( primer_get_hero_image() ); ?>') no-repeat top center; background-size: cover;"<?php endif; ?>>
+
 		<div class="side-masthead">
-			<?php do_action( 'primer_header' ) ?>
+
+			<?php do_action( 'primer_header' ); ?>
+
 			<div class="menu-toggle" id="menu-toggle">
 				<div></div>
 				<div></div>
 				<div></div>
 			</div>
+
 			<div class="mobile-container">
-				<?php do_action( 'primer_after_header' ) ?>
+
+				<?php do_action( 'primer_after_header' ); ?>
+
 			</div>
-		</div>
-
-
-		<div class="hero-widget">
-
-			<?php do_action( 'escapade_hero' ); ?>
-			<?php if ( is_front_page() ) dynamic_sidebar( 'hero' ) ?>
 
 		</div>
+
+		<?php do_action( 'primer_hero' ); ?>
 
 	</header><!-- #masthead -->
 

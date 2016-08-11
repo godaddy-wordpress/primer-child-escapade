@@ -1,14 +1,14 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the Escapade package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Escapade
+# Copyright (C) 2016
+# This file is distributed under the same license as the escapade package.
+# GoDaddy Operating Company, LLC.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Escapade 1.0.0\n"
+"Project-Id-Version: escapade 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-09 20:32-0400\n"
+"POT-Creation-Date: 2016-08-11 15:14-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,89 +17,66 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.php:32
+#: functions.php:34
 msgid "Footer Menu"
 msgstr ""
 
-#: functions.php:103
+#: functions.php:139
 msgid "Hero"
 msgstr ""
 
-#: functions.php:105
-msgid "The hero appears in the hero widget area on the front page"
+#: functions.php:140
+msgid "Hero widgets appear over the header image on the front page."
 msgstr ""
 
-#: functions.php:166
-msgid "Primary Font"
+#: functions.php:249
+msgid "Background Color"
 msgstr ""
 
-#: functions.php:177
-msgid "Secondary Font"
-msgstr ""
-
-#: functions.php:231
+#: functions.php:253
 msgid "Header Background Color"
 msgstr ""
 
-#: functions.php:241
+#: functions.php:262
 msgid "Link Color"
 msgstr ""
 
-#: functions.php:259
+#: functions.php:279
 msgid "Button Color"
 msgstr ""
 
-#: functions.php:269
+#: functions.php:288
 msgid "Widget Background Color"
 msgstr ""
 
-#: functions.php:279
+#: functions.php:297
 msgid "Footer Background Color"
 msgstr ""
 
-#: functions.php:294
+#: functions.php:326
 msgid "Sepia"
 msgstr ""
 
 #. //developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/#header-php
 #. *
-#. * @package Primer
+#. * @package Escapade
 #.
 #: header.php:33
 msgid "Skip to content"
 msgstr ""
 
-#: templates/parts/loop/page-content.php:17
-#: templates/parts/loop/post-content.php:17
-msgid "Pages:"
-msgstr ""
-
-#: templates/parts/loop/page-footer.php:8
-#: templates/parts/loop/post-footer.php:13
-#: templates/parts/loop/post-search-footer.php:45
-msgid "Edit"
-msgstr ""
-
-#: templates/parts/loop/post-content.php:13
-msgid "Read More <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#: templates/parts/loop/post-footer.php:19
-#: templates/parts/loop/post-footer.php:31
 #: templates/parts/loop/post-search-footer.php:13
 #: templates/parts/loop/post-search-footer.php:25
 msgctxt "separator for items in a list"
 msgid ", "
 msgstr ""
 
-#: templates/parts/loop/post-footer.php:25
 #: templates/parts/loop/post-search-footer.php:19
 #, php-format
 msgctxt "category list"
 msgid "Posted in: %s"
 msgstr ""
 
-#: templates/parts/loop/post-footer.php:37
 #: templates/parts/loop/post-search-footer.php:31
 #, php-format
 msgctxt "tag list"
@@ -119,8 +96,6 @@ msgctxt "number of comments"
 msgid "% Comments"
 msgstr ""
 
-#: templates/parts/site-info.php:29
-#, php-format
-msgctxt "1. theme name link, 2. theme author link"
-msgid "%1$s Theme by %2$s."
+#: templates/parts/loop/post-search-footer.php:45
+msgid "Edit"
 msgstr ""
