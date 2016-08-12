@@ -2846,7 +2846,7 @@ a {
   .main-navigation-container {
     margin: 35px -35px 0; } }
 
-@media all and (min-width: 480px) {
+@media all and (max-width: 783px) {
   #site-navigation {
     display: none; } }
 

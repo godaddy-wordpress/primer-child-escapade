@@ -9,7 +9,7 @@ $submenu-background-color: rgba(0,0,0,.7);
 	}
 }
 
-@media all and ( min-width: 480px ) {
+@media all and ( max-width: 783px ) {
 
 	#site-navigation {
 		display: none;
