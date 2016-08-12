@@ -12,7 +12,7 @@ $submenu-background-color: rgba(0,0,0,.7);
 header .main-navigation-container .menu {
 	position: relative;
 	z-index: 100;
-	@extend .row;
+	margin-left: 0;
 
 	ul {
 		font-size: emCalc(15);

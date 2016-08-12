@@ -40,17 +40,7 @@
 
 			<?php do_action( 'primer_header' ); ?>
 
-			<div class="menu-toggle" id="menu-toggle">
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-
-			<div class="mobile-container">
-
-				<?php do_action( 'primer_after_header' ); ?>
-
-			</div>
+			<?php do_action( 'primer_after_header' ); ?>
 
 		</div>
 

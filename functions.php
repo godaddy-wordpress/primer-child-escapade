@@ -185,17 +185,6 @@ function escapade_font_types( $font_types ) {
 add_filter( 'primer_font_types', 'escapade_font_types' );
 
 /**
- * Remove primer navigation and add escapade navigation
- */
-function escapade_navigation() {
-
-	wp_dequeue_script( 'primer-navigation' );
-	wp_enqueue_script( 'escapade-navigation', get_stylesheet_directory_uri() . '/assets/js/navigation.js', array( 'jquery' ), '20120206', true );
-
-}
-add_action( 'wp_print_scripts', 'escapade_navigation', 100 );
-
-/**
  * Add mobile menu to header
  *
  * @link https://codex.wordpress.org/Function_Reference/get_template_part
