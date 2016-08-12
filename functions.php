@@ -231,6 +231,7 @@ function escapade_layouts( $layouts ) {
 
 }
 add_filter( 'primer_layouts', 'escapade_layouts' );
+add_filter( 'primer_page_widths', '__return_empty_array' );
 
 /**
  * Register colors.
