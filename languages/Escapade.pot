@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: escapade 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-12 15:44-0400\n"
+"POT-Creation-Date: 2016-08-12 16:36-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,31 +29,31 @@ msgstr ""
 msgid "Hero widgets appear over the header image on the front page."
 msgstr ""
 
-#: functions.php:264
+#: functions.php:253
 msgid "Background Color"
 msgstr ""
 
-#: functions.php:268
+#: functions.php:257
 msgid "Header Background Color"
 msgstr ""
 
-#: functions.php:277
+#: functions.php:266
 msgid "Link Color"
 msgstr ""
 
-#: functions.php:294
+#: functions.php:283
 msgid "Button Color"
 msgstr ""
 
-#: functions.php:303
+#: functions.php:292
 msgid "Widget Background Color"
 msgstr ""
 
-#: functions.php:312
+#: functions.php:301
 msgid "Footer Background Color"
 msgstr ""
 
-#: functions.php:341
+#: functions.php:330
 msgid "Sepia"
 msgstr ""
 

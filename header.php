@@ -41,6 +41,8 @@
 			<?php do_action( 'primer_header' ); ?>
 
 			<?php do_action( 'primer_after_header' ); ?>
+			
+			<?php get_template_part( 'templates/parts/social-navigation' ); ?>
 
 		</div>
 
