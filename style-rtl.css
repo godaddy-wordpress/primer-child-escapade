@@ -2846,6 +2846,10 @@ a {
   .main-navigation-container {
     margin: 35px -35px 0; } }
 
+@media all and (min-width: 480px) {
+  #site-navigation {
+    display: none; } }
+
 header .main-navigation-container .menu {
   position: relative;
   z-index: 100;
@@ -2885,16 +2889,18 @@ header .main-navigation-container .menu {
   header .main-navigation-container .menu li {
     text-align: right; }
   @media all and (min-width: 480px) {
-    header .main-navigation-container .menu ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      display: block; }
-      header .main-navigation-container .menu ul ul {
-        display: none;
-        position: absolute; }
-    header .main-navigation-container .menu a {
-      border-bottom-width: 0; } }
+    header .main-navigation-container .menu {
+      clear: both; }
+      header .main-navigation-container .menu ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: block; }
+        header .main-navigation-container .menu ul ul {
+          display: none;
+          position: absolute; }
+      header .main-navigation-container .menu a {
+        border-bottom-width: 0; } }
   @media screen and (min-width: 783px) {
     header .main-navigation-container .menu li {
       padding: 8px 35px 8px;

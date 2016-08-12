@@ -9,6 +9,14 @@ $submenu-background-color: rgba(0,0,0,.7);
 	}
 }
 
+@media all and ( min-width: 480px ) {
+
+	#site-navigation {
+		display: none;
+	}
+
+}
+
 header .main-navigation-container .menu {
 	position: relative;
 	z-index: 100;
@@ -63,7 +71,9 @@ header .main-navigation-container .menu {
 	li {
 		text-align: left;
 	}
-	@media all and ( min-width: 480px ){
+	@media all and ( min-width: 480px ) {
+
+		clear: both;
 
 		ul {
 			padding: 0;
@@ -77,12 +87,12 @@ header .main-navigation-container .menu {
 			}
 		}
 
-		a{
+		a {
 			border-bottom-width: 0;
 		}
 
 	}
-	@media screen and (min-width: 783px){
+	@media screen and ( min-width: 783px ) {
 		li {
 			padding: 8px 35px 8px;
 			margin: 0 0 0 0;
