@@ -20,6 +20,20 @@ function escapade_move_elements() {
 add_action( 'template_redirect', 'escapade_move_elements' );
 
 /**
+ * Add footer navigation.
+ *
+ * @action primer_site_info
+ * @since  1.0.0
+ */
+function escapade_add_footer_navigation() {
+
+	get_template_part( 'templates/parts/footer-navigation' );
+
+}
+
+add_action( 'primer_site_info', 'escapade_add_footer_navigation' );
+
+/**
  * Add a footer menu.
  *
  * @filter primer_nav_menus
