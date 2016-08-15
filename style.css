@@ -3912,21 +3912,21 @@ body.layout-one-column-narrow #content {
     .featured-content .entry-header .read-more:hover {
       background-color: #006687; }
 
-.hero-widget {
+.hero {
   color: #fff;
   position: relative;
   padding: 5rem 2.3rem 0; }
-  .hero-widget .widget {
+  .hero .widget {
     padding: 0; }
-  .hero-widget h2.widget-title {
+  .hero h2.widget-title {
     color: #fff;
     font-size: 2em;
     font-weight: 300; }
-  .hero-widget div.textwidget {
+  .hero div.textwidget {
     font-family: "Droid Serif", serif;
     font-size: 14px;
     line-height: 20px; }
-    .hero-widget div.textwidget p {
+    .hero div.textwidget p {
       font-size: 14px;
       line-height: 20px; }
 

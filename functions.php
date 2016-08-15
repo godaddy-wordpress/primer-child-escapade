@@ -10,14 +10,36 @@ function escapade_move_elements() {
 
 	// Hero image
 	remove_action( 'primer_header', 'primer_add_hero' );
-	add_action( 'primer_hero', 'primer_add_hero' );
 
 	// Page titles
 	remove_action( 'primer_after_header', 'primer_add_page_title' );
-	add_action( 'primer_hero_content', 'primer_add_page_title' );
+
+	if ( ! is_front_page() ) {
+
+		add_action( 'primer_hero', 'primer_add_page_title' );
+
+	}
 
 }
 add_action( 'template_redirect', 'escapade_move_elements' );
+
+/**
+ * Set header element style attribute.
+ *
+ * @filter primer_header_style_attr
+ * @since  1.0.0
+ *
+ * @return string
+ */
+function escapade_header_style_attr() {
+
+	return sprintf(
+		'background: url(%s) no-repeat top center; background-size: cover;',
+		primer_get_hero_image()
+	);
+
+}
+add_filter( 'primer_header_style_attr', 'escapade_header_style_attr' );
 
 /**
  * Add footer navigation.
@@ -30,7 +52,6 @@ function escapade_add_footer_navigation() {
 	get_template_part( 'templates/parts/footer-navigation' );
 
 }
-
 add_action( 'primer_site_info', 'escapade_add_footer_navigation' );
 
 /**
@@ -111,57 +132,6 @@ function escapade_custom_header_args( $args ) {
 
 }
 add_filter( 'primer_custom_header_args', 'escapade_custom_header_args' );
-
-/**
- * Add styles to the header element.
- *
- * @param  string $css
- *
- * @return string
- */
-function escapade_header_style_attribute( $css ) {
-
-	if ( primer_has_hero_image() ) {
-
-		$css = sprintf(
-			"background:url('%s') no-repeat top center; background-size: cover;",
-			esc_url( primer_get_hero_image() )
-		);
-
-	}
-
-	return $css;
-
-}
-add_action( 'primer_header_style_attr', 'escapade_header_style_attribute' );
-
-/**
- * Register sidebar areas.
- *
- * @filter primer_sidebars
- * @since  1.0.0
- *
- * @param  array $sidebars
- *
- * @return array
- */
-function escapade_sidebars( $sidebars ) {
-
-	unset( $sidebars['sidebar-2'] );
-
-	$sidebars['hero'] = array(
-		'name'          => esc_html__( 'Hero', 'escapade' ),
-		'description'   => esc_html__( 'Hero widgets appear over the header image on the front page.', 'escapade' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	);
-
-	return $sidebars;
-
-}
-add_filter( 'primer_sidebars', 'escapade_sidebars' );
 
 /**
  * Set font types.

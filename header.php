@@ -46,7 +46,7 @@
 
 		</div>
 
-		<?php do_action( 'primer_hero' ); ?>
+		<?php get_template_part( 'templates/parts/hero' ); ?>
 
 	</header><!-- #masthead -->
 

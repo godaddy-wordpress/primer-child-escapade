@@ -1,37 +1,42 @@
-$entry-title-bg: rgba(0,0,0,.6) !default;
+$entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 
 .site-header[style] {
 	height: 100%;
 	max-height: 600px;
+
 	@include clearfix;
+
 	@media screen and (min-width: 900px) {
 		max-height: 800px;
 		min-height: 500px;
 	}
 }
 
-.featured-content{
-	.entry-header{
+.featured-content {
+	.entry-header {
 		background-size: cover;
 
 		&,
 		.entry-title,
-		.entry-title a{
+		.entry-title a {
 			color: #999;
 		}
 
-		.entry-header-row{
+		.entry-header-row {
 			@extend .row;
 		}
 
-		.entry-header-column{
+		.entry-header-column {
 			@extend .large-8;
+
 			@extend .medium-12;
+
 			@extend .small-12;
+
 			@extend .columns;
 
 			background-color: $entry-title-bg;
-			color: contrast-color($entry-title-bg,#000,#fff,50%);
+			color: contrast-color($entry-title-bg, #000, #fff, 50%);
 			margin-top: 6em;
 			margin-top: 6rem;
 			padding: 1.5em 4em 0;
@@ -47,28 +52,28 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 
 		.entry-meta,
 		.entry-title,
-		.entry-excerpt{
+		.entry-excerpt {
 			margin-bottom: 1.5rem;
 		}
 
-		.entry-meta{
-			color: contrast-color($entry-title-bg,#000,#fff,50%);
-			border-bottom: 1px solid rgba(255,255,255,.2);
+		.entry-meta {
+			color: contrast-color($entry-title-bg, #000, #fff, 50%);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 			line-height: 3rem;
 
-			.entry-date{
+			.entry-date {
 				float: right;
 			}
 		}
 
-		.entry-title{
+		.entry-title {
 			font-size: rem-calc(42);
 			line-height: 1.2;
 			font-family: $primary-font-family;
 		}
 
 		.entry-excerpt {
-			p{
+			p {
 				font-style: italic;
 				font-size: emCalc(19);
 				font-size: rem-calc(19);
@@ -76,15 +81,15 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 			}
 		}
 
-		.post-format{
+		.post-format {
 			color: $primary-color;
 		}
 
-		.read-more{
+		.read-more {
 			padding: .5em 1em;
 			padding: .5rem 1rem;
 			background-color: $primary-color;
-			color: contrast-color($primary-color,#fff,#000,50%);
+			color: contrast-color($primary-color, #fff, #000, 50%);
 			display: inline-block;
 			font-family: $primary-font-family;
 			text-transform: uppercase;
@@ -92,29 +97,33 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 			font-size: emCalc(13);
 			font-size: rem-calc(13);
 
-			&:hover{
-				background-color: darken($primary-color,10%);
+			&:hover {
+				background-color: darken($primary-color, 10%);
 			}
 		}
 	}
 }
 
-.hero-widget {
+.hero {
 	color: #fff;
 	position: relative;
 	padding: 5rem 2.3rem 0;
+
 	.widget {
 		padding: 0;
 	}
+
 	h2.widget-title {
 		color: #fff;
 		font-size: 2em;
 		font-weight: 300;
 	}
+
 	div.textwidget {
 		font-family: $secondary-font-family;
 		font-size: 14px;
 		line-height: 20px;
+
 		p {
 			font-size: 14px;
 			line-height: 20px;
@@ -122,19 +131,22 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 	}
 }
 
-@media all and ( min-width: 600px ){
+@media all and (min-width: 600px) {
 	.hero-widget {
 		color: #fff;
 		padding: 7rem 4.4375rem 0;
+
 		h2.widget-title {
 			color: #fff;
 			font-size: 3.5em;
 			font-weight: 300;
 		}
+
 		div.textwidget {
 			font-family: $secondary-font-family;
 			font-size: 18px;
 			line-height: 24px;
+
 			p {
 				font-size: 18px;
 				line-height: 24px;
@@ -143,19 +155,22 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 	}
 }
 
-@media all and ( min-width: 1100px ){
+@media all and (min-width: 1100px) {
 	.hero-widget {
 		color: #fff;
 		max-width: 800px;
+
 		h2.widget-title {
 			color: #fff;
 			font-size: 6em;
 			font-weight: 300;
 		}
+
 		div.textwidget {
 			font-family: $secondary-font-family;
 			font-size: 24px;
 			line-height: 36px;
+
 			p {
 				font-size: 24px;
 				line-height: 36px;
@@ -174,14 +189,18 @@ $entry-title-bg: rgba(0,0,0,.6) !default;
 .single {
 	.site-header[style] {
 		max-height: 300px;
+
 		@media screen and (min-width: 783px) {
 			max-height: 500px;
 		}
+
 		position: relative;
 	}
+
 	.hero-widget {
 		position: absolute;
 		bottom: 50px;
+
 		h1 {
 			color: #fff;
 		}
