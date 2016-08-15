@@ -24,74 +24,23 @@ function escapade_move_elements() {
 add_action( 'template_redirect', 'escapade_move_elements' );
 
 /**
- * Set header element style attribute.
+ * Set the default hero image description.
  *
- * @filter primer_header_style_attr
+ * @filter primer_default_hero_images
  * @since  1.0.0
  *
- * @return string
- */
-function escapade_header_style_attr() {
-
-	return sprintf(
-		'background: url(%s) no-repeat top center; background-size: cover;',
-		primer_get_hero_image()
-	);
-
-}
-add_filter( 'primer_header_style_attr', 'escapade_header_style_attr' );
-
-/**
- * Add footer navigation.
- *
- * @action primer_site_info
- * @since  1.0.0
- */
-function escapade_add_footer_navigation() {
-
-	get_template_part( 'templates/parts/footer-navigation' );
-
-}
-add_action( 'primer_site_info', 'escapade_add_footer_navigation' );
-
-/**
- * Add a footer menu.
- *
- * @filter primer_nav_menus
- * @since  1.0.0
- *
- * @param  array $nav_menus
+ * @param  array $defaults
  *
  * @return array
  */
-function escapade_nav_menus( $nav_menus ) {
+function escapade_default_hero_images( $defaults ) {
 
-	$nav_menus['footer'] = esc_html__( 'Footer Menu', 'escapade' );
+	$defaults['default']['description'] = esc_html__( 'Mountain Valley', 'escapade' );
 
-	return $nav_menus;
-
-}
-add_filter( 'primer_nav_menus', 'escapade_nav_menus' );
-
-/**
- * Set images sizes.
- *
- * @filter primer_image_sizes
- * @since  1.0.0
- *
- * @param  array $sizes
- *
- * @return array
- */
-function escapade_image_sizes( $sizes ) {
-
-	$sizes['primer-hero']['width']  = 2400;
-	$sizes['primer-hero']['height'] = 1300;
-
-	return $sizes;
+	return $defaults;
 
 }
-add_filter( 'primer_image_sizes', 'escapade_image_sizes' );
+add_filter( 'primer_default_hero_images', 'escapade_default_hero_images' );
 
 /**
  * Set custom logo args.
@@ -112,26 +61,6 @@ function escapade_custom_logo_args( $args ) {
 
 }
 add_filter( 'primer_custom_logo_args', 'escapade_custom_logo_args' );
-
-/**
- * Set custom header args.
- *
- * @action primer_custom_header_args
- * @since  1.0.0
- *
- * @param  array $args
- *
- * @return array
- */
-function escapade_custom_header_args( $args ) {
-
-	$args['width']  = 2400;
-	$args['height'] = 1300;
-
-	return $args;
-
-}
-add_filter( 'primer_custom_header_args', 'escapade_custom_header_args' );
 
 /**
  * Set font types.
