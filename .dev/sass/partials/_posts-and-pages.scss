@@ -110,7 +110,7 @@ html {
 		font-family: $primary-font-family;
 		text-transform: uppercase;
 		color: $meta-color;
-		
+
 		span {
 			font-size: 24px;
 			padding-right: 25px;
@@ -205,7 +205,9 @@ article.format-link {
 	}
 }
 
-.entry-content, .entry-summary {
+.entry-content,
+.entry-summary,
+.content {
 	p {
 		font-family: $secondary-font-family;
 		font-size: 16px;
@@ -216,7 +218,7 @@ article.format-link {
 			font-family: $secondary-font-family;
 			font-size: 20px;
 			line-height: 33px;
-		}	
+		}
 	}
 	p + p {
 		margin-top: 2rem;

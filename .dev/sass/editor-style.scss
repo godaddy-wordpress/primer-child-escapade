@@ -1,5 +1,23 @@
 @import "variables/variables";
+
+@import "mixins/functions";
+@import "mixins/color-contrast";
+@import "mixins/grid";
+@import "mixins/global";
+
 @import "partials/typography";
 @import "partials/forms";
 @import "partials/alignments";
+@import "partials/captions";
 @import "partials/content";
+@import "partials/media";
+@import "partials/galleries";
+@import "partials/links";
+@import "partials/accessibility";
+@import "partials/asides";
+@import "partials/clearings";
+
+body{
+	margin: 20px;
+	background-color: white;
+}

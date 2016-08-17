@@ -41,9 +41,6 @@ meta.foundation-mq-xxlarge {
 meta.foundation-data-attribute-namespace {
   font-family: false; }
 
-html, body {
-  height: 100%; }
-
 *,
 *:before,
 *:after {
@@ -158,9 +155,6 @@ meta.foundation-mq-xxlarge {
 
 meta.foundation-data-attribute-namespace {
   font-family: false; }
-
-html, body {
-  height: 100%; }
 
 *,
 *:before,
@@ -2118,9 +2112,6 @@ meta.foundation-mq-xxlarge {
 meta.foundation-data-attribute-namespace {
   font-family: false; }
 
-html, body {
-  height: 100%; }
-
 *,
 *:before,
 *:after {
@@ -3508,18 +3499,24 @@ article.format-link {
     width: 100% !important;
     height: 100% !important; }
 
-.entry-content p, .entry-summary p {
+.entry-content p,
+.entry-summary p,
+.content p {
   font-family: "Droid Serif", serif;
   font-size: 16px;
   line-height: 26px; }
 
 @media screen and (min-width: 769px) {
-  .entry-content p, .entry-summary p {
+  .entry-content p,
+  .entry-summary p,
+  .content p {
     font-family: "Droid Serif", serif;
     font-size: 20px;
     line-height: 33px; } }
 
-.entry-content p + p, .entry-summary p + p {
+.entry-content p + p,
+.entry-summary p + p,
+.content p + p {
   margin-top: 2rem; }
 
 .blog .format-aside .entry-title,
