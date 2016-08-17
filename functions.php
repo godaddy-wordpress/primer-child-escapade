@@ -8,10 +8,7 @@
  */
 function escapade_move_elements() {
 
-	// Hero image
-	remove_action( 'primer_header', 'primer_add_hero' );
-
-	// Page titles
+	remove_action( 'primer_header',       'primer_add_hero' );
 	remove_action( 'primer_after_header', 'primer_add_page_title' );
 
 	if ( ! is_front_page() ) {
@@ -22,6 +19,36 @@ function escapade_move_elements() {
 
 }
 add_action( 'template_redirect', 'escapade_move_elements' );
+
+/**
+ * Add mobile menu to header.
+ *
+ * @action primer_header
+ * @since  1.0.0
+ */
+function escapade_add_mobile_menu() {
+
+	get_template_part( 'templates/parts/mobile-menu' );
+
+}
+add_action( 'primer_header', 'escapade_add_mobile_menu', 0 );
+
+/**
+ * Add social links to primary navigation area.
+ *
+ * @action primer_after_header
+ * @since  1.0.0
+ */
+function escapade_add_social_menu() {
+
+	if ( has_nav_menu( 'social' ) ) {
+
+		get_template_part( 'templates/parts/social-menu' );
+
+	}
+
+}
+add_action( 'primer_after_header', 'escapade_add_social_menu', 30 );
 
 /**
  * Set the default hero image description.
@@ -35,7 +62,7 @@ add_action( 'template_redirect', 'escapade_move_elements' );
  */
 function escapade_default_hero_images( $defaults ) {
 
-	$defaults['default']['description'] = esc_html__( 'Mountain Valley', 'escapade' );
+	$defaults['default']['description'] = esc_html__( 'Village in a mountain valley', 'escapade' );
 
 	return $defaults;
 
@@ -63,56 +90,7 @@ function escapade_custom_logo_args( $args ) {
 add_filter( 'primer_custom_logo_args', 'escapade_custom_logo_args' );
 
 /**
- * Set font types.
- *
- * @filter primer_font_types
- * @since  1.0.0
- *
- * @param array $font_types
- *
- * @return array
- */
-function escapade_font_types( $font_types ) {
-
-	$font_types['header_font']['default']    = 'Oswald';
-	$font_types['primary_font']['default']   = 'Droid Serif';
-	$font_types['secondary_font']['default'] = 'Playfair Display';
-
-	return $font_types;
-
-}
-add_filter( 'primer_font_types', 'escapade_font_types' );
-
-/**
- * Add mobile menu to header
- *
- * @link https://codex.wordpress.org/Function_Reference/get_template_part
- */
-function escapade_add_mobile_menu() {
-
-	get_template_part( 'templates/parts/mobile-menu' );
-
-}
-add_action( 'primer_header', 'escapade_add_mobile_menu', 0 );
-
-/**
- * Add Social links to primary navigation area.
- *
- * @action primer_after_header
- */
-function escapade_add_social_to_header() {
-
-	if ( has_nav_menu( 'social' ) ) {
-
-		get_template_part( 'templates/parts/social-menu' );
-
-	}
-
-}
-add_action( 'primer_after_header', 'escapade_add_social_to_header', 30 );
-
-/**
- * Remove three-column layouts.
+ * Set layouts.
  *
  * @filter primer_layouts
  * @since  1.0.0
@@ -136,7 +114,28 @@ add_filter( 'primer_layouts', 'escapade_layouts' );
 add_filter( 'primer_page_widths', '__return_empty_array' );
 
 /**
- * Register colors.
+ * Set font types.
+ *
+ * @filter primer_font_types
+ * @since  1.0.0
+ *
+ * @param  array $font_types
+ *
+ * @return array
+ */
+function escapade_font_types( $font_types ) {
+
+	$font_types['header_font']['default']    = 'Oswald';
+	$font_types['primary_font']['default']   = 'Droid Serif';
+	$font_types['secondary_font']['default'] = 'Playfair Display';
+
+	return $font_types;
+
+}
+add_filter( 'primer_font_types', 'escapade_font_types' );
+
+/**
+ * Set colors.
  *
  * @filter primer_colors
  * @since  1.0.0
@@ -213,7 +212,7 @@ function escapade_colors( $colors ) {
 add_filter( 'primer_colors', 'escapade_colors' );
 
 /**
- * Register color schemes.
+ * Set color schemes.
  *
  * @filter primer_color_schemes
  * @since  1.0.0
