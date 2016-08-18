@@ -8,8 +8,9 @@
  */
 function escapade_move_elements() {
 
-	remove_action( 'primer_header',       'primer_add_hero' );
-	remove_action( 'primer_after_header', 'primer_add_page_title' );
+	remove_action( 'primer_header',                 'primer_add_hero' );
+	remove_action( 'primer_after_header',           'primer_add_page_title' );
+	remove_action( 'primer_before_site_navigation', 'primer_add_mobile_menu' );
 
 	if ( ! is_front_page() ) {
 
