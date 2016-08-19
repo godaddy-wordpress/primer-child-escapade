@@ -34,7 +34,6 @@ input[type="submit"] {
 	text-transform: uppercase;
 	color: #fff;
 	text-align: center;
-	display: table;
 	border-radius: 30px;
 	line-height: 48px;
 	font-family: $primary-font-family;
@@ -91,7 +90,7 @@ input[type="color"],
 textarea {
 	color: $input-color;
 	background-color: $input-background;
-	border: $border-color 2px solid;
+	border: 2px solid rgba(0,0,0,.3);
 	transform: 200ms background linear;
 	resize: none;
 

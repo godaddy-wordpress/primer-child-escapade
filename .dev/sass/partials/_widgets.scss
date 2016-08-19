@@ -89,12 +89,8 @@ $widget-bg: #fff !default;
 	}
 
 	li {
-		a {
-			display: block;
-			padding: .5em 0;
-			padding: .5rem 0;
-			border-bottom: 1px solid $body-bg;
-		}
+		padding: .5em 0;
+		padding: .5rem 0;
 	}
 
 	> ul:last-child > li:last-child > a,
@@ -142,7 +138,6 @@ $widget-bg: #fff !default;
 	li {
 		padding: .5em 0;
 		padding: .5rem 0;
-		border-bottom: 1px solid $body-bg;
 
 		&:last-child {
 			border-bottom: 0;
@@ -151,7 +146,6 @@ $widget-bg: #fff !default;
 
 		a {
 			border: 0;
-			display: inline;
 		}
 	}
 }
@@ -180,7 +174,6 @@ $widget-bg: #fff !default;
 
 			td,th{
 				width: 14.285714286%;
-				background: #fff;
 				border: 0;
 			}
 
@@ -192,13 +185,11 @@ $widget-bg: #fff !default;
 				color: contrast-color($primary-color,#222,white,30%);
 				padding: .75em .25em;
 				font-weight: bold;
-				background-color: $body-bg;
 				border-radius: 2px 2px 0 0;
 			}
 
 			thead th {
 				padding: .25em 0;
-				background-color: lighten($body-bg, 30%);
 
 				&:last-child { border: none; }
 			}
@@ -230,7 +221,6 @@ $widget-bg: #fff !default;
 			}
 
 			tfoot {
-				background: desaturate( darken( $body-bg, 10% ), 5% );
 
 				td {
 					padding: .5em 1em;

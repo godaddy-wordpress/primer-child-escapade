@@ -1,17 +1,5 @@
 $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 
-.site-header[style] {
-	height: 100%;
-	max-height: 600px;
-
-	@include clearfix;
-
-	@media screen and (min-width: 900px) {
-		max-height: 800px;
-		min-height: 500px;
-	}
-}
-
 .featured-content {
 	.entry-header {
 		background-size: cover;
@@ -107,74 +95,34 @@ $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 .hero {
 	color: #fff;
 	position: relative;
-	padding: 5rem 2.3rem 0;
+	font-size: 1rem;
+	line-height: 1.5;
+	padding: 0 20px;
+	text-align: center;
+
+	@media #{$medium-up}{
+		padding: 0 40px;
+		text-align: left;
+	}
 
 	.widget {
+		max-width: 780px;
+	}
+
+	.page-title,
+	.widget-title {
+		margin: 0 0 .25em;
 		padding: 0;
-	}
-
-	h2.widget-title {
-		color: #fff;
-		font-size: 2em;
+		font-size: 300%;
 		font-weight: 300;
+		line-height: 1.2;
 	}
 
-	div.textwidget {
+	.textwidget {
 		font-family: $secondary-font-family;
-		font-size: 14px;
-		line-height: 20px;
 
 		p {
-			font-size: 14px;
-			line-height: 20px;
-		}
-	}
-}
-
-@media all and (min-width: 600px) {
-	.hero-widget {
-		color: #fff;
-		padding: 7rem 4.4375rem 0;
-
-		h2.widget-title {
-			color: #fff;
-			font-size: 3.5em;
-			font-weight: 300;
-		}
-
-		div.textwidget {
-			font-family: $secondary-font-family;
-			font-size: 18px;
-			line-height: 24px;
-
-			p {
-				font-size: 18px;
-				line-height: 24px;
-			}
-		}
-	}
-}
-
-@media all and (min-width: 1100px) {
-	.hero-widget {
-		color: #fff;
-		max-width: 800px;
-
-		h2.widget-title {
-			color: #fff;
-			font-size: 6em;
-			font-weight: 300;
-		}
-
-		div.textwidget {
-			font-family: $secondary-font-family;
-			font-size: 24px;
-			line-height: 36px;
-
-			p {
-				font-size: 24px;
-				line-height: 36px;
-			}
+			font-size: 120%;
 		}
 	}
 }
@@ -184,25 +132,18 @@ $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 }
 
 .blog,
-.page:not(.home),
+.page,
 .archive,
 .single {
-	.site-header[style] {
-		max-height: 300px;
-
-		@media screen and (min-width: 783px) {
-			max-height: 500px;
-		}
-
+	.site-header {
+		padding: 120px 0 60px;
 		position: relative;
 	}
+}
 
-	.hero-widget {
-		position: absolute;
-		bottom: 50px;
 
-		h1 {
-			color: #fff;
-		}
+.home{
+	.site-header {
+		padding: 150px 0;
 	}
 }
