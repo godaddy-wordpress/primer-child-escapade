@@ -115,27 +115,6 @@ add_filter( 'primer_layouts', 'escapade_layouts' );
 add_filter( 'primer_page_widths', '__return_empty_array' );
 
 /**
- * Set font types.
- *
- * @filter primer_font_types
- * @since  1.0.0
- *
- * @param  array $font_types
- *
- * @return array
- */
-function escapade_font_types( $font_types ) {
-
-	$font_types['header_font']['default']    = 'Oswald';
-	$font_types['primary_font']['default']   = 'Droid Serif';
-	$font_types['secondary_font']['default'] = 'Playfair Display';
-
-	return $font_types;
-
-}
-add_filter( 'primer_font_types', 'escapade_font_types' );
-
-/**
  * Set colors.
  *
  * @filter primer_colors
@@ -242,3 +221,65 @@ function escapade_color_schemes( $color_schemes ) {
 
 }
 add_filter( 'primer_color_schemes', 'escapade_color_schemes' );
+
+/**
+ * Customize the fonts for this child theme.
+ *
+ * @since 1.0.0
+ */
+function escapade_fonts(){
+
+	return array(
+		'header_font' => array(
+			'label'       => esc_html__( 'Header Font', 'primer' ),
+			'description' => esc_html__( 'Site title, post titles, menu links, widget titles, form labels, table headers and buttons.', 'primer' ),
+			'default'     => 'Oswald',
+			'css'         => array(
+				'h1, h2, h3, h4, h5, h6,
+				label,
+				legend,
+				table th,
+				dl dt,
+				.site-title,
+				.entry-title,
+				.widget-title,
+				.main-navigation ul li a,
+				button, a.button, a.fl-button, input[type="button"], input[type="reset"], input[type="submit"]' => array(
+					'font-family' => '"%1$s", sans-serif',
+				),
+			),
+		),
+		'primary_font' => array(
+			'label'       => esc_html__( 'Primary Font', 'primer' ),
+			'description' => esc_html__( 'Paragraphs, lists, quotes and tables.', 'primer' ),
+			'default'     => 'Droid Serif',
+			'css'         => array(
+				'body,
+				p,
+				ol li,
+				ul li,
+				dl dd,
+				.fl-callout-text' => array(
+					'font-family' => '"%1$s", sans-serif',
+				),
+			),
+		),
+		'secondary_font' => array(
+			'label'       => esc_html__( 'Secondary Font', 'primer' ),
+			'description' => esc_html__( 'Post bylines, comment counts, comment reply links, post footers and quote footers.', 'primer' ),
+			'default'     => 'Playfair Display',
+			'css'         => array(
+				'blockquote,
+				.entry-meta,
+				.entry-footer,
+				.comment-list li .comment-meta .says,
+				.comment-list li .comment-metadata,
+				.comment-reply-link,
+				#respond .logged-in-as' => array(
+					'font-family' => '"%1$s", sans-serif',
+				),
+			),
+		),
+	);
+}
+add_filter( 'primer_font_types', 'escapade_fonts' );
