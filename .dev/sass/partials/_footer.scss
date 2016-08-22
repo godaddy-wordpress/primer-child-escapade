@@ -67,7 +67,6 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 		position: relative;
 
 		.widget{
-			color: $site-footer-text-color;
 			padding: 0 0 0 45px;
 			box-sizing: border-box;
 		}
@@ -91,7 +90,6 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 		}
 
 		.widget-title {
-			color: $site-footer-anchor-color;
 			background: transparent;
 			font-weight: 300;
 			text-transform: uppercase;
