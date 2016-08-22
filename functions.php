@@ -190,9 +190,6 @@ function escapade_colors( $colors ) {
 		'header_textcolor' => array(
 			'default'  => '#757575',
 		),
-		'tagline_text_color' => array(
-			'default'  => '#757575',
-		),
 		'menu_text_color' => array(
 			'default' => '#757575',
 		),
@@ -246,7 +243,11 @@ function escapade_colors( $colors ) {
 		),
 	);
 
-	return primer_array_replace_recursive( $colors, $overrides );
+	$overrides = primer_array_replace_recursive( $colors, $overrides );
+
+	unset( $overrides['tagline_text_color'] );
+
+	return $overrides;
 
 }
 add_filter( 'primer_colors', 'escapade_colors' );
