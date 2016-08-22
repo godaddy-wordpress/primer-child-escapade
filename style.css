@@ -3906,10 +3906,6 @@ body.layout-one-column-narrow #content {
   background-color: #414242;
   color: #fff;
   padding: 0; }
-  .site-footer a {
-    color: #fff; }
-    .site-footer a:hover {
-      color: #fff; }
 
 .footer-widget-area {
   overflow: hidden;
@@ -3981,15 +3977,9 @@ body.layout-one-column-narrow #content {
   @media screen and (min-width: 769px) {
     .site-info-wrapper {
       padding: 4.6rem; } }
-  .site-info-wrapper a {
-    color: #fff; }
-    .site-info-wrapper a:hover {
-      color: #fff; }
   .site-info-wrapper .site-info-text {
     color: rgba(255, 255, 255, 0.5);
     text-align: center; }
-    .site-info-wrapper .site-info-text a[rel="designer"] {
-      color: rgba(255, 255, 255, 0.5); }
     .site-info-wrapper .site-info-text .menu {
       display: none; }
     @media screen and (min-width: 769px) {
