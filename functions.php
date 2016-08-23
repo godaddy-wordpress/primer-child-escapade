@@ -182,17 +182,37 @@ add_filter( 'primer_font_types', 'escapade_font_types' );
  */
 function escapade_colors( $colors ) {
 
-	unset( $colors['content_background_color'] );
+	unset(
+		$colors['content_background_color'],
+		$colors['footer_widget_content_background_color']
+	);
 
 	$overrides = array(
 		/**
 		 * Text colors
 		 */
 		'header_textcolor' => array(
-			'default'  => '#757575',
+			'default' => '#757575',
+		),
+		'tagline_text_color' => array(
+			'default' => '#757575',
 		),
 		'menu_text_color' => array(
-			'default' => '#757575',
+			'default'  => '#757575',
+			'css'      => array(
+				'header .social-menu a,
+				header .social-menu a:visited' => array(
+					'color' => '%1$s',
+				),
+			),
+			'rgba_css' => array(
+				'header .social-menu a:hover, header .social-menu a:visited:hover' => array(
+					'color' => 'rgba(%1$s, 0.8)',
+				),
+			),
+		),
+		'footer_widget_heading_text_color' => array(
+			'default' => '#ffffff',
 		),
 		'footer_widget_text_color' => array(
 			'default' => '#ffffff',
@@ -202,14 +222,14 @@ function escapade_colors( $colors ) {
 		 */
 		'link_color' => array(
 			'default'  => '#55b74e',
-		),
-		'button_color' => array(
-			'default'  => '#55b74e',
-			'css' => array(
+			'css'      => array(
 				'.main-navigation ul li:hover, .main-navigation li.current-menu-item, .main-navigation ul li.current-menu-item > a:hover, .main-navigation ul li.current-menu-item > a:visited:hover' => array(
 					'background-color' => '%1$s',
 				),
 			),
+		),
+		'button_color' => array(
+			'default' => '#55b74e',
 		),
 		'button_text_color' => array(
 			'default'  => '#ffffff',
@@ -244,11 +264,7 @@ function escapade_colors( $colors ) {
 		),
 	);
 
-	$overrides = primer_array_replace_recursive( $colors, $overrides );
-
-	unset( $overrides['tagline_text_color'] );
-
-	return $overrides;
+	return primer_array_replace_recursive( $colors, $overrides );
 
 }
 add_filter( 'primer_colors', 'escapade_colors' );
@@ -270,115 +286,76 @@ function escapade_color_schemes( $color_schemes ) {
 	$overrides = array(
 		'blush' => array(
 			'colors' => array(
-				'header_textcolor'               => '#757575',
-				'tagline_text_color'             => '#757575',
-				'menu_text_color'                => '#757575',
-				'background_color'               => '#ffffff',
 				'hero_background_color'          => '#414242',
 				'menu_background_color'          => '#f5f5f5',
 				'footer_widget_background_color' => '#414242',
-				'footer_background_color'        => '#ffffff',
 			),
 		),
 		'bronze' => array(
 			'colors' => array(
-				'header_textcolor'               => '#757575',
-				'tagline_text_color'             => '#757575',
-				'menu_text_color'                => '#757575',
-				'background_color'               => '#ffffff',
 				'hero_background_color'          => '#414242',
 				'menu_background_color'          => '#f5f5f5',
 				'footer_widget_background_color' => '#414242',
-				'footer_background_color'        => '#ffffff',
 			),
 		),
 		'canary' => array(
 			'colors' => array(
-				'header_textcolor'               => '#757575',
-				'tagline_text_color'             => '#757575',
-				'menu_text_color'                => '#757575',
-				'background_color'               => '#ffffff',
 				'hero_background_color'          => '#414242',
 				'menu_background_color'          => '#f5f5f5',
 				'footer_widget_background_color' => '#414242',
-				'footer_background_color'        => '#ffffff',
+			),
+		),
+		'cool' => array(
+			'colors' => array(
+				'hero_background_color'          => '#414242',
+				'menu_background_color'          => '#f5f5f5',
+				'footer_widget_background_color' => '#414242',
 			),
 		),
 		'dark' => array(
 			'colors' => array(
-				'heading_text_color'             => '#353535',
-				'primary_text_color'             => '#252525',
-				'secondary_text_color'           => '#686868',
-				'footer_widget_text_color'       => '#252525',
-				'footer_text_color'              => '#686868',
-				'background_color'               => '#ffffff',
-				'hero_background_color'          => '#414242',
-				'menu_background_color'          => '#222222',
-				'footer_widget_background_color' => '#414242',
-				'footer_background_color'        => '#191919',
+				'link_color'                       => '#55b74e',
+				'button_color'                     => '#55b74e',
+				'background_color'                 => '#191919',
+				'hero_background_color'            => '#333333',
+				'menu_background_color'            => '#212121',
+				'footer_background_color'          => '#191919',
 			),
 		),
 		'muted' => array(
 			'colors' => array(
-				'heading_text_color'             => '#4f5875',
-				'primary_text_color'             => '#4f5875',
-				'secondary_text_color'           => '#888c99',
-				'footer_widget_text_color'       => '#ffffff',
-				'footer_text_color'              => '#4f5875',
-				'background_color'               => '#d5d6e0',
-				'hero_background_color'          => '#5a6175',
-				'menu_background_color'          => '#484e61',
-				'footer_widget_background_color' => '#5a6175',
-				'footer_background_color'        => '#d5d6e0',
+				'footer_widget_heading_text_color' => '#ffffff',
+				'footer_widget_text_color'         => '#ffffff',
+				'menu_background_color'            => '#484e61',
+				'footer_widget_background_color'   => '#767f99',
 			),
 		),
 		'plum' => array(
 			'colors' => array(
-				'header_textcolor'               => '#757575',
-				'tagline_text_color'             => '#757575',
-				'menu_text_color'                => '#757575',
-				'footer_widget_text_color'       => '#252525',
-				'background_color'               => '#ffffff',
 				'hero_background_color'          => '#414242',
 				'menu_background_color'          => '#f5f5f5',
-				'footer_widget_background_color' => '#eeeeee',
-				'footer_background_color'        => '#ffffff',
+				'footer_widget_background_color' => '#212121', // Darker
 			),
 		),
 		'rose' => array(
 			'colors' => array(
-				'header_textcolor'               => '#757575',
-				'tagline_text_color'             => '#757575',
-				'menu_text_color'                => '#757575',
-				'background_color'               => '#ffffff',
 				'hero_background_color'          => '#414242',
 				'menu_background_color'          => '#f5f5f5',
 				'footer_widget_background_color' => '#414242',
-				'footer_background_color'        => '#ffffff',
 			),
 		),
 		'tangerine' => array(
 			'colors' => array(
-				'header_textcolor'               => '#757575',
-				'tagline_text_color'             => '#757575',
-				'menu_text_color'                => '#757575',
-				'background_color'               => '#ffffff',
 				'hero_background_color'          => '#414242',
 				'menu_background_color'          => '#f5f5f5',
 				'footer_widget_background_color' => '#414242',
-				'footer_background_color'        => '#ffffff',
 			),
 		),
 		'turquoise' => array(
 			'colors' => array(
-				'header_textcolor'               => '#757575',
-				'tagline_text_color'             => '#757575',
-				'menu_text_color'                => '#757575',
-				'background_color'               => '#ffffff',
 				'hero_background_color'          => '#414242',
 				'menu_background_color'          => '#f5f5f5',
 				'footer_widget_background_color' => '#414242',
-				'footer_background_color'        => '#ffffff',
 			),
 		),
 	);

@@ -3906,6 +3906,10 @@ body.layout-one-column-narrow #content {
   background-color: #414242;
   color: #fff;
   padding: 0; }
+  .site-footer .widget {
+    color: #fff; }
+  .site-footer .widget-title {
+    color: #fff; }
 
 .footer-widget-area {
   overflow: hidden;
@@ -3984,9 +3988,7 @@ body.layout-one-column-narrow #content {
       display: none; }
     @media screen and (min-width: 769px) {
       .site-info-wrapper .site-info-text {
-        text-align: right;
-        float: right;
-        width: 50%; }
+        text-align: right; }
         .site-info-wrapper .site-info-text .menu {
           display: block; } }
   .site-info-wrapper .menu {

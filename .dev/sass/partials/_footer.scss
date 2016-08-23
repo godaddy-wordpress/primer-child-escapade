@@ -8,15 +8,24 @@ $site-footer-info-text-color: contrast-color($site-footer-info-background, #222,
 $site-footer-info-anchor-color: contrast-color($site-footer-info-background, #222, #fff, 50%) !default;
 $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-background, #222, #fff, 50%) !default;
 
-.site-footer{
+.site-footer {
 	background-color: $site-footer-background;
 	color: $site-footer-text-color;
 	padding: 0;
+
+	.widget {
+		color: $site-footer-text-color;
+	}
+
+	.widget-title {
+		color: $site-footer-anchor-color;
+	}
 }
 
 .footer-widget-area {
 	overflow: hidden;
 	padding: 4.7rem 4.7rem;
+
 	@media screen and (min-width: 2000px) {
 		padding: 4.6rem 4.6rem 2.25rem;
 		max-width: 66.6666666667%;
@@ -58,7 +67,7 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 		padding: 0;
 		position: relative;
 
-		.widget{
+		.widget {
 			padding: 0 0 0 45px;
 			box-sizing: border-box;
 		}
@@ -107,26 +116,28 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 	}
 }
 
-.site-info-wrapper{
+.site-info-wrapper {
 	padding: 1.5rem;
 	background: $site-footer-info-background;
 	color: $site-footer-info-text-color;
 	line-height: 1.5;
 	font-family: $primary-font-family;
+
 	@media screen and (min-width: 769px) {
 		padding: 4.6rem;
 	}
 
-	.site-info-text{
-		color: rgba(255,255,255,.5);
+	.site-info-text {
+		color: rgba(255, 255, 255, 0.5);
 		text-align: center;
+
 		.menu {
 			display: none;
 		}
+
 		@media screen and (min-width: 769px) {
 			text-align: left;
-			float: left;
-			width: 50%;
+
 			.menu {
 				display: block;
 			}
@@ -137,31 +148,37 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 		padding: 0;
 		margin: 0 0 10px 0;
 		list-style: none;
+
 		li {
 			display: inline;
 			padding-right: 30px;
+
 			a {
 				text-transform: uppercase;
 			}
 		}
 	}
 
-	.site-info{
+	.site-info {
 		overflow: hidden;
 
 		.social-menu {
 			margin-top: 15px;
+
 			@media screen and (min-width: 769px) {
 				float: right;
 				width: 50%;
 				margin: 0;
 			}
-			ul{
+
+			ul {
 				text-align: center;
 				margin-right: 0;
+
 				li:last-child a {
 					margin-right: 0;
 				}
+
 				@media screen and (min-width: 769px) {
 					text-align: right;
 				}
@@ -171,8 +188,9 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 				padding: 0;
 			}
 
-			a{
+			a {
 				margin-right: 15px;
+
 				&:before {
 					font-size: 36px;
 					padding: 0;
@@ -181,12 +199,13 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 				}
 			}
 		}
-
 	}
 
-	.site-info-inner{
+	.site-info-inner {
 		@extend .large-12;
+
 		@extend .columns;
+
 		padding: 0;
 	}
 }
