@@ -1,52 +1,24 @@
-# Escapade
-# Copyright (C) 2016
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the escapade package.
-# GoDaddy Operating Company, LLC.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: escapade 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-15 17:49-0500\n"
+"POT-Creation-Date: 2016-08-24 15:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.php:38
-msgid "Mountain Valley"
-msgstr ""
-
-#: functions.php:152
-msgid "Background Color"
-msgstr ""
-
-#: functions.php:156
-msgid "Header Background Color"
-msgstr ""
-
-#: functions.php:165
-msgid "Link Color"
-msgstr ""
-
-#: functions.php:182
-msgid "Button Color"
-msgstr ""
-
-#: functions.php:191
-msgid "Widget Background Color"
-msgstr ""
-
-#: functions.php:200
-msgid "Footer Background Color"
-msgstr ""
-
-#: functions.php:229
-msgid "Sepia"
+#: functions.php:67
+msgid "Village in a mountain valley"
 msgstr ""
 
 #. //developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/#header-php
