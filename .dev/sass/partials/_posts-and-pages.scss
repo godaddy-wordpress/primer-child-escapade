@@ -2,13 +2,36 @@ html {
 	-webkit-font-smoothing: antialiased;
 }
 
-#page {
-	.content-area {
-//		@include panel;
+.sticky {
+
+	.entry-title{
+		position: relative;
+
+		a:before {
+			background-color: rgba(0,0,0,.8);
+			font-family: 'Genericons';
+			content: '\f308';
+			position: absolute;
+			top: 10px;
+			left: -70px;
+			opacity: 0.2;
+			height: 42px;
+			width: 48px;
+			padding: 3px 3px 3px 8px;
+			font-size: 28px;
+			color: white;
+
+			@media #{$small-only}{
+				top: 8px;
+				left: -45px;
+				height: 28px;
+				width: 34px;
+				font-size: 22px;
+				padding: 0 0 0 8px;
+			}
+		}
 	}
 }
-
-.sticky {}
 
 .no-results,
 .not-found{

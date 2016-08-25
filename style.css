@@ -3172,15 +3172,6 @@ a {
 .site-footer:after {
   clear: both; }
 
-.widget {
-  margin: 0 0 1.5em;
-  padding: 0 2rem; }
-  .widget:last-child {
-    margin-bottom: 0; }
-  .widget, .widget p, .widget ul, .widget ol {
-    font-family: "Droid Serif", serif;
-    font-size: rem-calc(0.9); }
-
 /* Make sure form fields fit in widgets */
 .widget input[type="text"],
 .widget input[type="email"],
@@ -3234,8 +3225,13 @@ a {
   box-sizing: content-box; }
 
 .widget {
-  padding: 0 2em;
-  padding: 0 2rem; }
+  margin: 0 0 1.5em;
+  padding: 0 2rem 0 0; }
+  .widget:last-child {
+    margin-bottom: 0; }
+  .widget, .widget p, .widget ul, .widget ol {
+    font-family: "Droid Serif", serif;
+    font-size: rem-calc(0.9); }
   .widget ul {
     list-style: none;
     margin: 0;
@@ -3350,6 +3346,30 @@ a {
 
 html {
   -webkit-font-smoothing: antialiased; }
+
+.sticky .entry-title {
+  position: relative; }
+  .sticky .entry-title a:before {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: 'Genericons';
+    content: '\f308';
+    position: absolute;
+    top: 10px;
+    left: -70px;
+    opacity: 0.2;
+    height: 42px;
+    width: 48px;
+    padding: 3px 3px 3px 8px;
+    font-size: 28px;
+    color: white; }
+    @media only screen and (max-width: 55em) {
+      .sticky .entry-title a:before {
+        top: 8px;
+        left: -45px;
+        height: 28px;
+        width: 34px;
+        font-size: 22px;
+        padding: 0 0 0 8px; } }
 
 .no-results,
 .not-found {
@@ -3492,6 +3512,14 @@ article.format-link {
 
 .comment-content a {
   word-wrap: break-word; }
+
+.bypostauthor {
+  display: block;
+  padding: 40px 40px 0 50px;
+  margin-bottom: 60px;
+  border: 3px solid rgba(0, 0, 0, 0.2); }
+  .bypostauthor .comment-body {
+    padding-left: 50px; }
 
 .comments-area {
   padding: 1.5em;

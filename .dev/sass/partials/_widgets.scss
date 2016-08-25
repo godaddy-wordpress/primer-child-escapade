@@ -1,19 +1,5 @@
 $widget-bg: #fff !default;
 
-.widget {
-	margin: 0 0 1.5em;
-	padding: 0 2rem;
-
-	&:last-child {
-		margin-bottom: 0;
-	}
-
-	&,p,ul,ol{
-		font-family: $secondary-font-family;
-		font-size: $widget-font-size;
-	}
-}
-
 /* Make sure form fields fit in widgets */
 .widget {
 	input[type="text"],
@@ -79,8 +65,17 @@ $widget-bg: #fff !default;
 }
 
 .widget {
-	padding: 0 2em;
-	padding: 0 2rem;
+	margin: 0 0 1.5em;
+	padding: 0 2rem 0 0;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&,p,ul,ol{
+		font-family: $secondary-font-family;
+		font-size: $widget-font-size;
+	}
 
 	ul {
 		list-style: none;
