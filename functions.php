@@ -53,25 +53,6 @@ function escapade_add_social_menu() {
 add_action( 'primer_after_header', 'escapade_add_social_menu', 30 );
 
 /**
- * Set the default hero image description.
- *
- * @filter primer_default_hero_images
- * @since  1.0.0
- *
- * @param  array $defaults
- *
- * @return array
- */
-function escapade_default_hero_images( $defaults ) {
-
-	$defaults['default']['description'] = esc_html__( 'Village in a mountain valley', 'escapade' );
-
-	return $defaults;
-
-}
-add_filter( 'primer_default_hero_images', 'escapade_default_hero_images' );
-
-/**
  * Set custom logo args.
  *
  * @filter primer_custom_logo_args
