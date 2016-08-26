@@ -193,10 +193,10 @@ function escapade_colors( $colors ) {
 			),
 		),
 		'footer_widget_heading_text_color' => array(
-			'default' => '#ffffff',
+			'default' => '#757575',
 		),
 		'footer_widget_text_color' => array(
-			'default' => '#ffffff',
+			'default' => '#757575',
 		),
 		/**
 		 * Link / Button colors
@@ -238,7 +238,7 @@ function escapade_colors( $colors ) {
 			),
 		),
 		'footer_widget_background_color' => array(
-			'default' => '#414242',
+			'default' => '#eeeeee',
 		),
 		'footer_background_color' => array(
 			'default' => '#ffffff',
@@ -267,40 +267,31 @@ function escapade_color_schemes( $color_schemes ) {
 	$overrides = array(
 		'blush' => array(
 			'colors' => array(
-				'hero_background_color'          => '#414242',
-				'menu_background_color'          => '#f5f5f5',
-				'footer_widget_background_color' => '#414242',
+				'menu_background_color' => '#f5f5f5',
 			),
 		),
 		'bronze' => array(
 			'colors' => array(
-				'hero_background_color'          => '#414242',
-				'menu_background_color'          => '#f5f5f5',
-				'footer_widget_background_color' => '#414242',
+				'menu_background_color' => '#f5f5f5',
 			),
 		),
 		'canary' => array(
 			'colors' => array(
-				'hero_background_color'          => '#414242',
-				'menu_background_color'          => '#f5f5f5',
-				'footer_widget_background_color' => '#414242',
+				'menu_background_color' => '#f5f5f5',
 			),
 		),
 		'cool' => array(
 			'colors' => array(
-				'hero_background_color'          => '#414242',
-				'menu_background_color'          => '#f5f5f5',
-				'footer_widget_background_color' => '#414242',
+				'menu_background_color' => '#f5f5f5',
 			),
 		),
 		'dark' => array(
 			'colors' => array(
-				'link_color'                       => '#55b74e',
-				'button_color'                     => '#55b74e',
-				'background_color'                 => '#191919',
-				'hero_background_color'            => '#333333',
-				'menu_background_color'            => '#212121',
-				'footer_background_color'          => '#191919',
+				'link_color'              => '#55b74e',
+				'button_color'            => '#55b74e',
+				'background_color'        => '#191919',
+				'menu_background_color'   => '#212121',
+				'footer_background_color' => '#191919',
 			),
 		),
 		'muted' => array(
@@ -313,30 +304,22 @@ function escapade_color_schemes( $color_schemes ) {
 		),
 		'plum' => array(
 			'colors' => array(
-				'hero_background_color'          => '#414242',
-				'menu_background_color'          => '#f5f5f5',
-				'footer_widget_background_color' => '#212121', // Darker
+				'menu_background_color' => '#f5f5f5',
 			),
 		),
 		'rose' => array(
 			'colors' => array(
-				'hero_background_color'          => '#414242',
-				'menu_background_color'          => '#f5f5f5',
-				'footer_widget_background_color' => '#414242',
+				'menu_background_color' => '#f5f5f5',
 			),
 		),
 		'tangerine' => array(
 			'colors' => array(
-				'hero_background_color'          => '#414242',
-				'menu_background_color'          => '#f5f5f5',
-				'footer_widget_background_color' => '#414242',
+				'menu_background_color' => '#f5f5f5',
 			),
 		),
 		'turquoise' => array(
 			'colors' => array(
-				'hero_background_color'          => '#414242',
-				'menu_background_color'          => '#f5f5f5',
-				'footer_widget_background_color' => '#414242',
+				'menu_background_color' => '#f5f5f5',
 			),
 		),
 	);
