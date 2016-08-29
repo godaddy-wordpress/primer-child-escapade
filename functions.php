@@ -215,7 +215,7 @@ function escapade_colors( $colors ) {
 		'button_text_color' => array(
 			'default'  => '#ffffff',
 			'css' => array(
-				'.main-navigation ul li:hover a, .main-navigation ul li:hover a:hover, .main-navigation ul li:hover a:visited, .main-navigation ul li:hover a:visited:hover, .main-navigation ul li.current-menu-item > a' => array(
+				'.main-navigation ul > li:hover > a, .main-navigation ul > li:hover > a:hover, .main-navigation ul > li:hover > a:visited, .main-navigation ul > li:hover > a:visited:hover, .main-navigation ul li.current-menu-item > a' => array(
 					'color' => '%1$s',
 				),
 			),
