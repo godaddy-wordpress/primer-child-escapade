@@ -13,7 +13,7 @@ function escapade_move_elements() {
 	remove_action( 'primer_before_site_navigation', 'primer_add_mobile_menu' );
 	remove_action( 'primer_site_info',              'primer_add_social_navigation', 7 );
 
-	if ( ! is_front_page() ) {
+	if ( ! is_front_page() || ! is_active_sidebar( 'hero' ) ) {
 
 		add_action( 'primer_hero', 'primer_add_page_title' );
 

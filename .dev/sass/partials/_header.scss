@@ -100,7 +100,7 @@ $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 	padding: 0 20px;
 	text-align: center;
 
-	@media #{$medium-up}{
+	@media #{$medium-up} {
 		padding: 0 40px;
 		text-align: left;
 	}
@@ -138,12 +138,5 @@ $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 	.site-header {
 		padding: 120px 0 60px;
 		position: relative;
-	}
-}
-
-
-.home{
-	.site-header {
-		padding: 150px 0;
 	}
 }
