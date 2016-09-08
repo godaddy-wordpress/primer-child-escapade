@@ -2251,11 +2251,6 @@ html {
 
 .entry-meta {
   color: #999999; }
-  .entry-meta:before, .entry-meta:after {
-    content: " ";
-    display: table; }
-  .entry-meta:after {
-    clear: both; }
   .entry-meta .posted-date,
   .entry-meta .posted-author,
   .entry-meta .comments-number {
