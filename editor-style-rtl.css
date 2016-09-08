@@ -2259,6 +2259,12 @@ html {
     .entry-meta .posted-author:last-child,
     .entry-meta .comments-number:last-child {
       margin-left: 0; }
+    @media only screen and (max-width: 55em) {
+      .entry-meta .posted-date,
+      .entry-meta .posted-author,
+      .entry-meta .comments-number {
+        display: block;
+        margin-left: 0; } }
     .entry-meta .posted-date:before,
     .entry-meta .posted-author:before,
     .entry-meta .comments-number:before {
@@ -2268,7 +2274,8 @@ html {
       font-size: 1.375rem;
       padding-left: 2px; }
   .entry-meta .posted-date:before {
-    content: '\f303'; }
+    content: '\f303';
+    top: 5px; }
   .entry-meta .posted-author:before {
     content: '\f304'; }
   .entry-meta .comments-number:before {

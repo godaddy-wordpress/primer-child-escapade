@@ -132,6 +132,11 @@ html {
 			margin-right: 0;
 		}
 
+		@media #{$small-only} {
+			display: block;
+			margin-right: 0;
+		}
+
 		&:before {
 			position: relative;
 			top: 4px;
@@ -143,6 +148,7 @@ html {
 
 	.posted-date:before {
 		content: '\f303';
+		top: 5px;
 	}
 
 	.posted-author:before {
