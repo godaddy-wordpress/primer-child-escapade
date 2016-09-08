@@ -3443,8 +3443,6 @@ html {
     display: table; }
   .entry-footer:after {
     clear: both; }
-  .entry-footer a {
-    color: #008CBA; }
   .entry-footer .entry-footer-right {
     float: right; }
   .entry-footer .cat-links,
