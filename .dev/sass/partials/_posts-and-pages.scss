@@ -121,19 +121,38 @@ html {
 }
 
 .entry-meta {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+	@include clearfix;
 
-	li {
-		font-family: $primary-font-family;
-		text-transform: uppercase;
-		color: $meta-color;
+	color: $meta-color;
 
-		span {
-			font-size: 24px;
-			padding-right: 25px;
+	.posted-date,
+	.posted-author,
+	.comments-number {
+		margin-right: 1rem;
+
+		&:last-child {
+			margin-right: 0;
 		}
+
+		&:before {
+			position: relative;
+			top: 4px;
+			font-family: 'genericons';
+			font-size: rem-calc(22);
+			padding-right: 2px;
+		}
+	}
+
+	.posted-date:before {
+		content: '\f303';
+	}
+
+	.posted-author:before {
+		content: '\f304';
+	}
+
+	.comments-number:before {
+		content: '\f300';
 	}
 }
 

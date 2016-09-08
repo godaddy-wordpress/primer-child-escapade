@@ -2250,16 +2250,34 @@ html {
     vertical-align: top; }
 
 .entry-meta {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  .entry-meta li {
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    color: #999999; }
-    .entry-meta li span {
-      font-size: 24px;
-      padding-left: 25px; }
+  color: #999999; }
+  .entry-meta:before, .entry-meta:after {
+    content: " ";
+    display: table; }
+  .entry-meta:after {
+    clear: both; }
+  .entry-meta .posted-date,
+  .entry-meta .posted-author,
+  .entry-meta .comments-number {
+    margin-left: 1rem; }
+    .entry-meta .posted-date:last-child,
+    .entry-meta .posted-author:last-child,
+    .entry-meta .comments-number:last-child {
+      margin-left: 0; }
+    .entry-meta .posted-date:before,
+    .entry-meta .posted-author:before,
+    .entry-meta .comments-number:before {
+      position: relative;
+      top: 4px;
+      font-family: 'genericons';
+      font-size: 1.375rem;
+      padding-left: 2px; }
+  .entry-meta .posted-date:before {
+    content: '\f303'; }
+  .entry-meta .posted-author:before {
+    content: '\f304'; }
+  .entry-meta .comments-number:before {
+    content: '\f300'; }
 
 .post-format {
   color: #008CBA;
