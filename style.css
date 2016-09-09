@@ -3852,7 +3852,8 @@ body.page-template-page-builder-no-header #primary {
   margin: 4rem 0; }
 
 body.layout-one-column-narrow #content {
-  max-width: 50em; }
+  max-width: 50em;
+  margin: 0 auto; }
 
 .featured-content .entry-header {
   -webkit-background-size: cover;
