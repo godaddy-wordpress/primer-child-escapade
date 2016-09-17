@@ -48,7 +48,7 @@ Escapade is a Primer child theme with a unique sidebar navigation.
 
 **Contributing:**
 
-You can fork and contribute to Escapade by visiting [our public repo on GitHub](https://github.com/godaddy/wp-Escapade-theme).
+You can fork and contribute to Escapade by visiting [our public repo on GitHub](https://github.com/godaddy/wp-escapade-theme).
 
 == Installation ==
 
