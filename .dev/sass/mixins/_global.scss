@@ -310,6 +310,7 @@ body {
 	line-height: $base-line-height; // Set to $base-line-height to take on browser default of 150%
 	cursor: $cursor-default-value;
 	-webkit-font-smoothing: antialiased;
+	word-wrap: break-word;
 }
 
 a:hover { cursor: $cursor-pointer-value; }
