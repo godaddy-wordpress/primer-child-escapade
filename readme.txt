@@ -7,11 +7,11 @@ Stable tag:        1.0.0
 License:           GPL-2.0
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Escapade is a Primer child theme with a unique sidebar navigation.
+Escapade is a GoDaddy Primer child theme with a unique sidebar navigation.
 
 == Description ==
 
-Escapade is a Primer child theme with a unique sidebar navigation.
+Escapade is a GoDaddy Primer child theme with a unique sidebar navigation.
 
 **Languages Supported:**
 
@@ -48,7 +48,7 @@ Escapade is a Primer child theme with a unique sidebar navigation.
 
 **Contributing:**
 
-You can fork and contribute to Escapade by visiting [our public repo on GitHub](https://github.com/godaddy/wp-Escapade-theme).
+You can fork and contribute to Escapade by visiting [our public repo on GitHub](https://github.com/godaddy/wp-escapade-theme).
 
 == Installation ==
 
