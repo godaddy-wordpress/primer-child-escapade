@@ -3011,13 +3011,14 @@ a {
     border-radius: 1px; }
 
 .side-masthead {
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 0;
   text-align: center;
   z-index: 9999;
   background-color: #191919;
-  background-color: rgba(25, 25, 25, 0.95); }
+  background-color: rgba(25, 25, 25, 0.95);
+  margin-bottom: 60px; }
   .side-masthead:before, .side-masthead:after {
     content: " ";
     display: table; }
@@ -3966,6 +3967,12 @@ body.layout-one-column-narrow #content {
 .single .site-header {
   padding: 120px 0 60px;
   position: relative; }
+  @media only screen and (max-width: 55em) {
+    .blog .site-header,
+    .page .site-header,
+    .archive .site-header,
+    .single .site-header {
+      padding-top: 0; } }
 
 .site-footer {
   background-color: #414242;

@@ -138,5 +138,8 @@ $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 	.site-header {
 		padding: 120px 0 60px;
 		position: relative;
+		@media #{$small-only} {
+			padding-top: 0;
+		}
 	}
 }
