@@ -271,11 +271,21 @@ body {
 
 /* Small menu */
 .menu-toggle {
-	width: 70px;
-	padding: 15px 15px 10px 10px;
+	//width: 70px;
+	//padding: 15px 15px 10px 10px;
+	//cursor: pointer;
+	//float: right;
+	//display: block;
+
+	width: 3.6rem;
+	padding: 0.3rem;
 	cursor: pointer;
-	float: right;
+	display: none;
+	position: absolute;
+	top: 4px;
+	right: 0;
 	display: block;
+	z-index: 99999;
 
 	@media #{$medium-up}{
 		display: none;
@@ -283,21 +293,41 @@ body {
 
 	div {
 		background: #fff;
-		height: 4px;
-		margin: 6px;
-		border-radius: 1px;
+		margin: 0.43rem .86rem 0.43rem 0;
+		transform: rotate(0deg);
+		transition: .15s ease-in-out;
+		transform-origin: left center;
+		height: 0.32rem;
+	}
+
+	&.open {
+		div {
+			&:nth-child(1) {
+				transform: rotate(45deg);
+			}
+
+			&:nth-child(2) {
+				width: 0%;
+				opacity: 0;
+			}
+
+			&:nth-child(3) {
+				transform: rotate(-45deg);
+			}
+		}
 	}
 }
 
 .side-masthead {
 	@include clearfix;
-	position: absolute;
+	position: relative;
 	width: 100%;
 	top: 0;
 	text-align: center;
 	z-index: 9999;
 	background-color: $menu-bg-ie;
 	background-color: $menu-background-color;
+	margin-bottom: 60px;
 
 	@media #{$medium-up}{
 		position: fixed;
@@ -315,6 +345,12 @@ body {
 
 	.site-logo {
 		display: none;
+	}
+
+	.site-title-wrapper {
+		@media #{$small-only}{
+			width: 80%;
+		}
 	}
 
 	.site-title {

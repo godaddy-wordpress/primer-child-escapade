@@ -2995,29 +2995,51 @@ a {
 
 /* Small menu */
 .menu-toggle {
-  width: 70px;
-  padding: 15px 10px 10px 15px;
+  width: 3.6rem;
+  padding: 0.3rem;
   cursor: pointer;
-  float: left;
-  display: block; }
+  display: none;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: block;
+  z-index: 99999; }
   @media only screen and (min-width: 55.063em) {
     .menu-toggle {
       display: none; } }
   .menu-toggle div {
     background: #fff;
-    height: 4px;
-    margin: 6px;
-    -webkit-border-radius: 1px;
-    border-radius: 1px; }
+    margin: 0.43rem 0 0.43rem .86rem;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .15s ease-in-out;
+    transition: .15s ease-in-out;
+    -webkit-transform-origin: right center;
+    -ms-transform-origin: right center;
+    transform-origin: right center;
+    height: 0.32rem; }
+  .menu-toggle.open div:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .menu-toggle.open div:nth-child(2) {
+    width: 0%;
+    opacity: 0; }
+  .menu-toggle.open div:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
 
 .side-masthead {
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 0;
   text-align: center;
   z-index: 9999;
   background-color: #191919;
-  background-color: rgba(25, 25, 25, 0.95); }
+  background-color: rgba(25, 25, 25, 0.95);
+  margin-bottom: 60px; }
   .side-masthead:before, .side-masthead:after {
     content: " ";
     display: table; }
@@ -3034,6 +3056,9 @@ a {
     clear: both; }
   .side-masthead .site-logo {
     display: none; }
+  @media only screen and (max-width: 55em) {
+    .side-masthead .site-title-wrapper {
+      width: 80%; } }
   .side-masthead .site-title {
     line-height: 53px;
     font-size: 30px;
@@ -3966,6 +3991,12 @@ body.layout-one-column-narrow #content {
 .single .site-header {
   padding: 120px 0 60px;
   position: relative; }
+  @media only screen and (max-width: 55em) {
+    .blog .site-header,
+    .page .site-header,
+    .archive .site-header,
+    .single .site-header {
+      padding-top: 0; } }
 
 .site-footer {
   background-color: #414242;
