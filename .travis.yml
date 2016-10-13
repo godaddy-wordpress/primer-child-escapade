@@ -1,0 +1,29 @@
+sudo: false
+
+language:
+  - php
+  - node_js
+
+before_script:
+  - curl -s https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar > /tmp/wp-cli.phar
+
+script:
+  - echo "Deploy only"
+
+before_deploy:
+  - export RELEASE_FOLDER=escapade
+  - php /tmp/wp-cli.phar package install runcommand/dist-archive
+  - cp -rv ${TRAVIS_BUILD_DIR} /tmp/${RELEASE_FOLDER}
+  - mv /tmp/${RELEASE_FOLDER} ${TRAVIS_BUILD_DIR}
+  - php /tmp/wp-cli.phar dist-archive ${RELEASE_FOLDER} ${TRAVIS_BUILD_DIR}/${RELEASE_FOLDER}.zip --format=zip --debug
+
+deploy:
+  provider: releases
+  api_key:
+    secure: Gw/QxCTvWCReWaGnDw98OqFI8WajPSre8CGSERE8gWZnCiOKINKqCzwAEn6Obte6zaRoZN3iJnNHiT/dMCPmb00+qoJTIoTHRucQ7DgVKs/klNZ7lIeO8hj0pq6iMMhuaXhtGddxuYZRD9rGSUY1L+r67kYugEfPzmWwvIJ9G+rM0jsj3JH/QgR/qBH0JnZ+VC6wynduZvnDK+C6PVkz04JYav9LlZQAo8XvclaUCBSepoM4SLpnouPMgRtzzfZZlNxom8iqslFn9ovYfHfrQDhhFow7wBbdPxJf2zhwuo8FxYJfHmrOgQH1YajEwIJwNSNpur6swMKI8e2MjEds2Y/RfpViiyQrx82L8EkMGGMRRZECeOeOeGW61TB7m+B4jmY/4hTl/MglDG6o5NRo3tyR5hybGAe2BhPYvnWkO8CukLSfXFQjs+JCNUfUp1HlCAujF2IL859ywUCplgx4rFB4mbN0WI7t3LCEPn85rp1oHo5AFLWwDSGHXfSlbDkiR5C81XFjfbM+T0O8eR3IA/hvpQBeKjCYjQrS33LtTMza6xrGenwENXgQpMB/Lxiiw45HLdcHDDuzaQU8JbU9x49k4tH457xdl40OjL1tharSItq20ESOZuYSM7n61d43vfP/zrbPKTNrIiOJOm7zeY3NXuik+Q7Mcr0M81aGcfQ=
+  file: escapade.zip
+  on:
+    tags: true
+    repo: godaddy/wp-escapade-theme
+  skip_cleanup: true
+  overwrite: true
