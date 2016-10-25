@@ -3038,8 +3038,7 @@ a {
   text-align: center;
   z-index: 9999;
   background-color: #191919;
-  background-color: rgba(25, 25, 25, 0.95);
-  margin-bottom: 60px; }
+  background-color: rgba(25, 25, 25, 0.95); }
   .side-masthead:before, .side-masthead:after {
     content: " ";
     display: table; }
@@ -3368,6 +3367,10 @@ a {
         text-align: left; }
       .widget_calendar #calendar_wrap #wp-calendar tfoot td#next {
         text-align: right; }
+
+.hero .widget.widget_text p {
+  font-size: 1.4rem;
+  line-height: 1.4; }
 
 html {
   -webkit-font-smoothing: antialiased; }
