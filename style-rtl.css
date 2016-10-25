@@ -3368,9 +3368,11 @@ a {
       .widget_calendar #calendar_wrap #wp-calendar tfoot td#next {
         text-align: left; }
 
-.hero .widget.widget_text p {
-  font-size: 1.4rem;
-  line-height: 1.4; }
+.hero {
+  padding-top: 2em; }
+  .hero .widget.widget_text p {
+    font-size: 1.4rem;
+    line-height: 1.4; }
 
 html {
   -webkit-font-smoothing: antialiased; }
