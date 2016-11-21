@@ -17,10 +17,10 @@ define( 'PRIMER_CHILD_VERSION', '1.0.1' );
  */
 function escapade_move_elements() {
 
-	remove_action( 'primer_header',                 'primer_add_hero', 7 );
-	remove_action( 'primer_after_header',           'primer_add_page_title', 12 );
-	remove_action( 'primer_before_site_navigation', 'primer_add_mobile_menu' );
+	remove_action( 'primer_header',                 'primer_add_hero',              7 );
+	remove_action( 'primer_after_header',           'primer_add_page_title',        12 );
 	remove_action( 'primer_site_info',              'primer_add_social_navigation', 7 );
+	remove_action( 'primer_before_site_navigation', 'primer_add_mobile_menu' );
 
 	if ( ! is_front_page() || ! is_active_sidebar( 'hero' ) ) {
 
