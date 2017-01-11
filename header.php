@@ -48,7 +48,7 @@
 
 					<?php get_template_part( 'templates/parts/social-navigation' ); ?>
 
-			</div>
+				</div>
 
 			</div>
 
