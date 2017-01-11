@@ -38,11 +38,19 @@
 
 		<div class="side-masthead">
 
-			<?php do_action( 'primer_header' ); ?>
+			<div class="side-masthead-inner">
 
-			<?php do_action( 'primer_after_header' ); ?>
-			
-			<?php get_template_part( 'templates/parts/social-navigation' ); ?>
+				<div class="masthead-element">
+
+					<?php do_action( 'primer_header' ); ?>
+
+					<?php do_action( 'primer_after_header' ); ?>
+
+					<?php get_template_part( 'templates/parts/social-navigation' ); ?>
+
+			</div>
+
+			</div>
 
 		</div>
 

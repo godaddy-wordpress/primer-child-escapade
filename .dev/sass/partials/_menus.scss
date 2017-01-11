@@ -330,7 +330,6 @@ body {
 
 	@media #{$medium-up}{
 		position: fixed;
-		padding: 0 35px;
 	}
 
 	.mobile-container {
@@ -390,7 +389,27 @@ body {
 		width: 250px;
 		bottom: 0;
 		top: 0;
-		padding-top: 40px;
+		overflow: hidden;
+
+		.side-masthead-inner {
+			position: absolute;
+			left: 0;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			padding: 32px 35px 0 35px;
+			height: 100%;
+			width: 100%;
+
+			&::-webkit-scrollbar {
+			 display: none;
+			}
+
+		}
+
+		.masthead-element {
+			height: 100%;
+			width: 100%;
+		}
 
 		.mobile-container {
 			display: block;
