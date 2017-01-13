@@ -36,7 +36,8 @@
 		var windowHeight   = $window.height(),
 		    bodyHeight     = $body.height(),
 		    adminbarOffset = $body.is( '.admin-bar' ) ? $( '#wpadminbar' ).height() : 0,
-		    sidebarHeight  = 0;
+		    sidebarHeight  = 0,
+				topOffset      = ( $sidebar.offset().top > 0 ) ? $sidebar.offset().top - adminbarOffset : 0;
 
 		$sidebar.children().each( function() {
 
@@ -52,7 +53,6 @@
 
 					top = false;
 
-					topOffset = ( $sidebar.offset().top > 0 ) ? $sidebar.offset().top - adminbarOffset : 0;
 					$sidebar.attr( 'style', 'top: ' + topOffset + 'px; height: ' + sidebarHeight + 'px;' );
 
 				} else if ( ! bottom && windowPos + windowHeight >= ( sidebarHeight + $sidebar.offset().top - 10 ) && sidebarHeight + adminbarOffset < bodyHeight ) {
@@ -64,8 +64,6 @@
 				}
 
 			} else if ( windowPos < lastWindowPos ) {
-
-				topOffset = ( $sidebar.offset().top > 0 ) ? $sidebar.offset().top - adminbarOffset : 0;
 
 				if ( bottom ) {
 
@@ -84,8 +82,6 @@
 			} else {
 
 				top = bottom = false;
-
-				topOffset = ( $sidebar.offset().top > 0 ) ? $sidebar.offset().top - adminbarOffset : 0;
 
 				$sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
 
