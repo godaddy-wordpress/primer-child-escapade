@@ -3047,7 +3047,7 @@ a {
     .side-masthead {
       position: absolute;
       left: 0;
-      height: 120%;
+      height: 100%;
       padding: 0 35px; } }
   .side-masthead .mobile-container {
     display: none; }
