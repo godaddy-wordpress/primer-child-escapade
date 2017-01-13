@@ -319,7 +319,6 @@ body {
 	@include clearfix;
 	position: relative;
 	width: 100%;
-	top: 0;
 	text-align: center;
 	z-index: 9999;
 	background-color: $menu-bg-ie;
@@ -328,7 +327,6 @@ body {
 	@media #{$medium-up}{
 		position: absolute;
 		left: 0;
-		height: 100%;
 		padding: 0 35px;
 	}
 
@@ -348,6 +346,10 @@ body {
 	.site-title-wrapper {
 		@media #{$small-only}{
 			width: 80%;
+
+			.custom-logo-link {
+				display: none;
+			}
 		}
 	}
 
@@ -386,8 +388,6 @@ body {
 	@media #{$medium-up}{
 		display: block;
 		width: 250px;
-		bottom: 0;
-		top: 0;
 		padding-top: 40px;
 
 		.mobile-container {

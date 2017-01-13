@@ -3033,7 +3033,6 @@ a {
 .side-masthead {
   position: relative;
   width: 100%;
-  top: 0;
   text-align: center;
   z-index: 9999;
   background-color: #191919;
@@ -3047,7 +3046,6 @@ a {
     .side-masthead {
       position: absolute;
       left: 0;
-      height: 100%;
       padding: 0 35px; } }
   .side-masthead .mobile-container {
     display: none; }
@@ -3058,7 +3056,9 @@ a {
     display: none; }
   @media only screen and (max-width: 55em) {
     .side-masthead .site-title-wrapper {
-      width: 80%; } }
+      width: 80%; }
+      .side-masthead .site-title-wrapper .custom-logo-link {
+        display: none; } }
   .side-masthead .site-title {
     line-height: 53px;
     font-size: 30px;
@@ -3083,8 +3083,6 @@ a {
     .side-masthead {
       display: block;
       width: 250px;
-      bottom: 0;
-      top: 0;
       padding-top: 40px; }
       .side-masthead .mobile-container {
         display: block; }
