@@ -45,6 +45,21 @@ function escapade_add_mobile_menu() {
 add_action( 'primer_header', 'escapade_add_mobile_menu', 0 );
 
 /**
+ * Enqueue Escapade scripts
+ *
+ * @action wp_enqueue_scripts
+ * @since NEXT
+ */
+function escapade_load_scripts() {
+
+	$suffix = SCRIPT_DEBUG ? '' : '.min';
+
+	wp_enqueue_script( 'sidebar.js', get_stylesheet_directory_uri() . "/assets/js/sidebar$suffix.js", [ 'jquery' ], 'all', true );
+
+}
+add_action( 'wp_enqueue_scripts', 'escapade_load_scripts' );
+
+/**
  * Add social links to primary navigation area.
  *
  * @action primer_after_header

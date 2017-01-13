@@ -88,11 +88,11 @@ img {
 .right {
   float: left !important; }
 
-.clearfix:before, .site-info .social-menu:before, header .social-menu:before, .clearfix:after, .site-info .social-menu:after, header .social-menu:after {
+.clearfix:before, .site-info .social-menu:before, .side-masthead .social-menu:before, .clearfix:after, .site-info .social-menu:after, .side-masthead .social-menu:after {
   content: " ";
   display: table; }
 
-.clearfix:after, .site-info .social-menu:after, header .social-menu:after {
+.clearfix:after, .site-info .social-menu:after, .side-masthead .social-menu:after {
   clear: both; }
 
 .hide {
@@ -203,11 +203,11 @@ img {
 .right {
   float: left !important; }
 
-.clearfix:before, .site-info .social-menu:before, header .social-menu:before, .clearfix:after, .site-info .social-menu:after, header .social-menu:after {
+.clearfix:before, .site-info .social-menu:before, .side-masthead .social-menu:before, .clearfix:after, .site-info .social-menu:after, .side-masthead .social-menu:after {
   content: " ";
   display: table; }
 
-.clearfix:after, .site-info .social-menu:after, header .social-menu:after {
+.clearfix:after, .site-info .social-menu:after, .side-masthead .social-menu:after {
   clear: both; }
 
 .hide {
@@ -1686,7 +1686,7 @@ select {
 /**
  * All Genericons
  */
-.genericon, .site-info .social-menu a, header .social-menu a:before {
+.genericon, .site-info .social-menu a, .side-masthead .social-menu a:before {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -1703,7 +1703,7 @@ select {
 /**
  * IE7 and IE6 hacks
  */
-.genericon, .site-info .social-menu a, header .social-menu a:before {
+.genericon, .site-info .social-menu a, .side-masthead .social-menu a:before {
   *overflow: auto;
   *zoom: 1;
   *display: inline; }
@@ -2159,11 +2159,11 @@ img {
 .right {
   float: left !important; }
 
-.clearfix:before, .site-info .social-menu:before, header .social-menu:before, .clearfix:after, .site-info .social-menu:after, header .social-menu:after {
+.clearfix:before, .site-info .social-menu:before, .side-masthead .social-menu:before, .clearfix:after, .site-info .social-menu:after, .side-masthead .social-menu:after {
   content: " ";
   display: table; }
 
-.clearfix:after, .site-info .social-menu:after, header .social-menu:after {
+.clearfix:after, .site-info .social-menu:after, .side-masthead .social-menu:after {
   clear: both; }
 
 .hide {
@@ -2989,9 +2989,8 @@ a {
 @media only screen and (min-width: 55.063em) {
   body {
     margin-top: 0;
-    padding-right: 250px; }
-    body.admin-bar .side-masthead {
-      top: 32px; } }
+    padding-right: 250px;
+    position: relative; } }
 
 /* Small menu */
 .menu-toggle {
@@ -3046,7 +3045,10 @@ a {
     clear: both; }
   @media only screen and (min-width: 55.063em) {
     .side-masthead {
-      position: fixed; } }
+      position: absolute;
+      right: 0;
+      height: 120%;
+      padding: 0 35px; } }
   .side-masthead .mobile-container {
     display: none; }
   .side-masthead.toggled .mobile-container {
@@ -3080,24 +3082,10 @@ a {
   @media only screen and (min-width: 55.063em) {
     .side-masthead {
       display: block;
-      right: 0;
       width: 250px;
       bottom: 0;
       top: 0;
-      overflow: hidden; }
-      .side-masthead .side-masthead-inner {
-        position: absolute;
-        right: 0;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        padding: 32px 35px 0 35px;
-        height: 100%;
-        width: 100%; }
-        .side-masthead .side-masthead-inner::-webkit-scrollbar {
-          display: none; }
-      .side-masthead .masthead-element {
-        height: 100%;
-        width: 100%; }
+      padding-top: 40px; }
       .side-masthead .mobile-container {
         display: block; }
       .side-masthead .site-title {
@@ -4268,19 +4256,19 @@ body.layout-one-column-narrow #content {
       background: none !important;
       opacity: .8; }
 
-header .social-menu {
+.side-masthead .social-menu {
   margin-top: 20px;
   margin-bottom: 20px; }
-  header .social-menu li {
+  .side-masthead .social-menu li {
     margin: 0;
     padding-bottom: 7px; }
-  header .social-menu a {
+  .side-masthead .social-menu a {
     color: #999;
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
     font-size: 12px;
     line-height: 15px; }
-    header .social-menu a:before {
+    .side-masthead .social-menu a:before {
       margin-left: 7px; }
 
 #wpstats {
