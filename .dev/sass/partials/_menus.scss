@@ -388,6 +388,7 @@ body {
 	@media #{$medium-up}{
 		display: block;
 		width: 250px;
+		height: 100%;
 		padding-top: 40px;
 
 		.mobile-container {

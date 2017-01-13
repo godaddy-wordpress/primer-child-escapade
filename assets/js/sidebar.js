@@ -33,8 +33,6 @@
 
 		}
 
-		$sidebar.attr( 'style', 'top: ' + $sidebar.offset().top + 'px;' );
-
 		var windowHeight   = $window.height(),
 		    bodyHeight     = $body.height(),
 		    adminbarOffset = $body.is( '.admin-bar' ) ? $( '#wpadminbar' ).height() : 0,
@@ -55,13 +53,13 @@
 					top = false;
 
 					topOffset = ( $sidebar.offset().top > 0 ) ? $sidebar.offset().top - adminbarOffset : 0;
-					$sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
+					$sidebar.attr( 'style', 'top: ' + topOffset + 'px; height: ' + sidebarHeight + 'px;' );
 
 				} else if ( ! bottom && windowPos + windowHeight >= ( sidebarHeight + $sidebar.offset().top - 10 ) && sidebarHeight + adminbarOffset < bodyHeight ) {
 
 					bottom = true;
 
-					$sidebar.attr( 'style', 'position: fixed; bottom: 0; height: auto;' );
+					$sidebar.removeAttr( 'style' ).attr( 'style', 'position: fixed; bottom: 0; height: auto;' );
 
 				}
 
@@ -73,13 +71,13 @@
 
 					bottom = false;
 
-					$sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
+					$sidebar.attr( 'style', 'top: ' + topOffset + 'px; height: ' + sidebarHeight + 'px;' );
 
 				} else if ( ! top && windowPos + adminbarOffset < $sidebar.offset().top ) {
 
 					top = true;
 
-					$sidebar.attr( 'style', 'position: fixed; top: ' + adminbarOffset + 'px; height: 100%' );
+					$sidebar.attr( 'style', 'position: fixed; top: ' + adminbarOffset + 'px; height: ' + sidebarHeight + 'px;' );
 
 				}
 
@@ -97,7 +95,7 @@
 
 			top = true;
 
-			$sidebar.attr( 'style', 'position: fixed; height:100%' );
+			$sidebar.attr( 'style', 'position:fixed;' );
 
 		}
 

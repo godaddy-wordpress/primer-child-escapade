@@ -3083,6 +3083,7 @@ a {
     .side-masthead {
       display: block;
       width: 250px;
+      height: 100%;
       padding-top: 40px; }
       .side-masthead .mobile-container {
         display: block; }
