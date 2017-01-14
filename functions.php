@@ -54,7 +54,7 @@ function escapade_load_scripts() {
 
 	$suffix = SCRIPT_DEBUG ? '' : '.min';
 
-	wp_enqueue_script( 'sidebar.js', get_stylesheet_directory_uri() . "/assets/js/sidebar$suffix.js", [ 'jquery' ], 'all', true );
+	wp_enqueue_script( 'escapade-sidebar', get_stylesheet_directory_uri() . "/assets/js/sidebar{$suffix}.js", [ 'jquery' ], PRIMER_CHILD_VERSION, true );
 
 }
 add_action( 'wp_enqueue_scripts', 'escapade_load_scripts' );
