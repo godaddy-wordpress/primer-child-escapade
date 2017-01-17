@@ -66,7 +66,7 @@ module.exports = function( grunt ) {
 			dist: {
 				expand: true,
 				cwd: 'assets/js',
-				src: ['*.js', '!*.min.js'],
+				src: [ '**/*.js', '!**/*.min.js' ],
 				dest: 'assets/js',
 				ext: '.min.js'
 			},
@@ -78,7 +78,7 @@ module.exports = function( grunt ) {
 				tasks: [ 'sass','autoprefixer','cssjanus' ]
 			},
 			scripts: {
-				files: [ 'Gruntfile.js', 'assets/js/*.js', '!assets/js/*.min.js' ],
+				files: [ 'Gruntfile.js', 'assets/js/**/*.js', '!assets/js/**/*.min.js' ],
 				tasks: [ 'jshint', 'uglify' ],
 				options: {
 					interrupt: true
