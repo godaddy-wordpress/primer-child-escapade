@@ -87,7 +87,7 @@ module.exports = function( grunt ) {
 		},
 
 		jshint: {
-			all: [ 'Gruntfile.js', 'assets/js/*.js', '!assets/js/*.min.js' ]
+			all: [ 'Gruntfile.js', 'assets/js/**/*.js', '!assets/js/**/*.min.js' ]
 		},
 
 		replace: {
@@ -136,7 +136,7 @@ module.exports = function( grunt ) {
 
 	require( 'matchdep' ).filterDev( 'grunt-*' ).forEach( grunt.loadNpmTasks );
 
-	grunt.registerTask( 'default', [ 'sass', 'autoprefixer', 'cssjanus', 'uglify' ] );
+	grunt.registerTask( 'default', [ 'sass', 'autoprefixer', 'cssjanus', 'jshint', 'uglify' ] );
 	grunt.registerTask( 'version', [ 'replace' ] );
 
 };
