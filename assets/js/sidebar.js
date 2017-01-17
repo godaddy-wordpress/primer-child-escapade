@@ -81,9 +81,21 @@
 
 			} else {
 
+				console.log( sidebarHeight + adminbarOffset );
+
+				console.log( bodyHeight + adminbarOffset );
+
+				if ( sidebarHeight + adminbarOffset > bodyHeight + adminbarOffset ) {
+
+					$sidebar.attr( 'style', 'top: ' + topOffset + 'px; height: auto;' );
+
+					return;
+
+				}
+
 				top = bottom = false;
 
-				$sidebar.attr( 'style', 'top: ' + topOffset + 'px;' );
+				$sidebar.attr( 'style', 'top: ' + topOffset + 'px; height: 100%;' );
 
 			}
 
