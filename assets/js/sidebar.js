@@ -37,7 +37,7 @@
 		    bodyHeight     = $body.height(),
 		    adminbarOffset = $body.is( '.admin-bar' ) ? $( '#wpadminbar' ).height() : 0,
 		    sidebarHeight  = 0,
-				topOffset      = ( $sidebar.offset().top > 0 ) ? $sidebar.offset().top - adminbarOffset : 0;
+		    topOffset      = ( $sidebar.offset().top > 0 ) ? $sidebar.offset().top - adminbarOffset : 0;
 
 		$sidebar.children().each( function() {
 
