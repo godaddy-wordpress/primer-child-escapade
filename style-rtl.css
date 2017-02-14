@@ -4316,13 +4316,14 @@ header .social-menu {
     float: right;
     width: 100%; }
   .primer-wc-cart-menu .widget_shopping_cart .total {
-    margin: 0 0 10px 0;
-    padding-top: 10px;
+    margin: 0;
+    padding: 10px 0;
     text-align: center; }
     .primer-wc-cart-menu .widget_shopping_cart .total strong {
       text-index: 0; }
   .primer-wc-cart-menu .widget_shopping_cart p.buttons {
     padding: .5em;
+    padding-top: 0;
     margin-bottom: 0; }
     .primer-wc-cart-menu .widget_shopping_cart p.buttons a {
       text-align: center;
@@ -4367,19 +4368,15 @@ body.single-product span.onsale {
 body.woocommerce-cart .primer-wc-cart-sub-menu {
   display: none; }
 
-.woocommerce #content table.cart img,
 .woocommerce table.cart img,
-.woocommerce-page #content table.cart img,
 .woocommerce-page table.cart img {
   width: 100%;
   max-width: 100px;
   margin-bottom: 0; }
 
-.woocommerce #content table.cart td.actions .input-text,
 .woocommerce table.cart td.actions .input-text,
-.woocommerce-page #content table.cart td.actions .input-text,
 .woocommerce-page table.cart td.actions .input-text {
-  padding: 7px; }
+  padding: 7px !important; }
 
 .woocommerce ul.products li.product a.add_to_cart_button {
   width: 100%;
