@@ -245,7 +245,7 @@ $submenu-background-color: #121212;
 
 							a {
 
-								&:hover {
+								&:not(.wc-forward):hover {
 									background: none;
 								}
 							}
