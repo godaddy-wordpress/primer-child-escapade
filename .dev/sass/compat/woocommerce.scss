@@ -1,9 +1,5 @@
 .primer-wc-cart-menu {
 
-	.primer-wc-cart-sub-menu {
-		background: transparent;
-	}
-
 	.widget_shopping_cart {
 
 		float: left;
@@ -106,6 +102,21 @@
 
 	.cart-preview-count {
 		margin-left: 8px;
+	}
+
+}
+
+li.menu-item-has-children.primer-wc-cart-menu:hover {
+
+	ul.primer-wc-cart-sub-menu {
+		background: $white;
+		-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+
+		li:hover {
+			background: $white;
+		}
+
 	}
 
 }

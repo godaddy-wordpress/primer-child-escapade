@@ -4268,9 +4268,6 @@ header .social-menu {
 #wpstats {
   display: none; }
 
-.primer-wc-cart-menu .primer-wc-cart-sub-menu {
-  background: transparent; }
-
 .primer-wc-cart-menu .widget_shopping_cart {
   float: right;
   padding: 0; }
@@ -4341,6 +4338,13 @@ header .social-menu {
 
 .primer-wc-cart-menu .cart-preview-count {
   margin-right: 8px; }
+
+li.menu-item-has-children.primer-wc-cart-menu:hover ul.primer-wc-cart-sub-menu {
+  background: #fefefe;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); }
+  li.menu-item-has-children.primer-wc-cart-menu:hover ul.primer-wc-cart-sub-menu li:hover {
+    background: #fefefe; }
 
 body.post-type-archive,
 body.single-product {

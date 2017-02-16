@@ -264,9 +264,7 @@ function escapade_colors( $colors ) {
 		'menu_background_color' => array(
 			'default' => '#f5f5f5',
 			'css'     => array(
-				'.side-masthead,
-				.main-navigation li.menu-item-has-children:hover > ul.primer-wc-cart-sub-menu,
-				.main-navigation ul.primer-wc-cart-sub-menu li:hover' => array(
+				'.side-masthead' => array(
 					'background-color' => '%1$s',
 				),
 			),
