@@ -473,6 +473,7 @@ body {
 
 		.paging-nav-text {
 			display: inline-block;
+			float: left;
 			font-size: 0.9rem;
 			font-weight: normal;
 			color: $white;
@@ -480,6 +481,7 @@ body {
 
 		.nav-links {
 			float: right;
+			padding-right: 0;
 
 			.page-numbers {
 				&:not(.prev, .next) {

@@ -3143,11 +3143,13 @@ a {
   @media only screen and (max-width: 55em) {
     .navigation.pagination .paging-nav-text {
       display: inline-block;
+      float: right;
       font-size: 0.9rem;
       font-weight: normal;
       color: #fefefe; }
     .navigation.pagination .nav-links {
-      float: left; }
+      float: left;
+      padding-left: 0; }
       .navigation.pagination .nav-links .page-numbers:not(.prev):not(.next) {
         display: none; } }
 
