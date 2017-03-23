@@ -174,7 +174,8 @@ function escapade_colors( $colors ) {
 
 	unset(
 		$colors['content_background_color'],
-		$colors['footer_widget_content_background_color']
+		$colors['footer_widget_content_background_color'],
+		$colors['tagline_text_color']
 	);
 
 	$overrides = array(
