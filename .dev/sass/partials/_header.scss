@@ -1,3 +1,5 @@
+@import "video-header";
+
 $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 
 .featured-content {
@@ -141,50 +143,5 @@ $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 		@media #{$small-only} {
 			padding-top: 0;
 		}
-	}
-}
-
-.site-header {
-
-	&.video-header {
-		height: 100vh;
-		padding: 0;
-
-		@media #{$large-down} {
-			margin: 0 auto;
-		}
-
-		.hero {
-			height: 100%;
-			display: flex;
-			align-items: center;
-		}
-
-		#wp-custom-header-video-button {
-			position: absolute;
-			top: 0.5em;
-			right: 1em;
-			opacity: 0.5;
-			z-index: 11;
-		}
-
-		iframe#wp-custom-header-video {
-			height: 100%;
-		}
-	}
-
-	#wp-custom-header {
-		position: absolute;
-		height: 100%;
-
-		img {
-			display: none;
-		}
-	}
-}
-
-body.admin-bar {
-	.video-header {
-		height: calc( 100vh - 32px );
 	}
 }

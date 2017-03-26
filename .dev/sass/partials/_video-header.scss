@@ -1,0 +1,33 @@
+.site-header.video-header {
+	height: 100%;
+	padding: 0;
+	background-color: #000;
+	color: #000;
+
+	#wp-custom-header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+
+		img {
+			display: none;
+		}
+	}
+
+	#wp-custom-header-video-button {
+		position: absolute;
+		right: 1em;
+		opacity: 0.5;
+	}
+
+	iframe#wp-custom-header-video {
+		height: 100%;
+	}
+}
+
+.site-header {
+	#wp-custom-header img {
+		display: none;
+	}
+}

@@ -36,6 +36,8 @@
 
 	<header id="masthead" class="site-header" role="banner"<?php if ( primer_has_hero_image() ) : ?> style="background:url('<?php echo esc_url( primer_get_hero_image() ); ?>') no-repeat top center; background-size: cover;"<?php endif; ?>>
 
+		<?php do_action( 'primer_pre_hero' ); ?>
+
 		<div class="side-masthead">
 
 			<?php do_action( 'primer_header' ); ?>
