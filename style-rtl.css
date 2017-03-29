@@ -3942,6 +3942,31 @@ body.layout-one-column-narrow #content {
   max-width: 50em;
   margin: 0 auto; }
 
+.site-header.video-header {
+  overflow: hidden;
+  height: 100%;
+  padding: 0;
+  background-color: #000;
+  color: #000; }
+  .site-header.video-header #wp-custom-header {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto; }
+    .site-header.video-header #wp-custom-header img {
+      display: none; }
+  .site-header.video-header #wp-custom-header-video-button {
+    position: absolute;
+    left: 1em;
+    top: 25vh;
+    opacity: 0.5;
+    z-index: 1; }
+  .site-header.video-header iframe#wp-custom-header-video {
+    height: 100%; }
+
 .featured-content .entry-header {
   -webkit-background-size: cover;
   background-size: cover; }
@@ -4037,6 +4062,9 @@ body.layout-one-column-narrow #content {
     .archive .site-header,
     .single .site-header {
       padding-top: 0; } }
+
+.site-header #wp-custom-header img {
+  display: none; }
 
 .site-footer {
   background-color: #414242;
