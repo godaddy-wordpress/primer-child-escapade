@@ -22,6 +22,8 @@ function escapade_move_elements() {
 	remove_action( 'primer_site_info',              'primer_add_social_navigation', 7 );
 	remove_action( 'primer_before_site_navigation', 'primer_add_mobile_menu' );
 
+	add_action( 'primer_pre_hero', 'primer_video_header' );
+
 	if ( ! is_front_page() || ! is_active_sidebar( 'hero' ) ) {
 
 		add_action( 'primer_hero', 'primer_add_page_title', 12 );
@@ -174,7 +176,8 @@ function escapade_colors( $colors ) {
 
 	unset(
 		$colors['content_background_color'],
-		$colors['footer_widget_content_background_color']
+		$colors['footer_widget_content_background_color'],
+		$colors['tagline_text_color']
 	);
 
 	$overrides = array(
