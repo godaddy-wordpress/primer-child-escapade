@@ -17,14 +17,14 @@ define( 'PRIMER_CHILD_VERSION', '1.0.1' );
  */
 function escapade_move_elements() {
 
-	remove_action( 'primer_header',                 'primer_add_hero' );
-	remove_action( 'primer_after_header',           'primer_add_page_title' );
-	remove_action( 'primer_before_site_navigation', 'primer_add_mobile_menu' );
+	remove_action( 'primer_header',                 'primer_add_hero',              7 );
+	remove_action( 'primer_after_header',           'primer_add_page_title',        12 );
 	remove_action( 'primer_site_info',              'primer_add_social_navigation', 7 );
+	remove_action( 'primer_before_site_navigation', 'primer_add_mobile_menu' );
 
 	if ( ! is_front_page() || ! is_active_sidebar( 'hero' ) ) {
 
-		add_action( 'primer_hero', 'primer_add_page_title' );
+		add_action( 'primer_hero', 'primer_add_page_title', 12 );
 
 	}
 
@@ -231,7 +231,7 @@ function escapade_colors( $colors ) {
 		'link_color' => array(
 			'default'  => '#55b74e',
 			'css'      => array(
-				'.main-navigation ul li:hover, .main-navigation li.current-menu-item, .main-navigation ul li.current-menu-item > a:hover, .main-navigation ul li.current-menu-item > a:visited:hover' => array(
+				'.main-navigation ul li:hover, .main-navigation li.current-menu-item, .main-navigation ul li.current-menu-item > a:hover, .main-navigation ul li.current-menu-item > a:visited:hover, .woocommerce-cart-menu-item .woocommerce.widget_shopping_cart p.buttons a:hover' => array(
 					'background-color' => '%1$s',
 				),
 			),

@@ -245,7 +245,7 @@ $submenu-background-color: #121212;
 
 							a {
 
-								&:hover {
+								&:not(.wc-forward):hover {
 									background: none;
 								}
 							}
@@ -435,6 +435,60 @@ body {
 	div.nav-links{
 		padding-top: 0;
 		padding-bottom: 0;
+	}
+}
+
+.navigation.pagination {
+	clear: both;
+	margin: 0 0 1.5em;
+
+	.nav-links {
+		text-align: center;
+
+		.page-numbers {
+			display: inline-block;
+			border: none;
+			border-radius: 3px;
+			line-height: 1;
+			margin: 0 0.25em;
+			padding: 0.5em 0.75em;
+			white-space: nowrap;
+
+			&.dots {
+				background: none;
+			}
+
+			&.current {
+				color: $white;
+				background-color: $color-background-button;
+			}
+		}
+	}
+
+	.paging-nav-text {
+		display: none;
+	}
+
+	@media #{$small-only} {
+
+		.paging-nav-text {
+			display: inline-block;
+			float: left;
+			font-size: 0.9rem;
+			font-weight: normal;
+			color: $white;
+		}
+
+		.nav-links {
+			float: right;
+			padding-right: 0;
+
+			.page-numbers {
+				&:not(.prev, .next) {
+					display: none;
+				}
+			}
+		}
 	}
 }
 
