@@ -1,3 +1,5 @@
+@import "video-header";
+
 $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 
 .featured-content {
@@ -141,5 +143,11 @@ $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 		@media #{$small-only} {
 			padding-top: 0;
 		}
+	}
+}
+
+.site-header {
+	#wp-custom-header img {
+		display: none;
 	}
 }
