@@ -91,6 +91,19 @@ TODO
 
 ## Changelog ##
 
+### 1.1.0 ###
+
+* New: Added Ninja Forms compatibility styles. Styles Ninja Forms response messages.
+* New: Added styles for video headers.
+* New: Added priorities for Primer compatibility.
+* Tweak: Various theme specific style fixes.
+* Fixed: Customizer controls not working for site title.
+* Removed: Site tagline customizer controls.
+
+### 1.0.1 ###
+
+* Bumped version for compatibility with Primer. @props [fjarrett](https://github.com/fjarrett)
+
 ### 1.0.0 - June, 2016 ###
 
 * Initial release.
