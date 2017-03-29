@@ -352,33 +352,6 @@ body {
 		}
 	}
 
-	.site-title {
-		line-height: 53px;
-		font-size: 30px;
-		font-weight: 300;
-		text-transform: uppercase;
-		margin: 5px 0 5px 10px;
-		text-align: left;
-
-		@media #{$medium-up}{
-			margin: 0;
-			text-align: center;
-		}
-
-		a{
-			color: #999;
-
-			&:hover{
-				color: #999;
-				opacity: .8;
-			}
-		}
-
-		.site-description {
-			float: left;
-		}
-	}
-
 	.site-description {
 		display: none;
 	}
@@ -421,6 +394,33 @@ body {
 			display: block;
 			text-align: left;
 		}
+	}
+}
+
+.site-title {
+	line-height: 53px;
+	font-size: 30px;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin: 5px 0 5px 10px;
+	text-align: left;
+
+	@media #{$medium-up}{
+		margin: 0;
+		text-align: center;
+	}
+
+	a{
+		color: #999;
+
+		&:hover{
+			color: #999;
+			opacity: .8;
+		}
+	}
+
+	.site-description {
+		float: left;
 	}
 }
 

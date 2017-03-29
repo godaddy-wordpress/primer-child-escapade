@@ -3058,24 +3058,6 @@ a {
   @media only screen and (max-width: 55em) {
     .side-masthead .site-title-wrapper {
       width: 80%; } }
-  .side-masthead .site-title {
-    line-height: 53px;
-    font-size: 30px;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 5px 0 5px 10px;
-    text-align: left; }
-    @media only screen and (min-width: 55.063em) {
-      .side-masthead .site-title {
-        margin: 0;
-        text-align: center; } }
-    .side-masthead .site-title a {
-      color: #999; }
-      .side-masthead .site-title a:hover {
-        color: #999;
-        opacity: .8; }
-    .side-masthead .site-title .site-description {
-      float: left; }
   .side-masthead .site-description {
     display: none; }
   @media only screen and (min-width: 55.063em) {
@@ -3102,6 +3084,25 @@ a {
   .side-masthead .social-menu li {
     display: block;
     text-align: left; }
+
+.site-title {
+  line-height: 53px;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 5px 0 5px 10px;
+  text-align: left; }
+  @media only screen and (min-width: 55.063em) {
+    .site-title {
+      margin: 0;
+      text-align: center; } }
+  .site-title a {
+    color: #999; }
+    .site-title a:hover {
+      color: #999;
+      opacity: .8; }
+  .site-title .site-description {
+    float: left; }
 
 .navigation .nav-links {
   padding: 1.5em;
@@ -4351,6 +4352,13 @@ header .social-menu {
       width: 100%;
       padding: .3em 0 5px 1em;
       text-indent: 1px; }
+<<<<<<< HEAD
+=======
+    .primer-wc-cart-menu .widget_shopping_cart .cart_list li.mini_cart_item dl.variation .variation-color {
+      margin-bottom: 0;
+      color: #757575;
+      line-height: 22px; }
+>>>>>>> develop
   .primer-wc-cart-menu .widget_shopping_cart .quantity {
     font-style: italic;
     padding-left: 1.3em; }
