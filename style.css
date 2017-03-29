@@ -2652,6 +2652,14 @@ blockquote p {
   .show-for-print {
     display: inherit !important; } }
 
+.nf-response-msg p,
+.widget-area .nf-response-msg p {
+  font-weight: bold; }
+  .nf-response-msg p:first-child,
+  .widget-area .nf-response-msg p:first-child {
+    font-style: italic;
+    font-weight: normal; }
+
 button,
 a.button {
   font-size: 100%;
@@ -4495,7 +4503,7 @@ body.woocommerce-cart .primer-wc-cart-sub-menu {
 .woocommerce ul.products li.product a.add_to_cart_button {
   width: 100%;
   font-size: 16px;
-  text-align: center; }
+  white-space: normal; }
 
 @media only screen and (max-width: 55em) {
   .primer-wc-cart-menu-item .widget_shopping_cart {
