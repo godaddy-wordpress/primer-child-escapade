@@ -4352,13 +4352,10 @@ header .social-menu {
       width: 100%;
       padding: .3em 1em 5px 0;
       text-indent: 1px; }
-<<<<<<< HEAD
-=======
     .primer-wc-cart-menu .widget_shopping_cart .cart_list li.mini_cart_item dl.variation .variation-color {
       margin-bottom: 0;
       color: #757575;
       line-height: 22px; }
->>>>>>> develop
   .primer-wc-cart-menu .widget_shopping_cart .quantity {
     font-style: italic;
     padding-right: 1.3em; }
