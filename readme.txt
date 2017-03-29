@@ -91,12 +91,12 @@ TODO
 
 = 1.1.0 =
 
-* New: Added Ninja Forms compatibility styles. Styles Ninja Forms response messages.
-* New: Added styles for video headers.
-* New: Added priorities for Primer compatibility.
-* Tweak: Various theme specific style fixes.
-* Fixed: Customizer controls not working for site title.
-* Removed: Site tagline customizer controls.
+* New: Added Ninja Forms compatibility styles. Styles Ninja Forms response messages. @props [evanherman](https://github.com/EvanHerman)
+* New: Added styles for video headers. @props [evanherman](https://github.com/EvanHerman)
+* New: Added priorities for Primer compatibility. @props [evanherman](https://github.com/EvanHerman)
+* Tweak: Various theme specific style fixes. @props [evanherman](https://github.com/EvanHerman)
+* Fixed: Customizer controls not working for site title. @props [evanherman](https://github.com/EvanHerman)
+* Removed: Site tagline customizer controls. @props [evanherman](https://github.com/EvanHerman)
 
 = 1.0.1 =
 
