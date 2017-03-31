@@ -3066,8 +3066,6 @@ a {
   @media only screen and (max-width: 55em) {
     .side-masthead .site-title-wrapper {
       width: 80%; } }
-  .side-masthead .site-description {
-    display: none; }
   @media only screen and (min-width: 55.063em) {
     .side-masthead {
       display: block;
