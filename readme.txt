@@ -1,9 +1,9 @@
 === Escapade ===
-Contributors:      godaddy, jonathanbardo, fjarrett
+Contributors:      godaddy, jonathanbardo, fjarrett, eherman24
 Tags:              custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, fixed-layout, flexible-header, fluid-layout, left-sidebar, light, one-column, responsive-layout, right-sidebar, rtl-language-support, sticky-post, threaded-comments, three-columns, translation-ready, two-columns
 Requires at least: 4.4
 Tested up to:      4.6
-Stable tag:        1.0.1
+Stable tag:        1.1.0
 License:           GPL-2.0
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -88,6 +88,19 @@ TODO
 TODO
 
 == Changelog ==
+
+= 1.1.0 =
+
+* New: Added Ninja Forms compatibility styles. Styles Ninja Forms response messages. @props [evanherman](https://github.com/EvanHerman)
+* New: Added styles for video headers. @props [evanherman](https://github.com/EvanHerman)
+* New: Added priorities for Primer compatibility. @props [evanherman](https://github.com/EvanHerman)
+* Tweak: Various theme specific style fixes. @props [evanherman](https://github.com/EvanHerman)
+* Fixed: Customizer controls not working for site title. @props [evanherman](https://github.com/EvanHerman)
+* Removed: Site tagline customizer controls. @props [evanherman](https://github.com/EvanHerman)
+
+= 1.0.1 =
+
+* Bumped version for compatibility with Primer. @props [fjarrett](https://github.com/fjarrett)
 
 = 1.0.0 - June, 2016 =
 
