@@ -2,7 +2,7 @@
   "name": "escapade",
   "title": "Escapade",
   "description": "Escapade is a Primer child theme with a unique sidebar navigation.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "GoDaddy",
   "license": "GPL-2.0",
   "repository": "godaddy/wp-escapade-theme",
@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/godaddy/wp-escapade-theme/issues"
   },
-	"engines": {
+  "engines": {
     "php": ">= 5.2",
     "wordpress": ">= 4.4"
   },
@@ -22,7 +22,7 @@
     "[![PHP <%= pkg.engines.php %>](https://img.shields.io/badge/php-<%= pkg.engines.php %>-8892bf.svg)](https://secure.php.net/supported-versions.php)",
     "[![WordPress <%= pkg.engines.wordpress %>](https://img.shields.io/badge/wordpress-<%= pkg.engines.wordpress %>-blue.svg)](https://wordpress.org/download/release-archive/)"
   ],
-	"locales": {
+  "locales": {
     "da_DK": "Dansk",
     "de_DE": "Deutsch",
     "el": "Ελληνικά",
