@@ -81,7 +81,7 @@ Source: https://genericons.com/
 
 Stock photography, Unsplash
 License: Creative Commons Zero
-Source: https://unsplash.com/photos/rTZW4f02zY8/
+Source: https://unsplash.com/photos/SK3uHKx5nCU/
 
 == Frequently Asked Questions ==
 
