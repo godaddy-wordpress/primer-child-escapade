@@ -9,7 +9,7 @@
 
 Escapade is a GoDaddy Primer child theme with a unique sidebar navigation.
 
-[![Build Status](https://travis-ci.org/godaddy/wp-escapade-theme.svg?branch=master)](https://travis-ci.org/godaddy/wp-escapade-theme) [![StyleCI Status](https://styleci.io/repos/61812792/shield?branch=master&style=flat)](https://styleci.io/repos/61812792) [![devDependencies Status](https://david-dm.org/godaddy/wp-escapade-theme/master/dev-status.svg)](https://david-dm.org/godaddy/wp-escapade-theme/master?type=dev) [![License](https://img.shields.io/badge/license-GPL--2.0-brightgreen.svg)](https://github.com/godaddy/wp-escapade-theme/blob/master/license.txt) [![PHP >= 5.2](https://img.shields.io/badge/php-%3E=%205.2-8892bf.svg)](https://secure.php.net/supported-versions.php) [![WordPress >= 4.4](https://img.shields.io/badge/wordpress-%3E=%204.4-blue.svg)](https://wordpress.org/download/release-archive/)  
+[![Build Status](https://travis-ci.org/godaddy/wp-escapade-theme.svg?branch=master)](https://travis-ci.org/godaddy/wp-escapade-theme) [![devDependencies Status](https://david-dm.org/godaddy/wp-escapade-theme/master/dev-status.svg)](https://david-dm.org/godaddy/wp-escapade-theme/master?type=dev) [![License](https://img.shields.io/badge/license-GPL--2.0-brightgreen.svg)](https://github.com/godaddy/wp-escapade-theme/blob/master/license.txt) [![PHP >= 5.2](https://img.shields.io/badge/php-%3E=%205.2-8892bf.svg)](https://secure.php.net/supported-versions.php) [![WordPress >= 4.4](https://img.shields.io/badge/wordpress-%3E=%204.4-blue.svg)](https://wordpress.org/download/release-archive/)  
 
 ## Description ##
 
@@ -80,6 +80,10 @@ Escapade bundles the following third-party resources:
 Genericons icon font, Copyright 2013 Automattic, Inc.
 License: GPL-2.0 (or later)
 Source: https://genericons.com/
+
+Stock photography, Unsplash
+License: Creative Commons Zero
+Source: https://unsplash.com/photos/SK3uHKx5nCU/
 
 ## Frequently Asked Questions ##
 
