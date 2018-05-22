@@ -3141,7 +3141,7 @@ a {
   font-size: 30px;
   font-weight: 300;
   text-transform: uppercase;
-  margin: 5px 10px 5px 0;
+  margin: 5px 10px 0 0;
   text-align: right; }
   @media only screen and (min-width: 55.063em) {
     .site-title {
@@ -3152,8 +3152,10 @@ a {
     .site-title a:hover {
       color: #999;
       opacity: .8; }
-  .site-title .site-description {
-    float: right; }
+
+.site-description {
+  float: right;
+  margin: 0 10px 5px 0; }
 
 .navigation .nav-links {
   padding: 1.5em;
@@ -4084,6 +4086,9 @@ body.layout-one-column-narrow #content {
     .hero {
       padding: 0 40px;
       text-align: right; } }
+  @media only screen and (max-width: 55em) {
+    .hero {
+      padding-top: 120px; } }
   .hero .widget {
     max-width: 780px; }
   .hero .page-title,
@@ -4105,7 +4110,7 @@ body.layout-one-column-narrow #content {
 .page .site-header,
 .archive .site-header,
 .single .site-header {
-  padding: 120px 0 60px;
+  padding: 120px 0;
   position: relative; }
   @media only screen and (max-width: 55em) {
     .blog .site-header,
