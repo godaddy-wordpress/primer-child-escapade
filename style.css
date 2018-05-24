@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * Theme Name: Escapade
  * Theme URI: https://github.com/godaddy/wp-escapade-theme
@@ -260,15 +259,64 @@ select {
   .row:after, .navigation:after, .site-branding-container:after, .main-navigation:after, .featured-content .entry-header .entry-header-row:after, .featured-content .featured-content-inner:after {
     clear: both; }
   .row.collapse > .column, .collapse.navigation > .column, .collapse.site-branding-container > .column, .collapse.main-navigation > .column, .featured-content .entry-header .collapse.entry-header-row > .column, .featured-content .collapse.featured-content-inner > .column,
-  .row.collapse > .columns, .collapse.navigation > .columns, .collapse.site-branding-container > .columns, .collapse.main-navigation > .columns, .featured-content .entry-header .collapse.entry-header-row > .columns, .featured-content .collapse.featured-content-inner > .columns,
-  .row.collapse > #primary, .collapse.navigation > #primary, .collapse.site-branding-container > #primary, .collapse.main-navigation > #primary, .featured-content .entry-header .collapse.entry-header-row > #primary, .featured-content .collapse.featured-content-inner > #primary,
-  .row.collapse > #secondary, .collapse.navigation > #secondary, .collapse.site-branding-container > #secondary, .collapse.main-navigation > #secondary, .featured-content .entry-header .collapse.entry-header-row > #secondary, .featured-content .collapse.featured-content-inner > #secondary,
-  .row.collapse > #tertiary, .collapse.navigation > #tertiary, .collapse.site-branding-container > #tertiary, .collapse.main-navigation > #tertiary, .featured-content .entry-header .collapse.entry-header-row > #tertiary, .featured-content .collapse.featured-content-inner > #tertiary,
-  .row.collapse > .site-branding, .collapse.navigation > .site-branding, .collapse.site-branding-container > .site-branding, .collapse.main-navigation > .site-branding, .featured-content .entry-header .collapse.entry-header-row > .site-branding, .featured-content .collapse.featured-content-inner > .site-branding, .site-footer
-  .row.collapse > .site-info, .site-footer .collapse.navigation > .site-info, .site-footer .collapse.site-branding-container > .site-info, .site-footer .collapse.main-navigation > .site-info, .featured-content .entry-header .site-footer .collapse.entry-header-row > .site-info, .site-footer .featured-content .entry-header .collapse.entry-header-row > .site-info, .featured-content .site-footer .collapse.featured-content-inner > .site-info, .site-footer .featured-content .collapse.featured-content-inner > .site-info, .featured-content .entry-header
-  .row.collapse > .entry-header-column, .featured-content .entry-header .collapse.navigation > .entry-header-column, .featured-content .entry-header .collapse.site-branding-container > .entry-header-column, .featured-content .entry-header .collapse.main-navigation > .entry-header-column, .featured-content .entry-header .collapse.entry-header-row > .entry-header-column, .featured-content .entry-header .collapse.featured-content-inner > .entry-header-column, .site-info-wrapper
-  .row.collapse > .site-info-inner, .site-info-wrapper .collapse.navigation > .site-info-inner, .site-info-wrapper .collapse.site-branding-container > .site-info-inner, .site-info-wrapper .collapse.main-navigation > .site-info-inner, .featured-content .entry-header .site-info-wrapper .collapse.entry-header-row > .site-info-inner, .site-info-wrapper .featured-content .entry-header .collapse.entry-header-row > .site-info-inner, .featured-content .site-info-wrapper .collapse.featured-content-inner > .site-info-inner, .site-info-wrapper .featured-content .collapse.featured-content-inner > .site-info-inner, .featured-content
-  .row.collapse > article, .featured-content .collapse.navigation > article, .featured-content .collapse.site-branding-container > article, .featured-content .collapse.main-navigation > article, .featured-content .entry-header .collapse.entry-header-row > article, .featured-content .collapse.featured-content-inner > article {
+  .row.collapse > .columns,
+  .collapse.navigation > .columns,
+  .collapse.site-branding-container > .columns,
+  .collapse.main-navigation > .columns,
+  .featured-content .entry-header .collapse.entry-header-row > .columns,
+  .featured-content .collapse.featured-content-inner > .columns,
+  .row.collapse > #primary,
+  .collapse.navigation > #primary,
+  .collapse.site-branding-container > #primary,
+  .collapse.main-navigation > #primary,
+  .featured-content .entry-header .collapse.entry-header-row > #primary,
+  .featured-content .collapse.featured-content-inner > #primary,
+  .row.collapse > #secondary,
+  .collapse.navigation > #secondary,
+  .collapse.site-branding-container > #secondary,
+  .collapse.main-navigation > #secondary,
+  .featured-content .entry-header .collapse.entry-header-row > #secondary,
+  .featured-content .collapse.featured-content-inner > #secondary,
+  .row.collapse > #tertiary,
+  .collapse.navigation > #tertiary,
+  .collapse.site-branding-container > #tertiary,
+  .collapse.main-navigation > #tertiary,
+  .featured-content .entry-header .collapse.entry-header-row > #tertiary,
+  .featured-content .collapse.featured-content-inner > #tertiary,
+  .row.collapse > .site-branding,
+  .collapse.navigation > .site-branding,
+  .collapse.site-branding-container > .site-branding,
+  .collapse.main-navigation > .site-branding,
+  .featured-content .entry-header .collapse.entry-header-row > .site-branding,
+  .featured-content .collapse.featured-content-inner > .site-branding,
+  .site-footer .row.collapse > .site-info,
+  .site-footer .collapse.navigation > .site-info,
+  .site-footer .collapse.site-branding-container > .site-info,
+  .site-footer .collapse.main-navigation > .site-info,
+  .featured-content .entry-header .site-footer .collapse.entry-header-row > .site-info,
+  .site-footer .featured-content .entry-header .collapse.entry-header-row > .site-info,
+  .featured-content .site-footer .collapse.featured-content-inner > .site-info,
+  .site-footer .featured-content .collapse.featured-content-inner > .site-info,
+  .featured-content .entry-header .row.collapse > .entry-header-column,
+  .featured-content .entry-header .collapse.navigation > .entry-header-column,
+  .featured-content .entry-header .collapse.site-branding-container > .entry-header-column,
+  .featured-content .entry-header .collapse.main-navigation > .entry-header-column,
+  .featured-content .entry-header .collapse.entry-header-row > .entry-header-column,
+  .featured-content .entry-header .collapse.featured-content-inner > .entry-header-column,
+  .site-info-wrapper .row.collapse > .site-info-inner,
+  .site-info-wrapper .collapse.navigation > .site-info-inner,
+  .site-info-wrapper .collapse.site-branding-container > .site-info-inner,
+  .site-info-wrapper .collapse.main-navigation > .site-info-inner,
+  .featured-content .entry-header .site-info-wrapper .collapse.entry-header-row > .site-info-inner,
+  .site-info-wrapper .featured-content .entry-header .collapse.entry-header-row > .site-info-inner,
+  .featured-content .site-info-wrapper .collapse.featured-content-inner > .site-info-inner,
+  .site-info-wrapper .featured-content .collapse.featured-content-inner > .site-info-inner,
+  .featured-content .row.collapse > article,
+  .featured-content .collapse.navigation > article,
+  .featured-content .collapse.site-branding-container > article,
+  .featured-content .collapse.main-navigation > article,
+  .featured-content .entry-header .collapse.entry-header-row > article,
+  .featured-content .collapse.featured-content-inner > article {
     padding-left: 0;
     padding-right: 0; }
   .row.collapse .row, .collapse.navigation .row, .collapse.site-branding-container .row, .collapse.main-navigation .row, .featured-content .entry-header .collapse.entry-header-row .row, .featured-content .collapse.featured-content-inner .row, .row.collapse .navigation, .collapse.navigation .navigation, .collapse.site-branding-container .navigation, .collapse.main-navigation .navigation, .featured-content .entry-header .collapse.entry-header-row .navigation, .featured-content .collapse.featured-content-inner .navigation, .row.collapse .site-branding-container, .collapse.navigation .site-branding-container, .collapse.site-branding-container .site-branding-container, .collapse.main-navigation .site-branding-container, .featured-content .entry-header .collapse.entry-header-row .site-branding-container, .featured-content .collapse.featured-content-inner .site-branding-container, .row.collapse .main-navigation, .collapse.navigation .main-navigation, .collapse.site-branding-container .main-navigation, .collapse.main-navigation .main-navigation, .featured-content .entry-header .collapse.entry-header-row .main-navigation, .featured-content .collapse.featured-content-inner .main-navigation, .row.collapse .featured-content .entry-header .entry-header-row, .featured-content .entry-header .row.collapse .entry-header-row, .collapse.navigation .featured-content .entry-header .entry-header-row, .featured-content .entry-header .collapse.navigation .entry-header-row, .collapse.site-branding-container .featured-content .entry-header .entry-header-row, .featured-content .entry-header .collapse.site-branding-container .entry-header-row, .collapse.main-navigation .featured-content .entry-header .entry-header-row, .featured-content .entry-header .collapse.main-navigation .entry-header-row, .featured-content .entry-header .collapse.entry-header-row .entry-header-row, .featured-content .collapse.featured-content-inner .entry-header .entry-header-row, .featured-content .entry-header .collapse.featured-content-inner .entry-header-row, .row.collapse .featured-content .featured-content-inner, .featured-content .row.collapse .featured-content-inner, .collapse.navigation .featured-content .featured-content-inner, .featured-content .collapse.navigation .featured-content-inner, .collapse.site-branding-container .featured-content .featured-content-inner, .featured-content .collapse.site-branding-container .featured-content-inner, .collapse.main-navigation .featured-content .featured-content-inner, .featured-content .collapse.main-navigation .featured-content-inner, .featured-content .entry-header .collapse.entry-header-row .featured-content-inner, .featured-content .collapse.featured-content-inner .featured-content-inner {
@@ -980,16 +1028,13 @@ select {
   .large-2 {
     width: 16.66667%; }
   .large-3, body.layout-three-column-default #secondary,
-  body.layout-three-column-reversed #secondary,
-  body.layout-three-column-center #secondary, #tertiary {
+  body.layout-three-column-reversed #secondary, body.layout-three-column-center #secondary, #tertiary {
     width: 25%; }
   .large-4, #secondary {
     width: 33.33333%; }
   .large-5 {
     width: 41.66667%; }
-  .large-6, body.layout-three-column-default #primary,
-  body.layout-three-column-reversed #primary,
-  body.layout-three-column-center #primary {
+  .large-6, body.layout-three-column-default #primary, body.layout-three-column-reversed #primary, body.layout-three-column-center #primary {
     width: 50%; }
   .large-7 {
     width: 58.33333%; }
@@ -3096,7 +3141,7 @@ a {
   font-size: 30px;
   font-weight: 300;
   text-transform: uppercase;
-  margin: 5px 0 5px 10px;
+  margin: 5px 0 0 10px;
   text-align: left; }
   @media only screen and (min-width: 55.063em) {
     .site-title {
@@ -3107,8 +3152,10 @@ a {
     .site-title a:hover {
       color: #999;
       opacity: .8; }
-  .site-title .site-description {
-    float: left; }
+
+.site-description {
+  float: left;
+  margin: 0 0 5px 10px; }
 
 .navigation .nav-links {
   padding: 1.5em;
@@ -3157,7 +3204,7 @@ a {
     .navigation.pagination .nav-links {
       float: right;
       padding-right: 0; }
-      .navigation.pagination .nav-links .page-numbers:not(.prev):not(.next) {
+      .navigation.pagination .nav-links .page-numbers {
         display: none; } }
 
 .comment-navigation .nav-previous,
@@ -4039,6 +4086,9 @@ body.layout-one-column-narrow #content {
     .hero {
       padding: 0 40px;
       text-align: left; } }
+  @media only screen and (max-width: 55em) {
+    .hero {
+      padding-top: 120px; } }
   .hero .widget {
     max-width: 780px; }
   .hero .page-title,
@@ -4060,7 +4110,7 @@ body.layout-one-column-narrow #content {
 .page .site-header,
 .archive .site-header,
 .single .site-header {
-  padding: 120px 0 60px;
+  padding: 120px 0;
   position: relative; }
   @media only screen and (max-width: 55em) {
     .blog .site-header,
@@ -4142,15 +4192,24 @@ body.layout-one-column-narrow #content {
     .footer-widget-area .footer-widget .widget_calendar #calendar_wrap {
       padding-right: 0; }
 
+.privacy-policy-link {
+  line-height: 1.5;
+  font-family: "Oswald", sans-serif; }
+  @media screen and (min-width: 769px) {
+    .privacy-policy-link {
+      text-align: center; } }
+
 .site-info-wrapper {
   padding: 1.5rem;
   background: #191919;
   color: #fff;
   line-height: 1.5;
-  font-family: "Oswald", sans-serif; }
+  font-family: "Oswald", sans-serif;
+  text-align: center; }
   @media screen and (min-width: 769px) {
     .site-info-wrapper {
-      padding: 4.6rem; } }
+      padding: 4.6rem;
+      text-align: left; } }
   .site-info-wrapper .site-info-text {
     color: rgba(255, 255, 255, 0.5);
     text-align: center; }
