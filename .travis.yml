@@ -1,29 +1,58 @@
 sudo: false
 
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+
+cache:
+  directories:
+    - node_modules
+    - vendor
+    - $HOME/.composer/cache
+    - $HOME/.wp-cli/cache
+    - $HOME/.wp-cli/packages/cache
+
 language:
   - php
   - node_js
 
+branches:
+  only:
+    - /^v\d.*$/
+    - master
+    - develop
+
+env:
+  global:
+    - WP_THEME=escapade
+
+before_install:
+  - phpenv config-rm xdebug.ini
+
 before_script:
-  - curl -s https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar > /tmp/wp-cli.phar
+  - curl https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli-nightly.phar > /tmp/wp-cli.phar
+  - chmod +x /tmp/wp-cli.phar
 
 script:
   - echo "Deploy only"
 
 before_deploy:
-  - export RELEASE_FOLDER=escapade
-  - php /tmp/wp-cli.phar package install runcommand/dist-archive
-  - cp -rv ${TRAVIS_BUILD_DIR} /tmp/${RELEASE_FOLDER}
-  - mv /tmp/${RELEASE_FOLDER} ${TRAVIS_BUILD_DIR}
-  - php /tmp/wp-cli.phar dist-archive ${RELEASE_FOLDER} ${TRAVIS_BUILD_DIR}/${RELEASE_FOLDER}.zip --format=zip --debug
+  - mkdir -p /tmp/$WP_THEME
+  - rsync -av --exclude-from $TRAVIS_BUILD_DIR/.distignore --delete $TRAVIS_BUILD_DIR/ /tmp/$WP_THEME/
+  - cd /tmp
+  - zip -rT $TRAVIS_BUILD_DIR/$WP_THEME.zip $WP_THEME/
+  - sha256sum -b $TRAVIS_BUILD_DIR/$WP_THEME.zip | awk '{print $1}' | tee $TRAVIS_BUILD_DIR/$WP_THEME.zip.sha256
 
 deploy:
   provider: releases
   api_key:
-    secure: Gw/QxCTvWCReWaGnDw98OqFI8WajPSre8CGSERE8gWZnCiOKINKqCzwAEn6Obte6zaRoZN3iJnNHiT/dMCPmb00+qoJTIoTHRucQ7DgVKs/klNZ7lIeO8hj0pq6iMMhuaXhtGddxuYZRD9rGSUY1L+r67kYugEfPzmWwvIJ9G+rM0jsj3JH/QgR/qBH0JnZ+VC6wynduZvnDK+C6PVkz04JYav9LlZQAo8XvclaUCBSepoM4SLpnouPMgRtzzfZZlNxom8iqslFn9ovYfHfrQDhhFow7wBbdPxJf2zhwuo8FxYJfHmrOgQH1YajEwIJwNSNpur6swMKI8e2MjEds2Y/RfpViiyQrx82L8EkMGGMRRZECeOeOeGW61TB7m+B4jmY/4hTl/MglDG6o5NRo3tyR5hybGAe2BhPYvnWkO8CukLSfXFQjs+JCNUfUp1HlCAujF2IL859ywUCplgx4rFB4mbN0WI7t3LCEPn85rp1oHo5AFLWwDSGHXfSlbDkiR5C81XFjfbM+T0O8eR3IA/hvpQBeKjCYjQrS33LtTMza6xrGenwENXgQpMB/Lxiiw45HLdcHDDuzaQU8JbU9x49k4tH457xdl40OjL1tharSItq20ESOZuYSM7n61d43vfP/zrbPKTNrIiOJOm7zeY3NXuik+Q7Mcr0M81aGcfQ=
-  file: escapade.zip
+    secure: Dkr5VVoK/OXnqBu2fX6uVA43KHSxhQwvcWqhnIueWCFSEr38qClRupHnzsn0jWiINKHz0ATXqmhgEnwA/BM/neV2oECFJLwB71J4fHlFSBE9QGpcRGFGYW4pGHs/nacLNYVUqmqT0KreNaFhXSXzq+GeJuL8lDzHPSufxGpKP/n33KkX4JVUszmOjSr63KK0X6VRyuBoRohsUthheBo82J67/xpwahzVFx10DRPBjYyj8R93SC/9KsUw1jUpiWGrzURQeOwwAYplH3RRHPW9Ise9yWbBVL+Wpix2ew1uAYmtAQpe/CZoNslyQz/cTKNPRw3LU7QjQJ0h0k+RAEmifmVSz2rb4qAN+PRSotyiiyOdlazlgboCh/TYvhYdUUKPUvFqYPm1XiRxiXhOwX74H5atxmtn0AD6d7Y91uz5Xn4eg7D3cOtBP5uttf89/0xGAXbfYgpOb2NdmiIlV9JrJ/tnMPJfDIdQP/USeNKW5ls6G9XiEvzP7BRc7MZmKCl42r4Jz3CseJ2zTebrjwDje/FzWKkeiKKNy22jMmVh0NhO27MhxCZpkxhL/z1alH1AwQ/IhPvkbw9yEHayz6MAdnYK596GlNCp6+/W3j9EKuQBgBe5PEaXVHAhAcH3sS0njrr5UoOn7KH7KSxaj1TocKpegfsa1/1BQKm+Zu0LtiM=
+  file:
+    - "$TRAVIS_BUILD_DIR/$WP_THEME.zip"
+    - "$TRAVIS_BUILD_DIR/$WP_THEME.zip.sha256"
+  skip_cleanup: true
+  overwrite: true
   on:
     tags: true
     repo: godaddy/wp-escapade-theme
-  skip_cleanup: true
-  overwrite: true
