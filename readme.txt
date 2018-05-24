@@ -93,6 +93,10 @@ TODO
 
 == Changelog ==
 
+= 1.1.1 =
+
+* New: Added styles for WordPress 4.9.6 privacy policy footer link & cookie comment checkbox.
+
 = 1.1.0 =
 
 * New: Added Ninja Forms compatibility styles. Styles Ninja Forms response messages. @props [evanherman](https://github.com/EvanHerman)
