@@ -397,7 +397,7 @@ body {
 	font-size: 30px;
 	font-weight: 300;
 	text-transform: uppercase;
-	margin: 5px 0 5px 10px;
+	margin: 5px 0 0 10px;
 	text-align: left;
 
 	@media #{$medium-up}{
@@ -413,10 +413,11 @@ body {
 			opacity: .8;
 		}
 	}
+}
 
-	.site-description {
-		float: left;
-	}
+.site-description {
+	float: left;
+	margin: 0 0 5px 10px;
 }
 
 .navigation {
