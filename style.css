@@ -4,7 +4,7 @@
  * Author: GoDaddy
  * Author URI: https://www.godaddy.com/
  * Description: Escapade is a Primer child theme with a unique sidebar navigation.
- * Version: 1.1.0
+ * Version: 1.1.1
  * License: GPL-2.0
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: escapade
@@ -3141,7 +3141,7 @@ a {
   font-size: 30px;
   font-weight: 300;
   text-transform: uppercase;
-  margin: 5px 0 5px 10px;
+  margin: 5px 0 0 10px;
   text-align: left; }
   @media only screen and (min-width: 55.063em) {
     .site-title {
@@ -3152,8 +3152,10 @@ a {
     .site-title a:hover {
       color: #999;
       opacity: .8; }
-  .site-title .site-description {
-    float: left; }
+
+.site-description {
+  float: left;
+  margin: 0 0 5px 10px; }
 
 .navigation .nav-links {
   padding: 1.5em;
@@ -4084,6 +4086,9 @@ body.layout-one-column-narrow #content {
     .hero {
       padding: 0 40px;
       text-align: left; } }
+  @media only screen and (max-width: 55em) {
+    .hero {
+      padding-top: 120px; } }
   .hero .widget {
     max-width: 780px; }
   .hero .page-title,
@@ -4105,7 +4110,7 @@ body.layout-one-column-narrow #content {
 .page .site-header,
 .archive .site-header,
 .single .site-header {
-  padding: 120px 0 60px;
+  padding: 120px 0;
   position: relative; }
   @media only screen and (max-width: 55em) {
     .blog .site-header,
@@ -4187,15 +4192,24 @@ body.layout-one-column-narrow #content {
     .footer-widget-area .footer-widget .widget_calendar #calendar_wrap {
       padding-right: 0; }
 
+.privacy-policy-link {
+  line-height: 1.5;
+  font-family: "Oswald", sans-serif; }
+  @media screen and (min-width: 769px) {
+    .privacy-policy-link {
+      text-align: center; } }
+
 .site-info-wrapper {
   padding: 1.5rem;
   background: #191919;
   color: #fff;
   line-height: 1.5;
-  font-family: "Oswald", sans-serif; }
+  font-family: "Oswald", sans-serif;
+  text-align: center; }
   @media screen and (min-width: 769px) {
     .site-info-wrapper {
-      padding: 4.6rem; } }
+      padding: 4.6rem;
+      text-align: left; } }
   .site-info-wrapper .site-info-text {
     color: rgba(255, 255, 255, 0.5);
     text-align: center; }

@@ -116,15 +116,30 @@ $site-footer-info-anchor-color-hover: contrast-color($site-footer-info-backgroun
 	}
 }
 
+.privacy-policy-link {
+
+}
+
+.privacy-policy-link {
+	line-height: 1.5;
+	font-family: $primary-font-family;
+
+	@media screen and (min-width: 769px) {
+		text-align: center;
+	}
+}
+
 .site-info-wrapper {
 	padding: 1.5rem;
 	background: $site-footer-info-background;
 	color: $site-footer-info-text-color;
 	line-height: 1.5;
 	font-family: $primary-font-family;
+	text-align: center;
 
 	@media screen and (min-width: 769px) {
 		padding: 4.6rem;
+		text-align: left;
 	}
 
 	.site-info-text {

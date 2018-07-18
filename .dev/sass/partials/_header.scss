@@ -107,6 +107,10 @@ $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 		text-align: left;
 	}
 
+	@media #{$small-only} {
+		padding-top: 120px;
+	}
+
 	.widget {
 		max-width: 780px;
 	}
@@ -138,7 +142,7 @@ $entry-title-bg: rgba(0, 0, 0, 0.6) !default;
 .archive,
 .single {
 	.site-header {
-		padding: 120px 0 60px;
+		padding: 120px 0;
 		position: relative;
 		@media #{$small-only} {
 			padding-top: 0;
