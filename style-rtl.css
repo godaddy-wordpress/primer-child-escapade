@@ -4572,3 +4572,92 @@ body.woocommerce-cart .primer-wc-cart-sub-menu {
         max-width: 65px; }
     .primer-wc-cart-menu-item .widget_shopping_cart .mini_cart_item a.remove {
       margin-top: 20px; } }
+
+/*--------------------------------------------------------------
+>>> Gutenberg:
+--------------------------------------------------------------*/
+body.customize-support .wp-block-cover-image {
+  margin-bottom: 1.5rem; }
+
+body.customize-support .alignfull {
+  margin-right: -4.4375rem;
+  max-width: 100%; }
+  @media only screen and (max-width: 55em) {
+    body.customize-support .alignfull {
+      max-width: inherit; } }
+  body.customize-support .alignfull img {
+    width: -webkit-calc( 100% + 8.875rem);
+    width: calc( 100% + 8.875rem);
+    max-width: -webkit-calc( 100% + 8.875rem);
+    max-width: calc( 100% + 8.875rem); }
+    @media only screen and (max-width: 55em) {
+      body.customize-support .alignfull img {
+        max-width: -webkit-calc( 100% + 4.4375rem);
+        max-width: calc( 100% + 4.4375rem);
+        width: -webkit-calc( 100% + 4.4375rem);
+        width: calc( 100% + 4.4375rem); } }
+
+body.customize-support .alignwide {
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%; }
+
+body.customize-support .wp-block-image.alignleft,
+body.customize-support .wp-block-gallery.alignleft,
+body.customize-support .wp-block-video.alignleft,
+body.customize-support .wp-block-quote.alignleft,
+body.customize-support .wp-block-text-columns.alignleft,
+body.customize-support .entry-content ul.alignleft,
+body.customize-support .entry-content ol.alignleft,
+body.customize-support .wp-block-cover-text.alignleft {
+  margin: 0 0 0.5em 1em; }
+
+body.customize-support .wp-block-image.alignright,
+body.customize-support .wp-block-gallery.alignright,
+body.customize-support .wp-block-video.alignright,
+body.customize-support .wp-block-quote.alignright,
+body.customize-support .wp-block-text-columns.alignright,
+body.customize-support .entry-content ul.alignright,
+body.customize-support .entry-content ol.alignright,
+body.customize-support .wp-block-cover-text.alignright {
+  margin: 0 1em 0.5em 0; }
+
+body.customize-support .wp-block-image.alignleft, body.customize-support .wp-block-image.alignright,
+body.customize-support .wp-block-gallery.alignleft,
+body.customize-support .wp-block-gallery.alignright,
+body.customize-support .wp-block-video.alignleft,
+body.customize-support .wp-block-video.alignright,
+body.customize-support .wp-block-quote.alignleft,
+body.customize-support .wp-block-quote.alignright,
+body.customize-support .wp-block-text-columns.alignleft,
+body.customize-support .wp-block-text-columns.alignright,
+body.customize-support .entry-content ul.alignleft,
+body.customize-support .entry-content ul.alignright,
+body.customize-support .entry-content ol.alignleft,
+body.customize-support .entry-content ol.alignright,
+body.customize-support .wp-block-cover-text.alignleft,
+body.customize-support .wp-block-cover-text.alignright {
+  max-width: 40%;
+  width: 100%; }
+  body.customize-support .wp-block-image.alignleft img, body.customize-support .wp-block-image.alignright img,
+  body.customize-support .wp-block-gallery.alignleft img,
+  body.customize-support .wp-block-gallery.alignright img,
+  body.customize-support .wp-block-video.alignleft img,
+  body.customize-support .wp-block-video.alignright img,
+  body.customize-support .wp-block-quote.alignleft img,
+  body.customize-support .wp-block-quote.alignright img,
+  body.customize-support .wp-block-text-columns.alignleft img,
+  body.customize-support .wp-block-text-columns.alignright img,
+  body.customize-support .entry-content ul.alignleft img,
+  body.customize-support .entry-content ul.alignright img,
+  body.customize-support .entry-content ol.alignleft img,
+  body.customize-support .entry-content ol.alignright img,
+  body.customize-support .wp-block-cover-text.alignleft img,
+  body.customize-support .wp-block-cover-text.alignright img {
+    width: inherit; }
+
+body.customize-support .wp-block-gallery {
+  margin-right: 0;
+  margin-left: 0; }
+  body.customize-support .wp-block-gallery.is-cropped .blocks-gallery-item img {
+    height: auto; }
