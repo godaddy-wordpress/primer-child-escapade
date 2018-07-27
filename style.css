@@ -4579,25 +4579,25 @@ body.woocommerce-cart .primer-wc-cart-sub-menu {
 .wp-block-cover-image {
   margin-bottom: 1.5rem; }
 
-.alignfull {
+[class^="wp-block-"].alignfull {
   margin-left: -4.4375rem;
   max-width: 100%; }
   @media only screen and (max-width: 55em) {
-    .alignfull {
+    [class^="wp-block-"].alignfull {
       max-width: inherit; } }
-  .alignfull img {
+  [class^="wp-block-"].alignfull img {
     width: -webkit-calc( 100% + 8.875rem);
     width: calc( 100% + 8.875rem);
     max-width: -webkit-calc( 100% + 8.875rem);
     max-width: calc( 100% + 8.875rem); }
     @media only screen and (max-width: 55em) {
-      .alignfull img {
+      [class^="wp-block-"].alignfull img {
         max-width: -webkit-calc( 100% + 4.4375rem);
         max-width: calc( 100% + 4.4375rem);
         width: -webkit-calc( 100% + 4.4375rem);
         width: calc( 100% + 4.4375rem); } }
 
-.alignwide {
+[class^="wp-block-"].alignwide {
   margin-left: 0;
   margin-right: 0;
   width: 100%; }

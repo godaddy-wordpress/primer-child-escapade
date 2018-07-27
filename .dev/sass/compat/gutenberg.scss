@@ -5,7 +5,7 @@
 	margin-bottom: 1.5rem;
 }
 
-.alignfull {
+[class^="wp-block-"].alignfull {
 	margin-left: -4.4375rem;
 	max-width: 100%;
 	@media #{$small-only} {
@@ -23,7 +23,7 @@
 	}
 }
 
-.alignwide {
+[class^="wp-block-"].alignwide {
 	margin-left: 0;
 	margin-right: 0;
 	width: 100%;
