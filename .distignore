@@ -3,6 +3,9 @@
 .gitignore
 .travis.yml
 .dev
+readme.md
+package-lock.json
 package.json
+vendor
 node_modules
 Gruntfile.js
