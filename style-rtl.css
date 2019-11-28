@@ -3203,9 +3203,7 @@ a {
       color: #fefefe; }
     .navigation.pagination .nav-links {
       float: left;
-      padding-left: 0; }
-      .navigation.pagination .nav-links .page-numbers {
-        display: none; } }
+      padding-left: 0; } }
 
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
