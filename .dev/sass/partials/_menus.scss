@@ -478,12 +478,6 @@ body {
 		.nav-links {
 			float: right;
 			padding-right: 0;
-
-			.page-numbers {
-				&:not(.prev, .next) {
-					display: none;
-				}
-			}
 		}
 	}
 }
