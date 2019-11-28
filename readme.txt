@@ -2,7 +2,7 @@
 Contributors:      godaddy, jonathanbardo, fjarrett, eherman24
 Tags:              custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, fixed-layout, flexible-header, fluid-layout, left-sidebar, light, one-column, responsive-layout, right-sidebar, rtl-language-support, sticky-post, threaded-comments, three-columns, translation-ready, two-columns
 Requires at least: 4.4
-Tested up to:      4.9
+Tested up to:      5.3
 Requires PHP:      5.6.0
 Stable tag:        1.1.2
 License:           GPL-2.0
@@ -81,6 +81,10 @@ License: Creative Commons Zero
 Source: https://unsplash.com/photos/SK3uHKx5nCU/
 
 == Changelog ==
+
+= 1.1.3 =
+
+* Tweak: Display blog post pagination on mobile devices. @props [evanherman](https://github.com/EvanHerman)
 
 = 1.1.2 =
 
