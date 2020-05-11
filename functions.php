@@ -1,9 +1,9 @@
 <?php
-
 /**
  * Child theme version.
  *
- * @since 1.0.0
+ * @since   1.0.0
+ * @package Primer
  *
  * @var string
  */
@@ -17,9 +17,9 @@ define( 'PRIMER_CHILD_VERSION', '1.1.3' );
  */
 function escapade_move_elements() {
 
-	remove_action( 'primer_header',                 'primer_add_hero',              7 );
-	remove_action( 'primer_after_header',           'primer_add_page_title',        12 );
-	remove_action( 'primer_site_info',              'primer_add_social_navigation', 7 );
+	remove_action( 'primer_header', 'primer_add_hero', 7 );
+	remove_action( 'primer_after_header', 'primer_add_page_title', 12 );
+	remove_action( 'primer_site_info', 'primer_add_social_navigation', 7 );
 	remove_action( 'primer_before_site_navigation', 'primer_add_mobile_menu' );
 
 	add_action( 'primer_pre_hero', 'primer_video_header' );
@@ -69,7 +69,7 @@ add_action( 'primer_after_header', 'escapade_add_social_menu', 30 );
  * @filter primer_custom_logo_args
  * @since  1.0.0
  *
- * @param  array $args
+ * @param  array $args Arguments array.
  *
  * @return array
  */
@@ -89,7 +89,7 @@ add_filter( 'primer_custom_logo_args', 'escapade_custom_logo_args' );
  * @filter primer_layouts
  * @since  1.0.0
  *
- * @param  array $layouts
+ * @param  array $layouts Layouts array.
  *
  * @return array
  */
@@ -113,7 +113,7 @@ add_filter( 'primer_page_widths', '__return_empty_array' );
  * @filter primer_fonts
  * @since  1.0.0
  *
- * @param  array $fonts
+ * @param  array $fonts Registered fonts array.
  *
  * @return array
  */
@@ -133,7 +133,7 @@ add_filter( 'primer_fonts', 'escapade_fonts' );
  * @filter primer_font_types
  * @since  1.0.0
  *
- * @param  array $font_types
+ * @param  array $font_types Registered font types array.
  *
  * @return array
  */
@@ -146,13 +146,13 @@ function escapade_font_types( $font_types ) {
 		'navigation_font' => array(
 			'default' => 'Oswald',
 		),
-		'heading_font' => array(
+		'heading_font'    => array(
 			'default' => 'Oswald',
 		),
-		'primary_font' => array(
+		'primary_font'    => array(
 			'default' => 'Droid Serif',
 		),
-		'secondary_font' => array(
+		'secondary_font'  => array(
 			'default' => 'Droid Serif',
 		),
 	);
@@ -168,7 +168,7 @@ add_filter( 'primer_font_types', 'escapade_font_types' );
  * @filter primer_colors
  * @since  1.0.0
  *
- * @param  array $colors
+ * @param  array $colors Registered colors array.
  *
  * @return array
  */
@@ -184,20 +184,19 @@ function escapade_colors( $colors ) {
 		/**
 		 * Text colors
 		 */
-		'header_textcolor' => array(
+		'header_textcolor'                 => array(
 			'default' => '#757575',
 		),
-		'tagline_text_color' => array(
+		'tagline_text_color'               => array(
 			'default' => '#757575',
 		),
-		'hero_text_color' => array(
+		'hero_text_color'                  => array(
 			'default' => '#ffffff',
 		),
-		'menu_text_color' => array(
+		'menu_text_color'                  => array(
 			'default'  => '#757575',
 			'css'      => array(
-				'header .social-menu a,
-				header .social-menu a:visited' => array(
+				'header .social-menu a, header .social-menu a:visited' => array(
 					'color' => '%1$s',
 				),
 			),
@@ -207,44 +206,44 @@ function escapade_colors( $colors ) {
 				),
 			),
 		),
-		'heading_text_color' => array(
+		'heading_text_color'               => array(
 			'default' => '#353535',
 		),
-		'primary_text_color' => array(
+		'primary_text_color'               => array(
 			'default' => '#252525',
 		),
-		'secondary_text_color' => array(
+		'secondary_text_color'             => array(
 			'default' => '#757575',
 		),
 		'footer_widget_heading_text_color' => array(
 			'default' => '#757575',
 		),
-		'footer_widget_text_color' => array(
+		'footer_widget_text_color'         => array(
 			'default' => '#757575',
 		),
-		'footer_menu_text_color' => array(
+		'footer_menu_text_color'           => array(
 			'default' => '#757575',
 		),
-		'footer_text_color' => array(
+		'footer_text_color'                => array(
 			'default' => '#757575',
 		),
 		/**
 		 * Link / Button colors
 		 */
-		'link_color' => array(
-			'default'  => '#55b74e',
-			'css'      => array(
+		'link_color'                       => array(
+			'default' => '#55b74e',
+			'css'     => array(
 				'.main-navigation ul li:hover, .main-navigation li.current-menu-item, .main-navigation ul li.current-menu-item > a:hover, .main-navigation ul li.current-menu-item > a:visited:hover, .woocommerce-cart-menu-item .woocommerce.widget_shopping_cart p.buttons a:hover' => array(
 					'background-color' => '%1$s',
 				),
 			),
 		),
-		'button_color' => array(
+		'button_color'                     => array(
 			'default' => '#55b74e',
 		),
-		'button_text_color' => array(
-			'default'  => '#ffffff',
-			'css' => array(
+		'button_text_color'                => array(
+			'default' => '#ffffff',
+			'css'     => array(
 				'.main-navigation ul > li:hover > a, .main-navigation ul > li:hover > a:hover, .main-navigation ul > li:hover > a:visited, .main-navigation ul > li:hover > a:visited:hover, .main-navigation ul li.current-menu-item > a' => array(
 					'color' => '%1$s',
 				),
@@ -253,13 +252,13 @@ function escapade_colors( $colors ) {
 		/**
 		 * Background colors
 		 */
-		'background_color' => array(
+		'background_color'                 => array(
 			'default' => '#ffffff',
 		),
-		'hero_background_color' => array(
+		'hero_background_color'            => array(
 			'default' => '#414242',
 		),
-		'menu_background_color' => array(
+		'menu_background_color'            => array(
 			'default' => '#f5f5f5',
 			'css'     => array(
 				'.side-masthead' => array(
@@ -267,10 +266,10 @@ function escapade_colors( $colors ) {
 				),
 			),
 		),
-		'footer_widget_background_color' => array(
+		'footer_widget_background_color'   => array(
 			'default' => '#eeeeee',
 		),
-		'footer_background_color' => array(
+		'footer_background_color'          => array(
 			'default' => '#ffffff',
 		),
 	);
@@ -286,7 +285,7 @@ add_filter( 'primer_colors', 'escapade_colors' );
  * @filter primer_color_schemes
  * @since  1.0.0
  *
- * @param  array $color_schemes
+ * @param  array $color_schemes Registered color schemes.
  *
  * @return array
  */
@@ -295,33 +294,33 @@ function escapade_color_schemes( $color_schemes ) {
 	unset( $color_schemes['iguana'] );
 
 	$overrides = array(
-		'blush' => array(
+		'blush'     => array(
 			'colors' => array(
 				'link_color'   => $color_schemes['blush']['base'],
 				'button_color' => $color_schemes['blush']['base'],
 			),
 		),
-		'bronze' => array(
+		'bronze'    => array(
 			'colors' => array(
 				'link_color'   => $color_schemes['bronze']['base'],
 				'button_color' => $color_schemes['bronze']['base'],
 			),
 		),
-		'canary' => array(
+		'canary'    => array(
 			'colors' => array(
 				'link_color'   => $color_schemes['canary']['base'],
 				'button_color' => $color_schemes['canary']['base'],
 			),
 		),
-		'cool' => array(
+		'cool'      => array(
 			'colors' => array(
 				'link_color'   => $color_schemes['cool']['base'],
 				'button_color' => $color_schemes['cool']['base'],
 			),
 		),
-		'dark' => array(
+		'dark'      => array(
 			'colors' => array(
-				// Text
+				// Text.
 				'header_textcolor'                 => '#ffffff',
 				'tagline_text_color'               => '#999999',
 				'menu_text_color'                  => '#ffffff',
@@ -330,29 +329,29 @@ function escapade_color_schemes( $color_schemes ) {
 				'secondary_text_color'             => '#c1c1c1',
 				'footer_widget_heading_text_color' => '#ffffff',
 				'footer_widget_text_color'         => '#ffffff',
-				// Backgrounds
-				'background_color'               => '#191919',
-				'hero_background_color'          => '#282828',
-				'menu_background_color'          => '#212121',
-				'footer_widget_background_color' => '#282828',
-				'footer_background_color'        => '#191919',
+				// Backgrounds.
+				'background_color'                 => '#191919',
+				'hero_background_color'            => '#282828',
+				'menu_background_color'            => '#212121',
+				'footer_widget_background_color'   => '#282828',
+				'footer_background_color'          => '#191919',
 			),
 		),
-		'muted' => array(
+		'muted'     => array(
 			'colors' => array(
-				// Text
-				'header_textcolor'       => '#ffffff',
-				'tagline_text_color'     => '#ffffff',
-				'menu_text_color'        => '#ffffff',
-				'heading_text_color'     => '#4f5875',
-				'primary_text_color'     => '#4f5875',
-				'secondary_text_color'   => '#888c99',
-				'footer_menu_text_color' => $color_schemes['muted']['base'],
-				'footer_text_color'      => '#4f5875',
-				// Links & Buttons
-				'link_color'   => $color_schemes['muted']['base'],
-				'button_color' => $color_schemes['muted']['base'],
-				// Backgrounds
+				// Text.
+				'header_textcolor'               => '#ffffff',
+				'tagline_text_color'             => '#ffffff',
+				'menu_text_color'                => '#ffffff',
+				'heading_text_color'             => '#4f5875',
+				'primary_text_color'             => '#4f5875',
+				'secondary_text_color'           => '#888c99',
+				'footer_menu_text_color'         => $color_schemes['muted']['base'],
+				'footer_text_color'              => '#4f5875',
+				// Links & Buttons.
+				'link_color'                     => $color_schemes['muted']['base'],
+				'button_color'                   => $color_schemes['muted']['base'],
+				// Backgrounds.
 				'background_color'               => '#ffffff',
 				'hero_background_color'          => '#4f5875',
 				'menu_background_color'          => '#5a6175',
@@ -360,13 +359,13 @@ function escapade_color_schemes( $color_schemes ) {
 				'footer_background_color'        => '#ffffff',
 			),
 		),
-		'plum' => array(
+		'plum'      => array(
 			'colors' => array(
 				'link_color'   => $color_schemes['plum']['base'],
 				'button_color' => $color_schemes['plum']['base'],
 			),
 		),
-		'rose' => array(
+		'rose'      => array(
 			'colors' => array(
 				'link_color'   => $color_schemes['rose']['base'],
 				'button_color' => $color_schemes['rose']['base'],
